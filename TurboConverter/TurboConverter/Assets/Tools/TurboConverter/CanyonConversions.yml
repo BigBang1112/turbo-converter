@@ -1,0 +1,20 @@
+Blocks:
+  CE_HelicoStart:
+  CE_HelicoScreen:
+  CE_Helico:
+  CE_Airship:
+  CE_AirshipDiag:
+  CE_CranePlatformGridStraight:
+  CE_PodiumPlatformCrane:
+  RoadRaceCheckpointScreenMirror:
+  RoadRaceLandingRamp:
+  RoadRaceRoadPaintMirror:
+  RoadRaceCheckpointScreen:
+  RoadRaceTiltCheckpointScreenMirror:
+  RoadRaceSlopeRoadPaintUp:
+  RoadRaceSlopeCheckpointUpScreen:
+  RoadMainCheckpointScreen:
+  ArenaCheckpointBaseScreen:
+  ArenaSlopeRoadPaintLeft:
+  ArenaSlopeRoadPaintRight:
+  ArenaWallRideCheckpointScreen_V:
