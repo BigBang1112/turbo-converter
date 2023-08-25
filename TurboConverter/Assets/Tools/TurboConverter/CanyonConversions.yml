@@ -1,6 +1,15 @@
+DefaultCollection: 12
+DefaultAuthor: bigbang1112
+DecoBaseHeight: 15
 Blocks:
   CE_HelicoStart:
+    ItemModel:
+      Id: CE\CE_HelicoStart_Canyon.Item.gbx
+      Pivot: [32, 0, 32]
   CE_HelicoScreen:
+    ItemModel:
+      Id: CE\CE_HelicoScreenA_Canyon.Item.Gbx
+      Pivot: [16, 0, 16]
   CE_Helico:
   CE_Airship:
   CE_AirshipDiag:

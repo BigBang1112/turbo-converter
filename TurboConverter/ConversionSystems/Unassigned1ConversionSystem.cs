@@ -33,9 +33,12 @@ sealed class Unassigned1ConversionSystem : IConversionSystem
 
         // Unassigned1 safety check 2
         // add Unassigned1 at the end of Blocks if there is none
-        if (map.Blocks.Count > 0 && map.Blocks[^1].Name != "Unassigned1")
+        /*
+         * Broken on 001????
+         * 
+         * if (map.Blocks.Count > 0 && map.Blocks[^1].Name != "Unassigned1")
         {
             map.Blocks.Add(CGameCtnBlock.Unassigned1);
-        }
+        }*/
     }
 }

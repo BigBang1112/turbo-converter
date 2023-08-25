@@ -1,4 +1,5 @@
-﻿using GBX.NET.Engines.Game;
+﻿using GBX.NET;
+using GBX.NET.Engines.Game;
 using TurboConverter.Extensions;
 using TurboConverter.Models;
 
@@ -9,12 +10,15 @@ sealed class BlockConversionSystem : IConversionSystem
     private readonly CGameCtnChallenge map;
     private readonly Conversions conversions;
     private readonly Converters converters;
+    private readonly Int3 blockSize;
 
     public BlockConversionSystem(CGameCtnChallenge map, Conversions conversions, Converters converters)
     {
         this.map = map;
         this.conversions = conversions;
         this.converters = converters;
+
+        blockSize = map.Collection.GetBlockSize();
     }
 
     public void Run()
@@ -64,6 +68,15 @@ sealed class BlockConversionSystem : IConversionSystem
         {
             block.Variant = (byte?)conversion.Variant;
             removeBlock = false;
+        }
+
+        if (conversion.ItemModel is not null)
+        {
+            var ident = new Ident(conversion.ItemModel.Id ?? throw new Exception("ItemModel ID not available"),
+                conversion.ItemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
+                conversion.ItemModel.Author ?? conversions.DefaultAuthor ?? "");
+
+            map.PlaceAnchoredObject(ident, (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * 0.5f, new(), -conversion.ItemModel.Pivot ?? new());
         }
 
         if (!string.IsNullOrEmpty(conversion.Converter))

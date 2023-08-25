@@ -15,6 +15,6 @@ sealed class MapUidConversionSystem : IConversionSystem
     public void Run()
     {
         // Generate unique map UID
-        map.MapUid = $"{Convert.ToBase64String(Encoding.ASCII.GetBytes(Guid.NewGuid().ToString()))[..10]}{map.MapUid.Substring(9, 10)}ENVIMIX";
+        map.MapUid = $"{Convert.ToBase64String(Encoding.ASCII.GetBytes(Guid.NewGuid().ToString()))[..10]}{map.MapUid.Substring(9, 10)}TMTURBO";
     }
 }
