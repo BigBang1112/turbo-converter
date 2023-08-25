@@ -76,7 +76,10 @@ sealed class BlockConversionSystem : IConversionSystem
                 conversion.ItemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
                 conversion.ItemModel.Author ?? conversions.DefaultAuthor ?? "");
 
-            map.PlaceAnchoredObject(ident, (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * 0.5f, new(), -conversion.ItemModel.Pivot ?? new());
+            var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * 0.5f;
+            var pitchYawRoll = new Vec3(-(int)block.Direction * MathF.PI / 2, 0, 0);
+
+            map.PlaceAnchoredObject(ident, absolutePosition, pitchYawRoll, -conversion.ItemModel.Pivot ?? new());
         }
 
         if (!string.IsNullOrEmpty(conversion.Converter))
