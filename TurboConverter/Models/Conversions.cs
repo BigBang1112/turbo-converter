@@ -2,5 +2,5 @@
 
 public class Conversions
 {
-    public Dictionary<string, BlockConversion?> Blocks { get; set; } = new();
+    public Dictionary<string, BlockConverter?> Blocks { get; set; } = new();
 }

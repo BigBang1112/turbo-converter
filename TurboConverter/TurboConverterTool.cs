@@ -46,6 +46,9 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         // Remove lightmap chunk
         map.RemoveChunk<CGameCtnChallenge.Chunk0304303D>();
 
+        // Sometimes they might be placed on removed blocks, needs analysis to keep them
+        map.RemoveChunk<CGameCtnChallenge.Chunk0304303E>();
+
         // Generate unique map UID
         map.MapUid = $"{Convert.ToBase64String(Encoding.ASCII.GetBytes(Guid.NewGuid().ToString()))[..10]}{map.MapUid.Substring(9, 10)}ENVIMIX";
 
@@ -60,12 +63,13 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
                 continue;
             }
 
-            if (CanyonConversions.Blocks.TryGetValue(block.Name, out var conversion))
+            if (CanyonConversions.Blocks.TryGetValue(block.Name, out var converter))
             {
-                ApplyConversion(block, i, conversion);
+                ApplyConverter(block, i, converter);
             }
         }
 
+        // Unassigned1 safety check 1
         // check if there are 2 Unassigned1 after each other
         for (var i = map.Blocks.Count - 1; i >= 0; i--)
         {
@@ -80,6 +84,13 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
             }
         }
 
+        // Unassigned1 safety check 2
+        // add Unassigned1 at the end of Blocks if there is none
+        if (map.Blocks.Count > 0 && map.Blocks[^1].Name != "Unassigned1")
+        {
+            map.Blocks.Add(CGameCtnBlock.Unassigned1);
+        }
+
         // configurable
         // map.AnchoredObjects?.Clear();
 
@@ -89,58 +100,72 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         return new(map, $"Maps/TurboConverter/{validFileName}", IsManiaPlanet: true);
     }
 
-    private bool ApplyConversion(CGameCtnBlock block, int blockIndex, BlockConversion? conversion)
+    private bool ApplyConverter(CGameCtnBlock block, int blockIndex, BlockConverter? converter)
     {
-        if (conversion is null)
+        if (converter is null)
         {
             RemoveBlockAt(blockIndex);
             return false;
         }
 
-        if (!string.IsNullOrEmpty(conversion.Converter))
+        if (converter is not null)
         {
-            var converter = CanyonConverters.BlockConverters[conversion.Converter];
-            
-            if (converter is not null && converter.Name is not null)
+            if (!string.IsNullOrEmpty(converter.Converter))
             {
-                var conditionIsMet = false;
+                converter = CanyonConverters.BlockConverters[converter.Converter];
 
-                if (!string.IsNullOrEmpty(converter.Name.Contains))
-                {
-                    conditionIsMet = block.Name.Contains(converter.Name.Contains);
-                }
+                return ApplyConverter(block, blockIndex, converter);
+            }
 
-                if (!string.IsNullOrEmpty(converter.Name.Match))
-                {
-                    conditionIsMet = Regex.IsMatch(block.Name, converter.Name.Match);
-                }
-
-                if (!conditionIsMet)
-                {
-                    throw new Exception($"Block {block.Name} does not meet the condition for converter {conversion.Converter}.");
-                }
-
-                if (!string.IsNullOrEmpty(converter.Name.ReplaceWith))
-                {
-                    if (string.IsNullOrEmpty(converter.Name.Match))
-                    {
-                        throw new Exception($"Converter {converter.Name} does not have a match to replace.");
-                    }
-
-                    block.Name = Regex.Replace(block.Name, converter.Name.Match, converter.Name.ReplaceWith);
-                }
-
-                if (!string.IsNullOrEmpty(converter.Name.Remove))
-                {
-                    block.Name = block.Name.Replace(converter.Name.Remove, "");
-                }
-
+            if (converter.Name is not null)
+            {
+                ApplyStringOperation(block, converter.Name, converter.Converter);
                 return true;
             }
         }
 
         RemoveBlockAt(blockIndex);
         return false;
+    }
+
+    private static void ApplyStringOperation(CGameCtnBlock block, StringOperation operation, string? converterName)
+    {
+        var conditionIsMet = true;
+
+        if (!string.IsNullOrEmpty(operation.Contains))
+        {
+            conditionIsMet = block.Name.Contains(operation.Contains);
+        }
+
+        if (!string.IsNullOrEmpty(operation.Match))
+        {
+            conditionIsMet = Regex.IsMatch(block.Name, operation.Match);
+        }
+
+        if (!conditionIsMet)
+        {
+            throw new Exception($"Block {block.Name} does not meet the condition for converter {converterName ?? "[default]"}.");
+        }
+
+        if (!string.IsNullOrEmpty(operation.ReplaceWith))
+        {
+            if (string.IsNullOrEmpty(operation.Match))
+            {
+                throw new Exception($"Converter {converterName ?? "[default]"} does not have a match to replace.");
+            }
+
+            block.Name = Regex.Replace(block.Name, operation.Match, operation.ReplaceWith);
+        }
+
+        if (!string.IsNullOrEmpty(operation.Remove))
+        {
+            block.Name = block.Name.Replace(operation.Remove, "");
+        }
+
+        if (!string.IsNullOrEmpty(operation.Set))
+        {
+            block.Name = operation.Set;
+        }
     }
 
     private void RemoveBlockAt(int blockIndex)
