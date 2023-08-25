@@ -1,9 +1,9 @@
 using GBX.NET.Engines.Game;
 using GbxToolAPI;
-using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using TmEssentials;
-using static GBX.NET.Engines.Hms.CHmsLightMapCache;
+using TurboConverter.Models;
 
 namespace TurboConverter;
 
@@ -17,7 +17,8 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
 
     public TurboConverterConfig Config { get; set; } = new();
 
-    public Conversions? CanyonConversions { get; set; }
+    public Conversions CanyonConversions { get; set; } = new();
+    public Converters CanyonConverters { get; set; } = new();
 
     public TurboConverterTool(CGameCtnChallenge map)
     {
@@ -32,6 +33,7 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
     public async ValueTask LoadAssetsAsync()
     {
         CanyonConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("CanyonConversions.yml");
+        CanyonConverters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("CanyonConverters.yml");
     }
 
     public NodeFile<CGameCtnChallenge> Produce()
@@ -58,20 +60,24 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
                 continue;
             }
 
-            if (CanyonConversions?.Blocks.TryGetValue(block.Name, out var conversion) == true)
+            if (CanyonConversions.Blocks.TryGetValue(block.Name, out var conversion))
             {
-                // Always remove the block
-                map.Blocks.RemoveAt(i);
-
-                // If the following block is Unassigned1, also remove it
-                if (map.Blocks.Count > i && map.Blocks[i].Name == "Unassigned1")
-                {
-                    map.Blocks.RemoveAt(i);
-                }
-
-                continue;
+                ApplyConversion(block, i, conversion);
             }
+        }
 
+        // check if there are 2 Unassigned1 after each other
+        for (var i = map.Blocks.Count - 1; i >= 0; i--)
+        {
+            var block = map.Blocks[i];
+
+            if (block.Name == "Unassigned1")
+            {
+                if (i + 1 < map.Blocks.Count && map.Blocks[i + 1].Name == "Unassigned1")
+                {
+                    RemoveBlockAt(i);
+                }
+            }
         }
 
         // configurable
@@ -81,5 +87,70 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         var validFileName = string.Join("_", pureFileName.Split(Path.GetInvalidFileNameChars()));
 
         return new(map, $"Maps/TurboConverter/{validFileName}", IsManiaPlanet: true);
+    }
+
+    private bool ApplyConversion(CGameCtnBlock block, int blockIndex, BlockConversion? conversion)
+    {
+        if (conversion is null)
+        {
+            RemoveBlockAt(blockIndex);
+            return false;
+        }
+
+        if (!string.IsNullOrEmpty(conversion.Converter))
+        {
+            var converter = CanyonConverters.BlockConverters[conversion.Converter];
+            
+            if (converter is not null && converter.Name is not null)
+            {
+                var conditionIsMet = false;
+
+                if (!string.IsNullOrEmpty(converter.Name.Contains))
+                {
+                    conditionIsMet = block.Name.Contains(converter.Name.Contains);
+                }
+
+                if (!string.IsNullOrEmpty(converter.Name.Match))
+                {
+                    conditionIsMet = Regex.IsMatch(block.Name, converter.Name.Match);
+                }
+
+                if (!conditionIsMet)
+                {
+                    throw new Exception($"Block {block.Name} does not meet the condition for converter {conversion.Converter}.");
+                }
+
+                if (!string.IsNullOrEmpty(converter.Name.ReplaceWith))
+                {
+                    if (string.IsNullOrEmpty(converter.Name.Match))
+                    {
+                        throw new Exception($"Converter {converter.Name} does not have a match to replace.");
+                    }
+
+                    block.Name = Regex.Replace(block.Name, converter.Name.Match, converter.Name.ReplaceWith);
+                }
+
+                if (!string.IsNullOrEmpty(converter.Name.Remove))
+                {
+                    block.Name = block.Name.Replace(converter.Name.Remove, "");
+                }
+
+                return true;
+            }
+        }
+
+        RemoveBlockAt(blockIndex);
+        return false;
+    }
+
+    private void RemoveBlockAt(int blockIndex)
+    {
+        map.Blocks!.RemoveAt(blockIndex);
+
+        // If the following block is Unassigned1, also remove it
+        if (map.Blocks.Count > blockIndex && map.Blocks[blockIndex].Name == "Unassigned1")
+        {
+            map.Blocks.RemoveAt(blockIndex);
+        }
     }
 }

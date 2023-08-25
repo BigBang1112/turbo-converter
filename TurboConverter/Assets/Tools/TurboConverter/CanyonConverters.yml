@@ -1,0 +1,17 @@
+BlockConverters:
+  RoadPaint:
+    Name:
+      Match: (.*)(RoadPaint.*)(Mirror)?
+      ReplaceWith: $1Straight$3
+  RoadPaintStaight: # nandeo
+    Name:
+      Match: (.*)(RoadPaint.+)(Mirror)?
+      ReplaceWith: $1Staight$3
+  CheckpointScreen:
+    Name:
+      Contains: Checkpoint
+      Remove: Screen
+  LandingRamp:
+    Name:
+      Match: (.*)LandingRamp
+      ReplaceWith: $1Straight

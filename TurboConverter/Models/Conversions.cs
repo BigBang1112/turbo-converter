@@ -1,4 +1,4 @@
-﻿namespace TurboConverter;
+﻿namespace TurboConverter.Models;
 
 public class Conversions
 {

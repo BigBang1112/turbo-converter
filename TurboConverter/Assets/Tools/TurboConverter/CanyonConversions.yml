@@ -6,15 +6,112 @@ Blocks:
   CE_AirshipDiag:
   CE_CranePlatformGridStraight:
   CE_PodiumPlatformCrane:
-  RoadRaceCheckpointScreenMirror:
-  RoadRaceLandingRamp:
-  RoadRaceRoadPaintMirror:
-  RoadRaceCheckpointScreen:
-  RoadRaceTiltCheckpointScreenMirror:
-  RoadRaceSlopeRoadPaintUp:
-  RoadRaceSlopeCheckpointUpScreen:
-  RoadMainCheckpointScreen:
-  ArenaCheckpointBaseScreen:
-  ArenaSlopeRoadPaintLeft:
-  ArenaSlopeRoadPaintRight:
+  OffRoadLandingRamp:
+  RoadCaveRoadPaint:
+    Converter: RoadPaint
+  RoadCaveDoubleRoadPaint:
+    Converter: RoadPaint
+  RoadHill2LandingRamp:
+    Converter: LandingRamp
+  RoadHill2RoadPaint:
+    Converter: RoadPaint
+  RoadHill2RoadPaintMirror:
+    Converter: RoadPaint
+  RoadHill2CheckpointRightScreen:
+    Converter: CheckpointScreen
+  RoadHill2CheckpointLeftScreen:
+    Converter: CheckpointScreen
+  Cliff12RoadMedLandingRamp:
+    Converter: LandingRamp
+  Cliff12RoadMedRoadPaint:
+    Converter: RoadPaint
+  Cliff12RoadMedRoadPaintMirror:
+    Converter: RoadPaint
+  Cliff12RoadMedCheckpointRightScreen:
+    Converter: CheckpointScreen
+  Cliff12RoadMedCheckpointLeftScreen:
+    Converter: CheckpointScreen
+  Cliff12RoadHighLandingRamp:
+    Converter: LandingRamp
+  Cliff12RoadHighRoadPaint:
+    Converter: RoadPaint
+  Cliff12RoadHighRoadPaintMirror:
+    Converter: RoadPaint
+  Cliff12RoadHighCheckpointRightScreen:
+    Converter: CheckpointScreen
+  Cliff12RoadHighCheckpointLeftScreen:
+    Converter: CheckpointScreen
+  ArenaBorderBankRoadPaintRight:
+    Converter: RoadPaint
+  ArenaBorderBankRoadPaintLeft:
+    Converter: RoadPaint
   ArenaWallRideCheckpointScreen_V:
+    Converter: CheckpointScreen
+  ArenaWallRideCheckpointScreen_H:
+    Converter: CheckpointScreen
+  ArenaWallRide2RoadPaintRight: # two ArenaWallRideStraight
+  ArenaWallRide2RoadPaintLeft: # two ArenaWallRideStraight
+  ArenaSlopeRoadPaintRight:
+    Converter: RoadPaint
+  ArenaSlopeRoadPaintLeft:
+    Converter: RoadPaint
+  ArenaSlopeRoadPaintUp:
+    Converter: RoadPaint
+  ArenaSlopeRoadPaintDown:
+    Converter: RoadPaint
+  OffRoadCheckpointScreen:
+    Converter: CheckpointScreen
+  ArenaCheckpointSlopeStraightRightAirScreen:
+    Converter: CheckpointScreen
+  ArenaCheckpointSlopeStraightLeftAirScreen:
+    Converter: CheckpointScreen
+  ArenaCheckpointSlopeStraightDownScreen:
+    Converter: CheckpointScreen
+  ArenaCheckpointSlopeStraightUpScreen:
+    Converter: CheckpointScreen
+  ArenaCheckpointBaseScreen:
+    Converter: CheckpointScreen
+  ArenaRoadPaint:
+    Converter: RoadPaint
+  RoadMainSlopeRoadPaintUp:
+    Converter: RoadPaint
+  RoadMainSlopeRoadPaintDown:
+    Converter: RoadPaint
+  RoadMainLandingRamp:
+    Converter: LandingRamp
+  RoadMainCheckpointScreen:
+    Converter: CheckpointScreen
+  RoadRaceTiltCheckpointScreen:
+    Converter: CheckpointScreen
+  RoadRaceTiltCheckpointScreenMirror:
+    Converter: CheckpointScreen
+  RoadRaceTiltRoadPaint:
+    Converter: RoadPaint
+  RoadRaceTiltRoadPaintMirror:
+    Converter: RoadPaint
+  RoadRaceSlopeRoadPaintUp:
+    Converter: RoadPaintStaight
+  RoadRaceSlopeRoadPaintUpMirror:
+    Converter: RoadPaintStaight
+  RoadRaceSlopeRoadPaintDown:
+    Converter: RoadPaintStaight
+  RoadRaceSlopeRoadPaintDownMirror:
+    Converter: RoadPaintStaight
+  RoadRaceSlopeCheckpointDownScreen:
+    Converter: CheckpointScreen
+  RoadRaceSlopeCheckpointDownScreenMirror:
+    Converter: CheckpointScreen
+  RoadRaceSlopeCheckpointUpScreen:
+    Converter: CheckpointScreen
+  RoadRaceSlopeCheckpointUpScreenMirror:
+    Converter: CheckpointScreen
+  RoadRaceCheckpointScreen:
+    Converter: CheckpointScreen
+  RoadRaceCheckpointScreenMirror:
+    Converter: CheckpointScreen
+  RoadRaceLandingRamp:
+    Converter: LandingRamp
+  RoadRaceRoadPaint:
+    Converter: RoadPaint
+  RoadRaceRoadPaintMirror:
+    Converter: RoadPaint
