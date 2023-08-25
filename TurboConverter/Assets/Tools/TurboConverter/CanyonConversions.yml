@@ -42,11 +42,9 @@ Blocks:
   Cliff12RoadHighCheckpointLeftScreen:
     Converter: CheckpointScreen
   ArenaBorderBankRoadPaintRight:
-    Name:
-      Set: ArenaBorderStraightPillarBank
+    Name: ArenaBorderStraightPillarBank
   ArenaBorderBankRoadPaintLeft:
-    Name:
-      Set: ArenaBorderStraightPillarBank
+    Name: ArenaBorderStraightPillarBank
   ArenaWallRideCheckpointScreen_V:
     Converter: CheckpointScreen
   ArenaWallRideCheckpointScreen_H:
@@ -74,14 +72,16 @@ Blocks:
   ArenaCheckpointBaseScreen:
     Converter: CheckpointScreen
   ArenaRoadPaint:
-    Converter: RoadPaint
+    Name: ArenaSimpleBase
   RoadMainSlopeRoadPaintUp:
     Converter: RoadPaint
   RoadMainSlopeRoadPaintDown:
     Converter: RoadPaint
   RoadMainLandingRamp:
     Converter: LandingRamp
-  RoadMainRoadPaint: # RoadMain straight variant
+  RoadMainRoadPaint:
+    Name: RoadMain
+    Variant: 3
   RoadMainCheckpointScreen:
     Converter: CheckpointScreen
   RoadRaceTiltCheckpointScreen:

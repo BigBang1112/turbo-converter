@@ -1,6 +1,6 @@
 ﻿namespace TurboConverter.Models;
 
-public class Conversions
+public sealed class Conversions
 {
-    public Dictionary<string, BlockConverter?> Blocks { get; set; } = new();
+    public Dictionary<string, BlockConversion?> Blocks { get; set; } = new();
 }
