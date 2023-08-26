@@ -79,6 +79,14 @@ sealed class BlockConversionSystem : IConversionSystem
             PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
         }
 
+        if (conversion.ItemModels is not null)
+        {
+            foreach (var itemModel in conversion.ItemModels)
+            {
+                PlaceAnchoredObject(block, itemModel, conversion.Size);
+            }
+        }
+
         if (!string.IsNullOrEmpty(conversion.Converter))
         {
             if (!converters.BlockConverters.TryGetValue(conversion.Converter, out var converter))
@@ -115,7 +123,8 @@ sealed class BlockConversionSystem : IConversionSystem
         var id = string.Format(itemModel.Id ?? throw new Exception("ItemModel ID not available"),
             block.Name,
             map.Collection,
-            block.IsGround ? "Ground" : "Air");
+            block.IsGround ? "Ground" : "Air",
+            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc.FilePath));
 
         var ident = new Ident(id,
             itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
