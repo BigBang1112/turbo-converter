@@ -15,3 +15,5 @@ BlockConverters:
     Name:
       Match: (.*)LandingRamp
       ReplaceWith: $1Straight
+    ItemModel:
+      Id: CE\LandingRamp\{1}_{0}_{2}.Item.Gbx

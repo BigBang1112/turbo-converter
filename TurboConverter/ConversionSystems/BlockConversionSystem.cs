@@ -72,14 +72,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (conversion.ItemModel is not null)
         {
-            var ident = new Ident(conversion.ItemModel.Id ?? throw new Exception("ItemModel ID not available"),
-                conversion.ItemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
-                conversion.ItemModel.Author ?? conversions.DefaultAuthor ?? "");
-
-            var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * 0.5f;
-            var pitchYawRoll = new Vec3(-(int)block.Direction * MathF.PI / 2, 0, 0);
-
-            map.PlaceAnchoredObject(ident, absolutePosition, pitchYawRoll, -conversion.ItemModel.Pivot ?? new());
+            PlaceAnchoredObject(block, conversion.ItemModel);
         }
 
         if (!string.IsNullOrEmpty(conversion.Converter))
@@ -92,6 +85,11 @@ sealed class BlockConversionSystem : IConversionSystem
             if (converter is null)
             {
                 throw new Exception($"Converter {conversion.Converter} is not implemented.");
+            }
+
+            if (converter.ItemModel is not null)
+            {
+                PlaceAnchoredObject(block, converter.ItemModel);
             }
 
             if (converter.Name is not null)
@@ -108,5 +106,22 @@ sealed class BlockConversionSystem : IConversionSystem
         }
 
         return !removeBlock;
+    }
+
+    private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel)
+    {
+        var id = string.Format(itemModel.Id ?? throw new Exception("ItemModel ID not available"),
+            block.Name,
+            map.Collection,
+            block.IsGround ? "Ground" : "Air");
+
+        var ident = new Ident(id,
+            itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
+            itemModel.Author ?? conversions.DefaultAuthor ?? "");
+
+        var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize.GetXZ() * 0.5f;
+        var pitchYawRoll = new Vec3(-(int)block.Direction * MathF.PI / 2, 0, 0);
+
+        map.PlaceAnchoredObject(ident, absolutePosition, pitchYawRoll, -itemModel.Pivot ?? -blockSize.GetXZ() * 0.5f);
     }
 }

@@ -5,7 +5,6 @@ Blocks:
   CE_HelicoStart:
     ItemModel:
       Id: CE\CE_HelicoStart_Canyon.Item.gbx
-      Pivot: [32, 0, 32]
   CE_HelicoScreen:
     ItemModel:
       Id: CE\CE_HelicoScreenA_Canyon.Item.Gbx
@@ -14,7 +13,11 @@ Blocks:
   CE_Airship:
   CE_AirshipDiag:
   CE_CranePlatformGridStraight:
+    ItemModel:
+      Id: CE\CE_CranePlatform_Canyon.Item.Gbx
   CE_PodiumPlatformCrane:
+    ItemModel:
+      Id: CE\CE_CranePodium_Canyon.Item.Gbx
   OffRoadLandingRamp:
   RoadCaveRoadPaint:
     Converter: RoadPaint
