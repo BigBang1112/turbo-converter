@@ -1,1 +1,37 @@
 Blocks:
+  CE_HelicoStart:
+  - ItemModel:
+      Id: CE\CE_HelicoStart_Valley.Item.gbx
+  CE_HelicoScreen:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\CE_HelicoScreenA.Item.Gbx
+    - ItemModel:
+        Id: CE\CE_HelicoScreenB.Item.Gbx
+  CE_Helico:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\CE_HelicoA.Item.Gbx
+    - ItemModel:
+        Id: CE\CE_HelicoB.Item.Gbx
+  CE_Airship:
+  - Size: [1, 3]
+    ItemModels:
+    - Id: CE\CE_Airship_Valley.Item.gbx
+    - Id: CE\CE_Airship\32x32\{3}.Item.Gbx
+  CE_AirshipDiag:
+  - Size: [3, 3]
+    ItemModels:
+    - Id: CE\CE_AirshipDiag_Valley.Item.Gbx
+    - Id: CE\CE_AirshipDiag\32x32\{3}.Item.Gbx
+  CE_CranePlatformStraight:
+  - ItemModel:
+      Id: CE\CE_CranePlatform_Valley_{2}.Item.Gbx
+  CE_PodiumPlatformCrane:
+  - ItemModel:
+      Id: CE\CE_CranePodium_Valley_{2}.Item.Gbx
+  OffRoadLandingRamp:
+  - ItemModel:
+      Id: CE\LandingRamp\Valley_OffRoadLandingRamp.Item.Gbx
+  OffRoadCheckpointScreen:
+  - Converter: CheckpointScreen
