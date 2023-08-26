@@ -6,4 +6,5 @@ public sealed class BlockConversion
     public int? Variant { get; set; }
     public string? Converter { get; set; }
     public ItemModel? ItemModel { get; set; }
+    public BlockConversion[]? SubVariants { get; set; }
 }

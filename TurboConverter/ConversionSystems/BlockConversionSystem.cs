@@ -44,19 +44,23 @@ sealed class BlockConversionSystem : IConversionSystem
     {
         if (conversions.Blocks.TryGetValue(block.Name, out var conversion))
         {
-            ApplyBlockConversion(block, blockIndex, conversion);
+            ApplyBlockConversion(block, blockIndex, conversion?[block.Variant.GetValueOrDefault()], out var removeBlock);
+
+            if (removeBlock)
+            {
+                map.RemoveBlockAt(blockIndex);
+            }
         }
     }
 
-    private bool ApplyBlockConversion(CGameCtnBlock block, int blockIndex, BlockConversion? conversion)
+    private void ApplyBlockConversion(CGameCtnBlock block, int blockIndex, BlockConversion? conversion, out bool removeBlock)
     {
+        removeBlock = true;
+
         if (conversion is null)
         {
-            map.RemoveBlockAt(blockIndex);
-            return false;
+            return;
         }
-
-        var removeBlock = true;
 
         if (!string.IsNullOrEmpty(conversion.Name))
         {
@@ -100,12 +104,10 @@ sealed class BlockConversionSystem : IConversionSystem
             removeBlock = false;
         }
 
-        if (removeBlock)
+        if (conversion.SubVariants?.Length > 0)
         {
-            map.RemoveBlockAt(blockIndex);
+            ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant.GetValueOrDefault()], out removeBlock);
         }
-
-        return !removeBlock;
     }
 
     private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel)
