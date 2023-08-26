@@ -1,4 +1,6 @@
-﻿namespace TurboConverter.Models;
+﻿using GBX.NET;
+
+namespace TurboConverter.Models;
 
 public sealed class BlockConversion
 {
@@ -7,4 +9,5 @@ public sealed class BlockConversion
     public string? Converter { get; set; }
     public ItemModel? ItemModel { get; set; }
     public BlockConversion[]? SubVariants { get; set; }
+    public Vec2? Size { get; set; }
 }

@@ -42,7 +42,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
     private void ApplyBlockConversion(CGameCtnBlock block, int blockIndex)
     {
-        if (conversions.Blocks.TryGetValue(block.Name, out var conversion))
+        if (conversions.Blocks?.TryGetValue(block.Name, out var conversion) == true)
         {
             ApplyBlockConversion(block, blockIndex, conversion?[block.Variant.GetValueOrDefault()], out var removeBlock);
 
@@ -76,7 +76,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (conversion.ItemModel is not null)
         {
-            PlaceAnchoredObject(block, conversion.ItemModel);
+            PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
         }
 
         if (!string.IsNullOrEmpty(conversion.Converter))
@@ -93,7 +93,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
             if (converter.ItemModel is not null)
             {
-                PlaceAnchoredObject(block, converter.ItemModel);
+                PlaceAnchoredObject(block, converter.ItemModel, conversion.Size);
             }
 
             if (converter.Name is not null)
@@ -110,7 +110,7 @@ sealed class BlockConversionSystem : IConversionSystem
         }
     }
 
-    private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel)
+    private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel, Vec2? blockSizeForRotation)
     {
         var id = string.Format(itemModel.Id ?? throw new Exception("ItemModel ID not available"),
             block.Name,
@@ -123,6 +123,24 @@ sealed class BlockConversionSystem : IConversionSystem
 
         var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize.GetXZ() * 0.5f;
         var pitchYawRoll = new Vec3(-(int)block.Direction * MathF.PI / 2, 0, 0);
+
+        if (blockSizeForRotation.HasValue)
+        {
+            blockSizeForRotation = new Vec2(blockSizeForRotation.Value.X - 1, blockSizeForRotation.Value.Y - 1);
+
+            switch (block.Direction)
+            {
+                case Direction.East:
+                    absolutePosition += (blockSizeForRotation.Value.Y * blockSize.X, 0, 0);
+                    break;
+                case Direction.South:
+                    absolutePosition += (blockSizeForRotation.Value.X * blockSize.X, 0, blockSizeForRotation.Value.Y * blockSize.Z);
+                    break;
+                case Direction.West:
+                    absolutePosition += (0, 0, blockSizeForRotation.Value.X * blockSize.X);
+                    break;
+            }
+        }
 
         map.PlaceAnchoredObject(ident, absolutePosition, pitchYawRoll, -itemModel.Pivot ?? -blockSize.GetXZ() * 0.5f);
     }
