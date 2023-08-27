@@ -56,6 +56,7 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         new MapUidConversionSystem(map).Run();
         new BlockConversionSystem(map, conversions, Converters).Run();
         new Unassigned1ConversionSystem(map).Run();
+        new WarpConversionSystem(map, conversions).Run();
         new CleanupConversionSystem(map).Run();
 
         // configurable

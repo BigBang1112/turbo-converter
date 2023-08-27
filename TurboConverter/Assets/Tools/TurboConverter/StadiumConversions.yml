@@ -1,1 +1,133 @@
+DefaultCollection: Stadium
+DefaultAuthor: bigbang1112
+DecoBaseHeight: 8
+WarpItemModel:
+  Id: CE\WarpBuildings.Item.gbx
 Blocks:
+  CE_HelicoStart:
+  - Size: [1, 2]
+    ItemModel:
+      Id: CE\CE_HelicoStart_{1}.Item.gbx
+  CE_HelicoScreen:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\CE_HelicoScreenA.Item.Gbx
+        Collection: 10003
+    - ItemModel:
+        Id: CE\CE_HelicoScreenB.Item.Gbx
+        Collection: 10003
+  CE_Helico:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\CE_HelicoA.Item.Gbx
+        Collection: 10003
+    - ItemModel:
+        Id: CE\CE_HelicoB.Item.Gbx
+        Collection: 10003
+  CE_CranePlatformGridStraight:
+  - Size: [2, 1]
+    ItemModel:
+      Id: CE\CE_CranePlatform_{1}_{2}.Item.Gbx
+  CE_PodiumPlatformCrane:
+  - Size: [2, 1]
+    ItemModel:
+      Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
+  CE_Crane:
+  - Size: [2, 1]
+    ItemModel:
+      Id: CE\CE_Crane_{2}.Item.Gbx
+  StadiumDecoPalm:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\GrassBaseA.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\GrassBaseB.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\GrassBaseC.Item.Gbx
+  - SubVariants:
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillBase1A.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillBase1B.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillBase1C.Item.Gbx
+  - SubVariants:
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillBase5A.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillBase5B.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillBase5C.Item.Gbx
+  - SubVariants:
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillCornerA.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillCornerB.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillCornerC.Item.Gbx
+  - SubVariants:
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillDeadendA.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillDeadendB.Item.Gbx
+    - ItemModel:
+        Id: CE\StadiumDecoPalm\DirtHillDeadendC.Item.Gbx
+  StadiumDecoTowerA:
+  - Name: StadiumDecoTower.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\StadiumDecoTower\A.Item.Gbx
+  StadiumDecoTowerB:
+  - Name: StadiumDecoTower.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\StadiumDecoTower\B.Item.Gbx
+  StadiumDecoTowerC:
+  - Name: StadiumDecoTower.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\StadiumDecoTower\C.Item.Gbx
+  StadiumDecoTowerD:
+  - Name: StadiumDecoTower.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\StadiumDecoTower\D.Item.Gbx
+  # StadiumRoadDirtDiagonaleLeft
+  # StadiumRoadDirtDiagonaleRight
+  StadiumCircuitRoadPaintSlopeRight:
+  - Name: StadiumCircuitSlopeStraight
+    Converter: RoadPaint
+  StadiumCircuitRoadPaintSlopeLeft:
+  - Name: StadiumCircuitSlopeStraight
+    Converter: RoadPaint
+  StadiumCircuitRoadPaintSlopeDown:
+  - Name: StadiumCircuitSlopeStraight
+    Converter: RoadPaint
+  StadiumCircuitRoadPaintSlopeUp:
+  - Name: StadiumCircuitSlopeStraight
+    Converter: RoadPaint
+  StadiumCircuitRoadPaint:
+  - Name: StadiumCircuitBase
+    Converter: RoadPaint
+  StadiumPlatformGridRoadPaint:
+  - Converter: RoadPaint
+  StadiumPlatformWall4RoadPaintDown:
+  - Name: StadiumPlatformWall4
+    Converter: RoadPaint
+  StadiumPlatformWall4RoadPaintUp:
+  - Name: StadiumPlatformWall4
+    Converter: RoadPaint
+  StadiumPlatformWall2RoadPaintRight:
+  - Name: StadiumPlatformWall2
+    Converter: RoadPaint
+  StadiumPlatformWall2RoadPaintLeft:
+  - Name: StadiumPlatformWall2
+    Converter: RoadPaint
+  StadiumRoadTiltRoadPaintRight:
+  - Converter: RoadPaint
+  StadiumRoadTiltRoadPaintLeft:
+  - Name: StadiumRoadMainSlopeStraight
+    Converter: RoadPaint
+  StadiumRoadMainRoadPaintSlopeDown:
+  - Name: StadiumRoadMainSlopeStraight
+    Converter: RoadPaint
+  StadiumRoadRoadPaint:
+  - Name: StadiumRoadMain
+    Variant: 3
+    Converter: RoadPaint
