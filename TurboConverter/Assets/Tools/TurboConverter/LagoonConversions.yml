@@ -1,1 +1,166 @@
+DefaultCollection: 13
+DefaultAuthor: bigbang1112
+DecoBaseHeight: 5
 Blocks:
+  CE_HelicoStart:
+  - Size: [1, 2]
+    ItemModel:
+      Id: CE\CE_HelicoStart_{1}.Item.gbx
+  CE_HelicoScreen:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\CE_HelicoScreenA.Item.Gbx
+        Collection: 10003
+    - ItemModel:
+        Id: CE\CE_HelicoScreenB.Item.Gbx
+        Collection: 10003
+  CE_Helico:
+  - SubVariants:
+    - ItemModel:
+        Id: CE\CE_HelicoA.Item.Gbx
+        Collection: 10003
+    - ItemModel:
+        Id: CE\CE_HelicoB.Item.Gbx
+        Collection: 10003
+  CE_Airship:
+  - Size: [1, 3]
+    ItemModels:
+    - Id: CE\CE_Airship_{1}.Item.gbx
+    - Id: CE\CE_Airship\32x32\{3}_{1}.Item.Gbx
+  CE_AirshipDiag:
+  - Size: [3, 3]
+    ItemModels:
+    - Id: CE\CE_AirshipDiag_{1}.Item.Gbx
+    - Id: CE\CE_AirshipDiag\32x32\{3}_{1}.Item.Gbx
+  CE_CranePlatformStraight:
+  - Size: [2, 1]
+    ItemModel:
+      Id: CE\CE_CranePlatform_{1}_{2}.Item.Gbx
+  CE_PodiumPlatformCrane:
+  - Size: [2, 1]
+    ItemModel:
+      Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
+  BeachCheckPointRightScreen:
+  - Converter: CheckpointScreen
+  BeachCheckPointLeftScreen:
+  - Converter: CheckpointScreen
+  LandHillCheckpointRightScreen:
+  - Converter: CheckpointScreen
+  LandHillCheckpointLeftScreen:
+  - Converter: CheckpointScreen
+  LandHillCheckpointDownScreen:
+  - Converter: CheckpointScreen
+  LandHillCheckpointUpScreen:
+  - Converter: CheckpointScreen
+  LandCheckpointScreen:
+  - Converter: CheckpointScreen
+  RoadTunnelRoadPaintDown:
+  - Converter: RoadPaint
+  RoadTunnelRoadPaintUp:
+  - Converter: RoadPaint
+  RoadTunnelRoadPaint:
+  - Converter: RoadPaint
+  ArenaRoadPaintWall4:
+  - Converter: RoadPaint
+  ArenaRoadPaintWall2Right:
+  - Converter: RoadPaint
+  ArenaRoadPaintWall2Left:
+  - Converter: RoadPaint
+  ArenaRoadPaintDown:
+  - Name: ArenaSlope2Straight
+    Converter: RoadPaint
+  ArenaRoadPaintLeft:
+  - Name: ArenaSlope2Straight
+    Converter: RoadPaint
+  ArenaRoadPaintRight:
+  - Name: ArenaSlope2Straight
+    Converter: RoadPaint
+  ArenaRoadPaintUp:
+  - Name: ArenaSlope2Straight
+    Converter: RoadPaint
+  ArenaRoadPaint:
+  - Name: ArenaBase
+    Converter: RoadPaint
+  ArenaLoopCheckpointH-Screen:
+  - Converter: CheckpointScreen
+  ArenaLoopCheckpointV-Screen:
+  - Converter: CheckpointScreen
+  ArenaCheckpointRightScreen:
+  - Converter: CheckpointScreen
+  ArenaCheckpointLeftScreen:
+  - Converter: CheckpointScreen
+  ArenaCheckpointDownScreen:
+  - Converter: CheckpointScreen
+  ArenaCheckpointUpScreen:
+  - Converter: CheckpointScreen
+  ArenaCheckpointScreen:
+  - Converter: CheckpointScreen
+  RoadThemeParkFlip-RoadPaint:
+  - Converter: RoadPaint
+  RoadThemeParkFlip-CheckpointScreen:
+  - Converter: CheckpointScreen
+  RoadThemeParkWall-RoadPaintDown:
+  - Name: RoadThemeParkWall-StraightUp
+    Converter: RoadPaint
+  RoadThemeParkWall-RoadPaintUp:
+  - Name: RoadThemeParkWall-StraightUp
+    Converter: RoadPaint
+  RoadThemeParkWall-CheckpointUpScreen:
+  - Converter: CheckpointScreen
+  RoadThemeParkWall-RoadPaintRight:
+  - Converter: RoadPaint
+  RoadThemeParkWall-RoadPaintLeft:
+  - Converter: RoadPaint
+  RoadThemeParkWall-CheckpointScreen:
+  - Converter: CheckpointScreen
+  RoadThemeParkRoadPaint:
+  - Name: RoadThemePark
+    Variant: 3
+    Converter: RoadPaint
+  RoadThemeParkCheckpointScreen:
+  - Converter: CheckpointScreen
+  ArenaToRoadThemeParkUp:
+  - Name: ArenaToRoadThemeParkUpSimple.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\ArenaToRoadThemeParkUp.Item.Gbx
+  RoadThemeParkToRoadMain:
+  - Name: RoadThemeParkToRoadMainSimple.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\RoadThemeParkToRoadMain.Item.Gbx
+  HighWaySlope2CheckpointRightScreen:
+  - Converter: CheckpointScreen
+  HighWaySlope2CheckpointLeftScreen:
+  - Converter: CheckpointScreen
+  HighWaySlope2CheckpointDownScreen:
+  - Converter: CheckpointScreen
+  HighWaySlope2CheckpointUpScreen:
+  - Converter: CheckpointScreen
+  HighWayRoadPaintDown:
+  - Name: HighWaySlope2Straight
+    Converter: RoadPaint
+  HighWayRoadPaintUp:
+  - Name: HighWaySlope2Straight
+    Converter: RoadPaint
+  HighWayRoadPaintRight:
+  - Name: HighWayTilt2Straight
+    Converter: RoadPaint
+  HighWayRoadPaintLeft:
+  - Name: HighWayTilt2Straight
+    Converter: RoadPaint
+  RoadMainRoadPaint:
+  - Converter: RoadPaint
+  RoadMainLandingRamp:
+  - Converter: LandingRamp
+  RoadMainCheckpointScreen:
+  - Converter: CheckpointScreen
+  FreeWayRoadPaint:
+  - Name: FreeWay
+    Variant: 3
+    Converter: RoadPaint
+  FreeWayRampLandingRamp:
+  - Name: FreeWay
+    Variant: 3
+    ItemModel:
+      Id: CE\LandingRamp\{1}_FreeWayRampLandingRamp.Item.Gbx
+  FreeWayCheckpointScreen:
+  - Converter: CheckpointScreen  

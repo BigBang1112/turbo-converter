@@ -16,7 +16,7 @@ public sealed class StringOperation
 
         if (!string.IsNullOrEmpty(Contains))
         {
-            conditionIsMet = input.Contains(Contains);
+            conditionIsMet = input.Contains(Contains, StringComparison.OrdinalIgnoreCase);
         }
 
         if (!string.IsNullOrEmpty(Match))

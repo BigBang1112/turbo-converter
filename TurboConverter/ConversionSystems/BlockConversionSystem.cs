@@ -42,6 +42,8 @@ sealed class BlockConversionSystem : IConversionSystem
 
     private void ApplyBlockConversion(CGameCtnBlock block, int blockIndex)
     {
+        var previousBlockName = block.Name;
+
         if (conversions.Blocks?.TryGetValue(block.Name, out var conversion) == true)
         {
             ApplyBlockConversion(block, blockIndex, conversion?[block.Variant.GetValueOrDefault()], out var removeBlock);
@@ -60,31 +62,6 @@ sealed class BlockConversionSystem : IConversionSystem
         if (conversion is null)
         {
             return;
-        }
-
-        if (!string.IsNullOrEmpty(conversion.Name))
-        {
-            block.Name = conversion.Name;
-            removeBlock = false;
-        }
-
-        if (conversion.Variant.HasValue)
-        {
-            block.Variant = (byte?)conversion.Variant;
-            removeBlock = false;
-        }
-
-        if (conversion.ItemModel is not null)
-        {
-            PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
-        }
-
-        if (conversion.ItemModels is not null)
-        {
-            foreach (var itemModel in conversion.ItemModels)
-            {
-                PlaceAnchoredObject(block, itemModel, conversion.Size);
-            }
         }
 
         if (!string.IsNullOrEmpty(conversion.Converter))
@@ -112,6 +89,31 @@ sealed class BlockConversionSystem : IConversionSystem
             removeBlock = false;
         }
 
+        if (!string.IsNullOrEmpty(conversion.Name))
+        {
+            block.Name = conversion.Name;
+            removeBlock = false;
+        }
+
+        if (conversion.Variant.HasValue)
+        {
+            block.Variant = (byte?)conversion.Variant;
+            removeBlock = false;
+        }
+
+        if (conversion.ItemModel is not null)
+        {
+            PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
+        }
+
+        if (conversion.ItemModels is not null)
+        {
+            foreach (var itemModel in conversion.ItemModels)
+            {
+                PlaceAnchoredObject(block, itemModel, conversion.Size);
+            }
+        }
+
         if (conversion.SubVariants?.Length > 0)
         {
             ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant.GetValueOrDefault()], out removeBlock);
@@ -124,7 +126,7 @@ sealed class BlockConversionSystem : IConversionSystem
             block.Name,
             map.Collection,
             block.IsGround ? "Ground" : "Air",
-            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc.FilePath));
+            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc.FilePath) ?? "WELCOME_TM");
 
         var ident = new Ident(id,
             itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,

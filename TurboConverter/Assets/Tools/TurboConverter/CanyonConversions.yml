@@ -4,42 +4,42 @@ DecoBaseHeight: 15
 Blocks:
   CE_HelicoStart:
   - ItemModel:
-      Id: CE\CE_HelicoStart_Canyon.Item.gbx
+      Id: CE\CE_HelicoStart_{1}.Item.gbx
   CE_HelicoScreen:
   - SubVariants:
     - ItemModel:
-        Id: CE\CE_HelicoScreenA_Canyon.Item.Gbx
+        Id: CE\CE_HelicoScreenA_{1}.Item.Gbx
         Pivot: [16, 0, 16]
     - ItemModel:
-        Id: CE\CE_HelicoScreenB_Canyon.Item.Gbx
+        Id: CE\CE_HelicoScreenB_{1}.Item.Gbx
         Pivot: [16, 0, 16]
   CE_Helico:
   - SubVariants:
     - ItemModel:
-        Id: CE\CE_HelicoA_Canyon.Item.Gbx
+        Id: CE\CE_HelicoA_{1}.Item.Gbx
         Pivot: [16, 0, 16]
     - ItemModel:
-        Id: CE\CE_HelicoB_Canyon.Item.Gbx
+        Id: CE\CE_HelicoB_{1}.Item.Gbx
         Pivot: [16, 0, 16]
   CE_Airship:
   - Size: [1, 3]
     ItemModels:
-    - Id: CE\CE_Airship_Canyon.Item.gbx
+    - Id: CE\CE_Airship_{1}.Item.gbx
     - Id: CE\CE_Airship\64x64\{3}.Item.Gbx
   CE_AirshipDiag:
   - Size: [3, 3]
     ItemModels:
-    - Id: CE\CE_AirshipDiag_Canyon.Item.Gbx
+    - Id: CE\CE_AirshipDiag_{1}.Item.Gbx
     - Id: CE\CE_AirshipDiag\64x64\{3}.Item.Gbx
   CE_CranePlatformGridStraight:
   - ItemModel:
-      Id: CE\CE_CranePlatform_Canyon.Item.Gbx
+      Id: CE\CE_CranePlatform_{1}.Item.Gbx
   CE_PodiumPlatformCrane:
   - ItemModel:
-      Id: CE\CE_CranePodium_Canyon.Item.Gbx
+      Id: CE\CE_CranePodium_{1}.Item.Gbx
   OffRoadLandingRamp:
   - ItemModel:
-      Id: CE\LandingRamp\Canyon_OffRoadLandingRamp.Item.Gbx
+      Id: CE\LandingRamp\{1}_OffRoadLandingRamp.Item.Gbx
   RoadCaveRoadPaint:
   - Converter: RoadPaint
   RoadCaveDoubleRoadPaint:

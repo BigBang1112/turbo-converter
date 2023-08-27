@@ -1,10 +1,7 @@
 using GBX.NET.Engines.Game;
 using GbxToolAPI;
-using System.Text;
-using System.Text.RegularExpressions;
 using TmEssentials;
 using TurboConverter.ConversionSystems;
-using TurboConverter.Extensions;
 using TurboConverter.Models;
 
 namespace TurboConverter;
@@ -24,10 +21,7 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
     public Conversions ValleyConversions { get; set; } = new();
     public Conversions LagoonConversions { get; set; } = new();
 
-    public Converters CanyonConverters { get; set; } = new();
-    public Converters StadiumConverters { get; set; } = new();
-    public Converters ValleyConverters { get; set; } = new();
-    public Converters LagoonConverters { get; set; } = new();
+    public Converters Converters { get; set; } = new();
 
     public TurboConverterTool(CGameCtnChallenge map)
     {
@@ -45,41 +39,22 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         StadiumConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("StadiumConversions.yml");
         ValleyConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("ValleyConversions.yml");
         LagoonConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("LagoonConversions.yml");
-        CanyonConverters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("CanyonConverters.yml");
-        StadiumConverters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("StadiumConverters.yml");
-        ValleyConverters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("ValleyConverters.yml");
-        LagoonConverters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("LagoonConverters.yml");
+        Converters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("Converters.yml");
     }
 
     public NodeFile<CGameCtnChallenge> Produce()
     {
-        Conversions conversions;
-        Converters converters;
-
-        switch (map.Collection)
+        var conversions = (string)map.Collection switch
         {
-            case "Canyon":
-                conversions = CanyonConversions;
-                converters = CanyonConverters;
-                break;
-            case "Stadium":
-                conversions = StadiumConversions;
-                converters = StadiumConverters;
-                break;
-            case "Valley":
-                conversions = ValleyConversions;
-                converters = ValleyConverters;
-                break;
-            case "Lagoon":
-                conversions = LagoonConversions;
-                converters = LagoonConverters;
-                break;
-            default:
-                throw new Exception($"Collection {map.Collection} is not supported.");
-        }
+            "Canyon" => CanyonConversions,
+            "Stadium" => StadiumConversions,
+            "Valley" => ValleyConversions,
+            "Lagoon" => LagoonConversions,
+            _ => throw new Exception($"Collection {map.Collection} is not supported."),
+        };
 
         new MapUidConversionSystem(map).Run();
-        new BlockConversionSystem(map, conversions, converters).Run();
+        new BlockConversionSystem(map, conversions, Converters).Run();
         new Unassigned1ConversionSystem(map).Run();
         new CleanupConversionSystem(map).Run();
 
