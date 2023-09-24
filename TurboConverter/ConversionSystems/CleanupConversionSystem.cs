@@ -21,5 +21,11 @@ sealed class CleanupConversionSystem : IConversionSystem
 
         // Sometimes they might be placed on removed blocks, needs analysis to keep them
         map.RemoveChunk<CGameCtnChallenge.Chunk0304303E>();
+
+        // Some older maps have Trackmania\RaceCE MapType
+        if (map.ChallengeParameters is not null)
+        {
+            map.ChallengeParameters.MapType = "Trackmania\\Race";
+        }
     }
 }
