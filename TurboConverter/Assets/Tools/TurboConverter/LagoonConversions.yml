@@ -8,12 +8,14 @@ Blocks:
       Id: CE\CE_HelicoStart_{1}.Item.gbx
   CE_HelicoScreen:
   - SubVariants:
-    - ItemModel:
-        Id: CE\CE_HelicoScreenA.Item.Gbx
+    - ItemModels:
+      - Id: CE\CE_HelicoScreenA.Item.Gbx
         Collection: 10003
-    - ItemModel:
-        Id: CE\CE_HelicoScreenB.Item.Gbx
+      - Id: CE\CE_HelicoScreenA\32x32\{3}.Item.Gbx
+    - ItemModels:
+      - Id: CE\CE_HelicoScreenB.Item.Gbx
         Collection: 10003
+      - Id: CE\CE_HelicoScreenB\32x32\{3}.Item.Gbx
   CE_Helico:
   - SubVariants:
     - ItemModel:
