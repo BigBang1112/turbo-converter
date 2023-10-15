@@ -47,8 +47,7 @@ Blocks:
     - ItemModel:
         Id: CE\StadiumDecoPalm\GrassBaseC.Item.Gbx
     VariantOf:
-      Block: StadiumDirtHill
-      Variants:
+      StadiumDirtHill:
       - SubVariants:
         - ItemModel:
             Id: CE\StadiumDecoPalm\DirtHillBase1A.Item.Gbx

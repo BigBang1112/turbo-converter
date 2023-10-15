@@ -70,11 +70,11 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (conversion.VariantOf is not null)
         {
-            var blockForVariant = blocksByCoord[block.Coord].FirstOrDefault(x => x.Name == conversion.VariantOf.Block);
+            var blockForVariant = blocksByCoord[block.Coord].FirstOrDefault(x => conversion.VariantOf.ContainsKey(x.Name));
 
             if (blockForVariant is not null)
             {
-                ApplyBlockConversion(block, blockIndex, conversion.VariantOf.Variants[blockForVariant.Variant.GetValueOrDefault()], out removeBlock);
+                ApplyBlockConversion(block, blockIndex, conversion.VariantOf[blockForVariant.Name][blockForVariant.Variant.GetValueOrDefault()], out removeBlock);
                 return;
             }
         }
