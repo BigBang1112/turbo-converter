@@ -11,6 +11,7 @@ sealed class BlockConversionSystem : IConversionSystem
     private readonly Conversions conversions;
     private readonly Converters converters;
     private readonly Int3 blockSize;
+    private readonly ILookup<Int3, CGameCtnBlock> blocksByCoord;
 
     public BlockConversionSystem(CGameCtnChallenge map, Conversions conversions, Converters converters)
     {
@@ -19,6 +20,9 @@ sealed class BlockConversionSystem : IConversionSystem
         this.converters = converters;
 
         blockSize = map.Collection.GetBlockSize();
+
+        _ = map.Blocks ?? throw new Exception("Map blocks are null.");
+        blocksByCoord = map.Blocks.ToLookup(x => x.Coord);
     }
 
     public void Run()
@@ -62,6 +66,17 @@ sealed class BlockConversionSystem : IConversionSystem
         if (conversion is null)
         {
             return;
+        }
+
+        if (conversion.VariantOf is not null)
+        {
+            var blockForVariant = blocksByCoord[block.Coord].FirstOrDefault(x => x.Name == conversion.VariantOf.Block);
+
+            if (blockForVariant is not null)
+            {
+                ApplyBlockConversion(block, blockIndex, conversion.VariantOf.Variants[blockForVariant.Variant.GetValueOrDefault()], out removeBlock);
+                return;
+            }
         }
 
         if (!string.IsNullOrEmpty(conversion.Converter))

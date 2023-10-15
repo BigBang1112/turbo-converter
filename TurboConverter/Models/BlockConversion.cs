@@ -11,4 +11,5 @@ public sealed class BlockConversion
     public ItemModel[]? ItemModels { get; set; }
     public BlockConversion[]? SubVariants { get; set; }
     public Vec2? Size { get; set; }
+    public BlockVariantOf? VariantOf { get; set; }
 }
