@@ -53,11 +53,14 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
             _ => throw new Exception($"Collection {map.Collection} is not supported."),
         };
 
+        var originalMapInfo = new OriginalMapInfo(map);
+
         new MapUidConversionSystem(map).Run();
         new BlockConversionSystem(map, conversions, Converters).Run();
         new Unassigned1ConversionSystem(map).Run();
         new WarpConversionSystem(map, conversions).Run();
         new CleanupConversionSystem(map).Run();
+        new MetadataConversionSystem(map, originalMapInfo).Run();
 
         // configurable
         // map.AnchoredObjects?.Clear();
