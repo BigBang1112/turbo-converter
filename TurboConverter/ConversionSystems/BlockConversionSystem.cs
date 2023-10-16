@@ -12,6 +12,7 @@ sealed class BlockConversionSystem : IConversionSystem
     private readonly Converters converters;
     private readonly Int3 blockSize;
     private readonly ILookup<Int3, CGameCtnBlock> blocksByCoord;
+    private readonly HashSet<CGameCtnBlockSkin> modifiedSkins = new();
 
     public BlockConversionSystem(CGameCtnChallenge map, Conversions conversions, Converters converters)
     {
@@ -99,6 +100,12 @@ sealed class BlockConversionSystem : IConversionSystem
             if (converter.Name is not null)
             {
                 block.Name = converter.Name.Apply(block.Name, conversion.Converter);
+            }
+
+            if (block.Skin is not null && !string.IsNullOrEmpty(block.Skin.PackDesc.FilePath) && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
+            {
+                block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = converter.Skin.Apply(block.Skin.PackDesc.FilePath, conversion.Converter) };
+                modifiedSkins.Add(block.Skin);
             }
 
             removeBlock = false;

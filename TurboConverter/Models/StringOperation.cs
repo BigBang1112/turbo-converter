@@ -9,6 +9,7 @@ public sealed class StringOperation
     public string? Contains { get; set; }
     public string? Remove { get; set; }
     public string? Set { get; set; }
+    public bool Safe { get; set; }
 
     public string Apply(string input, string converterName)
     {
@@ -26,6 +27,11 @@ public sealed class StringOperation
 
         if (!conditionIsMet)
         {
+            if (Safe)
+            {
+                return input;
+            }
+
             throw new Exception($"{input} does not meet the condition for converter {converterName}.");
         }
 

@@ -17,3 +17,8 @@ BlockConverters:
       ReplaceWith: $1Straight
     ItemModel:
       Id: CE\LandingRamp\{1}_{0}_{2}.Item.Gbx
+  SkinCE:
+    Skin:
+      Match: StadiumCE
+      ReplaceWith: Stadium
+      Safe: true

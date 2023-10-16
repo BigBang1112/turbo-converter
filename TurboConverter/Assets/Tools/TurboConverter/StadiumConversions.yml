@@ -141,3 +141,27 @@ Blocks:
   - Name: StadiumRoadMain
     Variant: 3
     Converter: RoadPaint
+  StadiumAirship:
+  - Converter: SkinCE
+  StadiumAirshipDiag:
+  - Converter: SkinCE
+  StadiumInflatableSupport:
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  StadiumInflatablePillar:
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
+  - Converter: SkinCE
