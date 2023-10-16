@@ -1,5 +1,6 @@
 ﻿using GBX.NET;
 using GBX.NET.Engines.Game;
+using GBX.NET.Engines.Script;
 using TurboConverter.Extensions;
 using TurboConverter.Models;
 
@@ -13,6 +14,8 @@ sealed class BlockConversionSystem : IConversionSystem
     private readonly Int3 blockSize;
     private readonly ILookup<Int3, CGameCtnBlock> blocksByCoord;
     private readonly HashSet<CGameCtnBlockSkin> modifiedSkins = new();
+    
+    public IList<CScriptTraitsMetadata.ScriptStructTrait> ConvertedBlocks { get; } = new List<CScriptTraitsMetadata.ScriptStructTrait>();
 
     public BlockConversionSystem(CGameCtnChallenge map, Conversions conversions, Converters converters)
     {
@@ -51,12 +54,36 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (conversions.Blocks?.TryGetValue(block.Name, out var conversion) == true)
         {
-            ApplyBlockConversion(block, blockIndex, conversion?[block.Variant.GetValueOrDefault()], out var removeBlock);
+            var convertedBlockStructBuilder = CScriptTraitsMetadata.CreateStruct("SConvertedBlock")
+                .WithText("Name", block.Name)
+                .WithInt3("Coord", block.Coord);
+
+            if (conversion is null)
+            {
+                return;
+            }
+
+            var removeBlock = true;
+
+            var variant = block.Variant.GetValueOrDefault();
+
+            if (conversion.Length > variant)
+            {
+                ApplyBlockConversion(block, blockIndex, conversion[variant], out removeBlock);
+            }
+            else
+            {
+                Console.WriteLine($"Block {block.Name} has variant {variant} but only {conversion.Length} variants are defined. Block will be removed.");
+            }
 
             if (removeBlock)
             {
                 map.RemoveBlockAt(blockIndex);
             }
+
+            var convertedBlockStruct = convertedBlockStructBuilder.Build();
+
+            ConvertedBlocks.Add(convertedBlockStruct);
         }
     }
 

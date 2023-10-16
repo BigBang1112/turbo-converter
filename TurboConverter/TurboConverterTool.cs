@@ -30,7 +30,7 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
 
     public static string RemapAssetRoute(string route, bool isManiaPlanet)
     {
-        return ""; // everything should stay the same
+        return route; // everything should stay the same
     }
 
     public async ValueTask LoadAssetsAsync()
@@ -56,11 +56,14 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         var originalMapInfo = new OriginalMapInfo(map);
 
         new MapUidConversionSystem(map).Run();
-        new BlockConversionSystem(map, conversions, Converters).Run();
+
+        var blockConversionSystem = new BlockConversionSystem(map, conversions, Converters);
+        blockConversionSystem.Run();
+
         new Unassigned1ConversionSystem(map).Run();
         new WarpConversionSystem(map, conversions).Run();
         new CleanupConversionSystem(map).Run();
-        new MetadataConversionSystem(map, originalMapInfo).Run();
+        new MetadataConversionSystem(map, originalMapInfo, blockConversionSystem.ConvertedBlocks).Run();
 
         // configurable
         // map.AnchoredObjects?.Clear();
