@@ -62,12 +62,13 @@ Blocks:
   - Converter: RoadPaint
   RoadTunnelRoadPaint:
   - Converter: RoadPaint
-  ArenaRoadPaintWall4:
-  - Converter: RoadPaint
+  ArenaRoadPaintWall4: # two ArenaLoopStraight2
   ArenaRoadPaintWall2Right:
-  - Converter: RoadPaint
+  - Name: ArenaLoopStraight2
+    Converter: RoadPaint
   ArenaRoadPaintWall2Left:
-  - Converter: RoadPaint
+  - Name: ArenaLoopStraight2
+    Converter: RoadPaint
   ArenaRoadPaintDown:
   - Name: ArenaSlope2Straight
     Converter: RoadPaint
@@ -150,9 +151,13 @@ Blocks:
   - Name: HighWayTilt2Straight
     Converter: RoadPaint
   RoadMainRoadPaint:
-  - Converter: RoadPaint
+  - Name: RoadMain
+    Variant: 3
+    Converter: RoadPaint
   RoadMainLandingRamp:
-  - Converter: LandingRamp
+  - Name: RoadMain
+    Variant: 3
+    Converter: LandingRamp
   RoadMainCheckpointScreen:
   - Converter: CheckpointScreen
   FreeWayRoadPaint:
@@ -165,4 +170,12 @@ Blocks:
     ItemModel:
       Id: CE\LandingRamp\{1}_FreeWayRampLandingRamp.Item.Gbx
   FreeWayCheckpointScreen:
-  - Converter: CheckpointScreen  
+  - Converter: CheckpointScreen
+  DecoCityCheckpointScreen:
+  - Converter: CheckpointScreen
+  DecoCityCenterLandingRamp:
+  - Name: DecoCityFloorBase
+  DecoCityGardenRampCenter: # wtf
+  RoadFreeWayStraight:
+  - Name: FreeWay
+    Variant: 3

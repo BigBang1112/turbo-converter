@@ -54,8 +54,10 @@ Blocks:
   - Name: ArenaParkRoofLoopStraight2
     Converter: RoadPaint
   ArenaParkBaseLandingRamp:
-  - Converter: LandingRamp
+  - Name: ArenaParkBase
+    Converter: LandingRamp
   ArenaParkRoadPaint:
+  - Name: ArenaParkBase
   - Converter: RoadPaint
   ArenaCheckpointParkRoofLoopStraight4HAirScreen:
   - Converter: CheckpointScreen
@@ -173,3 +175,9 @@ Blocks:
   Road4WayStart:
   - ItemModel:
       Id: CE\Road4WayStart_{2}.Item.Gbx
+  DecoCastleEntryCheckPointInScreen:
+  - Converter: CheckpointScreen
+  TunnelRoad4WayCross:
+  - Name: TunnelRoad4wayCross
+  DecoCastleCenterLakeLandingRamp:
+  - Name: DecoCastleCenterLake

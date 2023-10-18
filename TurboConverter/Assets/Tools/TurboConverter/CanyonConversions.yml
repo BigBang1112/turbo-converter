@@ -108,6 +108,8 @@ Blocks:
   - Converter: CheckpointScreen
   ArenaRoadPaint:
   - Name: ArenaSimpleBase
+  ArenaTunnelRoadPaint:
+  - Converter: RoadPaint
   RoadMainSlopeRoadPaintUp:
   - Converter: RoadPaint
   RoadMainSlopeRoadPaintDown:
@@ -153,3 +155,6 @@ Blocks:
   - Converter: RoadPaint
   RoadRaceRoadPaintMirror:
   - Converter: RoadPaint
+  RoadMainStraight:
+  - Name: RoadMain
+    Variant: 3
