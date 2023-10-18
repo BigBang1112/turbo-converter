@@ -129,9 +129,18 @@ sealed class BlockConversionSystem : IConversionSystem
                 block.Name = converter.Name.Apply(block.Name, conversion.Converter);
             }
 
-            if (block.Skin is not null && !string.IsNullOrEmpty(block.Skin.PackDesc.FilePath) && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
+            if (block.Skin is not null && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
             {
-                block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = converter.Skin.Apply(block.Skin.PackDesc.FilePath, conversion.Converter) };
+                if (!string.IsNullOrEmpty(block.Skin.PackDesc.FilePath))
+                {
+                    block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = converter.Skin.Apply(block.Skin.PackDesc.FilePath, conversion.Converter) };
+                }
+
+                if (block.Skin.ParentPackDesc is not null && !string.IsNullOrEmpty(block.Skin.ParentPackDesc.FilePath))
+                {
+                    block.Skin.ParentPackDesc = block.Skin.ParentPackDesc with { FilePath = converter.Skin.Apply(block.Skin.ParentPackDesc.FilePath, conversion.Converter) };
+                }
+
                 modifiedSkins.Add(block.Skin);
             }
 
