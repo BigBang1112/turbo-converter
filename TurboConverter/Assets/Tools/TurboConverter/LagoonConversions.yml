@@ -175,7 +175,10 @@ Blocks:
   - Converter: CheckpointScreen
   DecoCityCenterLandingRamp:
   - Name: DecoCityFloorBase
-  DecoCityGardenRampCenter: # wtf
+  DecoCityGardenRampCenter:
+  - Name: DecoCityFloorRampCenter
+  DecoCityGardenRamp2Center:
+  - Name: DecoCityFloorRamp2Center
   RoadFreeWayStraight:
   - Name: FreeWay
     Variant: 3
