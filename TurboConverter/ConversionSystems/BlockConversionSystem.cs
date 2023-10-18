@@ -60,6 +60,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
             if (conversion is null)
             {
+                map.RemoveBlockAt(blockIndex);
                 return;
             }
 
