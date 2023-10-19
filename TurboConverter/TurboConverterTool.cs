@@ -61,6 +61,7 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         blockConversionSystem.Run();
 
         new Unassigned1ConversionSystem(map).Run();
+        new SkinFixupConversionSystem(map).Run();
         new WarpConversionSystem(map, conversions).Run();
         new CleanupConversionSystem(map).Run();
         new MetadataConversionSystem(map, originalMapInfo, blockConversionSystem.ConvertedBlocks).Run();
