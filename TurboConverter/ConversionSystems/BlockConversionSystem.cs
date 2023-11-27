@@ -115,6 +115,11 @@ sealed class BlockConversionSystem : IConversionSystem
                 throw new Exception($"Converter {conversion.Converter} does not exist.");
             }
 
+            if (conversion.Converter == "Tanks")
+            {
+                ApplyTanks(block);
+            }
+
             if (converter is null)
             {
                 throw new Exception($"Converter {conversion.Converter} is not implemented.");
@@ -177,6 +182,13 @@ sealed class BlockConversionSystem : IConversionSystem
         {
             ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant.GetValueOrDefault()], out removeBlock);
         }
+    }
+
+    private void ApplyTanks(CGameCtnBlock block)
+    {
+        var offset = (Int3)block.Direction;
+
+        //if (blocksByCoord.Contains(block.Coord + (1, 0, 0))
     }
 
     private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel, Vec2? blockSizeForRotation)

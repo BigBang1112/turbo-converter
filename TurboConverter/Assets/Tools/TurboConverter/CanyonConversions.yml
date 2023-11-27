@@ -158,3 +158,5 @@ Blocks:
   RoadMainStraight:
   - Name: RoadMain
     Variant: 3
+  ArenaTurbo1:
+  - Converter: Tanks
