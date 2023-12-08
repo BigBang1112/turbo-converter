@@ -8,13 +8,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="GbxToolApi" Version="1.0.5" />
+		<PackageReference Include="GbxToolApi" Version="1.0.7" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Update="Assets\**">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Assets\Tools\TurboConverter\ReverseConversions\" />
 	</ItemGroup>
 	
 </Project>
