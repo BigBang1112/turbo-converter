@@ -9,9 +9,11 @@ public sealed class StringOperation
     public string? Contains { get; set; }
     public string? Remove { get; set; }
     public string? Set { get; set; }
+    public string? Prepend { get; set; }
+    public string? Append { get; set; }
     public bool Safe { get; set; }
 
-    public string Apply(string input, string converterName)
+    public string Apply(string input = "", string? converterName = null)
     {
         var conditionIsMet = true;
 
@@ -32,14 +34,14 @@ public sealed class StringOperation
                 return input;
             }
 
-            throw new Exception($"{input} does not meet the condition for converter {converterName}.");
+            throw new Exception($"{input} does not meet the condition for converter '{converterName}'.");
         }
 
         if (!string.IsNullOrEmpty(ReplaceWith))
         {
             if (string.IsNullOrEmpty(Match))
             {
-                throw new Exception($"Converter {converterName} does not have a match to replace.");
+                throw new Exception($"Converter '{converterName}' does not have a match to replace.");
             }
 
             input = Regex.Replace(input, Match, ReplaceWith);
@@ -53,6 +55,16 @@ public sealed class StringOperation
         if (!string.IsNullOrEmpty(Set))
         {
             input = Set;
+        }
+
+        if (!string.IsNullOrEmpty(Prepend))
+        {
+            input = Prepend + input;
+        }
+
+        if (!string.IsNullOrEmpty(Append))
+        {
+            input += Append;
         }
 
         return input;

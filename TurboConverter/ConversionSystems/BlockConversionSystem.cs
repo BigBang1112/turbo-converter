@@ -97,6 +97,19 @@ sealed class BlockConversionSystem : IConversionSystem
             return;
         }
 
+        if (conversion.ItemModel is not null)
+        {
+            PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
+        }
+
+        if (conversion.ItemModels is not null)
+        {
+            foreach (var itemModel in conversion.ItemModels)
+            {
+                PlaceAnchoredObject(block, itemModel, conversion.Size);
+            }
+        }
+
         if (conversion.VariantOf is not null)
         {
             var blockForVariant = blocksByCoord[block.Coord].FirstOrDefault(x => conversion.VariantOf.ContainsKey(x.Name));
@@ -110,46 +123,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (!string.IsNullOrEmpty(conversion.Converter))
         {
-            if (!converters.BlockConverters.TryGetValue(conversion.Converter, out var converter))
-            {
-                throw new Exception($"Converter {conversion.Converter} does not exist.");
-            }
-
-            if (conversion.Converter == "Tanks")
-            {
-                ApplyTanks(block);
-            }
-
-            if (converter is null)
-            {
-                throw new Exception($"Converter {conversion.Converter} is not implemented.");
-            }
-
-            if (converter.ItemModel is not null)
-            {
-                PlaceAnchoredObject(block, converter.ItemModel, conversion.Size);
-            }
-
-            if (converter.Name is not null)
-            {
-                block.Name = string.Format(converter.Name.Apply(block.Name, conversion.Converter), GetBlockStringArgs(block));
-            }
-
-            if (block.Skin is not null && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
-            {
-                if (!string.IsNullOrEmpty(block.Skin.PackDesc.FilePath))
-                {
-                    block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = converter.Skin.Apply(block.Skin.PackDesc.FilePath, conversion.Converter) };
-                }
-
-                if (block.Skin.ParentPackDesc is not null && !string.IsNullOrEmpty(block.Skin.ParentPackDesc.FilePath))
-                {
-                    block.Skin.ParentPackDesc = block.Skin.ParentPackDesc with { FilePath = converter.Skin.Apply(block.Skin.ParentPackDesc.FilePath, conversion.Converter) };
-                }
-
-                modifiedSkins.Add(block.Skin);
-            }
-
+            ApplyConverter(block, conversion.Converter, conversion);
             removeBlock = false;
         }
 
@@ -165,26 +139,86 @@ sealed class BlockConversionSystem : IConversionSystem
             removeBlock = false;
         }
 
-        if (conversion.ItemModel is not null)
-        {
-            PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
-        }
-
-        if (conversion.ItemModels is not null)
-        {
-            foreach (var itemModel in conversion.ItemModels)
-            {
-                PlaceAnchoredObject(block, itemModel, conversion.Size);
-            }
-        }
-
         if (conversion.SubVariants?.Length > 0)
         {
             ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant.GetValueOrDefault()], out removeBlock);
         }
+
+        if (!string.IsNullOrEmpty(conversion.ConverterAfter))
+        {
+            ApplyConverter(block, conversion.ConverterAfter, conversion);
+            removeBlock = false;
+        }
     }
 
-    private void ApplyTanks(CGameCtnBlock block)
+    private void ApplyConverter(CGameCtnBlock block, string converterName, BlockConversion conversion)
+    {
+        if (!converters.BlockConverters.TryGetValue(converterName, out var converter))
+        {
+            throw new Exception($"Converter {converterName} does not exist.");
+        }
+
+        if (converterName == "Tanks")
+        {
+            ApplyTanksConverter(block);
+        }
+
+        if (converter is null)
+        {
+            // throw new Exception($"Converter {conversion.Converter} is not implemented.");
+        }
+        else
+        {
+            ApplyGenericConverter(block, converter, conversion);
+        }
+    }
+
+    private void ApplyGenericConverter(CGameCtnBlock block, BlockConverter converter, BlockConversion conversion)
+    {
+        if (converter.ItemModel is not null)
+        {
+            PlaceAnchoredObject(block, converter.ItemModel, conversion.Size);
+        }
+
+        if (converter.Name is not null)
+        {
+            block.Name = string.Format(converter.Name.Apply(block.Name, conversion.Converter), GetBlockStringArgs(block));
+        }
+
+        if (block.Skin is not null && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
+        {
+            if (!string.IsNullOrEmpty(block.Skin.PackDesc.FilePath))
+            {
+                block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = converter.Skin.Apply(block.Skin.PackDesc.FilePath, conversion.Converter) };
+            }
+
+            if (block.Skin.ParentPackDesc is not null && !string.IsNullOrEmpty(block.Skin.ParentPackDesc.FilePath))
+            {
+                block.Skin.ParentPackDesc = block.Skin.ParentPackDesc with { FilePath = converter.Skin.Apply(block.Skin.ParentPackDesc.FilePath, conversion.Converter) };
+            }
+
+            modifiedSkins.Add(block.Skin);
+        }
+
+        if (!string.IsNullOrEmpty(converter.ConverterAfter))
+        {
+            if (!converters.BlockConverters.TryGetValue(converter.ConverterAfter, out var converterAfter))
+            {
+                throw new Exception($"Converter {conversion.Converter} does not exist.");
+            }
+
+            if (converterAfter is null)
+            {
+                // throw new Exception($"Converter {conversion.Converter} is not implemented.");
+            }
+            else
+            {
+                ApplyGenericConverter(block, converterAfter, conversion);
+            }
+        }
+    }
+
+    private void ApplyTanksConverter(CGameCtnBlock block)
     {
         var offset = (Int3)block.Direction;
 
