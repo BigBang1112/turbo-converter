@@ -141,3 +141,5 @@ Blocks:
   - Name: StadiumRoadMain
     Variant: 3
     Converter: RoadPaint
+  StadiumRoadMainStartLine:
+  - Converter: WaypointCommon

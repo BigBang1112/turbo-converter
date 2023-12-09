@@ -98,14 +98,19 @@ Blocks:
   - Converter: CheckpointScreen
   ArenaCheckpointSlopeStraightRightAirScreen:
   - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightLeftAirScreen:
   - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightDownScreen:
   - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightUpScreen:
   - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
   ArenaCheckpointBaseScreen:
   - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
   ArenaRoadPaint:
   - Name: ArenaSimpleBase
   ArenaTunnelRoadPaint:
@@ -138,17 +143,23 @@ Blocks:
   RoadRaceSlopeRoadPaintDownMirror:
   - Converter: RoadPaintStaight
   RoadRaceSlopeCheckpointDownScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
   RoadRaceSlopeCheckpointDownScreenMirror:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
   RoadRaceSlopeCheckpointUpScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
   RoadRaceSlopeCheckpointUpScreenMirror:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
   RoadRaceCheckpointScreen:
   - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
   RoadRaceCheckpointScreenMirror:
   - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
   RoadRaceLandingRamp:
   - Converter: LandingRamp
   RoadRaceRoadPaint:
@@ -158,5 +169,136 @@ Blocks:
   RoadMainStraight:
   - Name: RoadMain
     Variant: 3
+  RoadRaceCheckpoint:
+  - Converter: Waypoint
+  RoadRaceCheckpointMirror:
+  - Converter: Waypoint
+  RoadRaceStart:
+  - Converter: Waypoint
+  RoadRaceStartMirror:
+  - Converter: Waypoint
+  RoadRaceFinish:
+  - Converter: Waypoint
+  RoadRaceFinishMirror:
+  - Converter: Waypoint
+  RoadRaceMultilap:
+  - Converter: Waypoint
+  RoadRaceMultilapMirror:
+  - Converter: Waypoint
+  RoadRaceSlopeCheckpointUp:
+  - Converter: Waypoint
+  RoadRaceSlopeCheckpointUpMirror:
+  - Converter: Waypoint
+  RoadRaceSlopeCheckpointDown:
+  - Converter: Waypoint
+  RoadRaceSlopeCheckpointDownMirror:
+  - Converter: Waypoint
+  ArenaCheckpointSlopeStraightRightAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightLeftAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightDown:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightUp:
+  - Converter: WaypointCommon
+  ArenaCheckpointBase:
+  - Converter: WaypointCommon
+  RoadRaceTurbo:
+  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
+  RoadRaceTurboMirror:
+  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
+  RoadRaceTurbo2:
+  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
+  RoadRaceTurbo2Mirror:
+  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
+  RoadRaceFW:
+  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
+  RoadRaceFWMirror:
+  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   ArenaTurbo1:
-  - Converter: Tanks
+  - Name: '{1}\ArenaTurbo1Hole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo1SlopeUp:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo1SlopeDown:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo1SlopeLeft:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo1SlopeRight:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo2:
+  - Name: '{1}\ArenaTurbo1Hole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo2SlopeUp:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo2SlopeDown:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo2SlopeLeft:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaTurbo2SlopeRight:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaFreeWheeling:
+  - Name: '{1}\ArenaTurbo1Hole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaFWSlopeUp:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaFWSlopeDown:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaFWSlopeLeft:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks
+  ArenaFWSlopeRight:
+  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+    Converter: Tanks

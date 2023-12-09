@@ -11,6 +11,12 @@ BlockConverters:
     Name:
       Contains: Checkpoint
       Remove: Screen
+    #ConverterAfter: Waypoint
+  CheckpointScreenCommon:
+    Name:
+      Contains: Checkpoint
+      Remove: Screen
+    #ConverterAfter: WaypointCommon
   LandingRamp:
     Name:
       Match: (.*)LandingRamp
