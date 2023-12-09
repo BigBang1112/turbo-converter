@@ -181,3 +181,6 @@ Blocks:
   - Name: TunnelRoad4wayCross
   DecoCastleCenterLakeLandingRamp:
   - Name: DecoCastleCenterLake
+  RoadDirtStraight:
+  - Name: RoadDirt
+    Variant: 3
