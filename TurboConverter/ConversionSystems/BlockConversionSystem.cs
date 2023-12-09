@@ -132,7 +132,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
             if (converter.Name is not null)
             {
-                block.Name = converter.Name.Apply(block.Name, conversion.Converter);
+                block.Name = string.Format(converter.Name.Apply(block.Name, conversion.Converter), GetBlockStringArgs(block));
             }
 
             if (block.Skin is not null && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
@@ -155,7 +155,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (!string.IsNullOrEmpty(conversion.Name))
         {
-            block.Name = conversion.Name;
+            block.Name = string.Format(conversion.Name, GetBlockStringArgs(block));
             removeBlock = false;
         }
 
@@ -191,13 +191,20 @@ sealed class BlockConversionSystem : IConversionSystem
         //if (blocksByCoord.Contains(block.Coord + (1, 0, 0))
     }
 
-    private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel, Vec2? blockSizeForRotation)
+    private object[] GetBlockStringArgs(CGameCtnBlock block)
     {
-        var id = string.Format(itemModel.Id ?? throw new Exception("ItemModel ID not available"),
+        return new object[]
+        {
             block.Name,
             map.Collection,
             block.IsGround ? "Ground" : "Air",
-            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc.FilePath) ?? "WELCOME_TM");
+            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc.FilePath) ?? "WELCOME_TM"
+        };
+    }
+
+    private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel, Vec2? blockSizeForRotation)
+    {
+        var id = string.Format(itemModel.Id ?? throw new Exception("ItemModel ID not available"), GetBlockStringArgs(block));
 
         var ident = new Ident(id,
             itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
