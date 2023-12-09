@@ -133,6 +133,8 @@ sealed class BlockConversionSystem : IConversionSystem
             removeBlock = false;
         }
 
+        block.Direction = (Direction)(((int)block.Direction + conversion.DirOffset) % 4);
+
         if (conversion.Variant.HasValue)
         {
             block.Variant = (byte?)conversion.Variant;

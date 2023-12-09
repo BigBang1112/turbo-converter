@@ -239,6 +239,7 @@ Blocks:
     Converter: Tanks
   ArenaTurbo1SlopeDown:
   - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 2
     ItemModel:
       Id: CE\Tank\{1}_{0}.Item.Gbx
     Converter: Tanks
@@ -264,6 +265,7 @@ Blocks:
     Converter: Tanks
   ArenaTurbo2SlopeDown:
   - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 2
     ItemModel:
       Id: CE\Tank\{1}_{0}.Item.Gbx
     Converter: Tanks
@@ -289,6 +291,7 @@ Blocks:
     Converter: Tanks
   ArenaFWSlopeDown:
   - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 2
     ItemModel:
       Id: CE\Tank\{1}_{0}.Item.Gbx
     Converter: Tanks
