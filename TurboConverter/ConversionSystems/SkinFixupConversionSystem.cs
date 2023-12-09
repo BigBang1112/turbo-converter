@@ -1,6 +1,4 @@
 ﻿using GBX.NET.Engines.Game;
-using Microsoft.VisualBasic;
-using System;
 
 namespace TurboConverter.ConversionSystems;
 
@@ -28,7 +26,7 @@ sealed class SkinFixupConversionSystem : IConversionSystem
                 continue;
             }
 
-            if (!string.IsNullOrEmpty(block.Skin.PackDesc.FilePath))
+            /*if (!string.IsNullOrEmpty(block.Skin.PackDesc.FilePath))
             {
                 block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = RegexUtils.AdjustSkinReference(block.Skin.PackDesc.FilePath) };
             }
@@ -36,7 +34,7 @@ sealed class SkinFixupConversionSystem : IConversionSystem
             if (block.Skin.ParentPackDesc is not null && !string.IsNullOrEmpty(block.Skin.ParentPackDesc.FilePath))
             {
                 block.Skin.ParentPackDesc = block.Skin.ParentPackDesc with { FilePath = RegexUtils.AdjustSkinReference(block.Skin.ParentPackDesc.FilePath) };
-            }
+            }*/
 
             modifiedSkins.Add(block.Skin);
         }
