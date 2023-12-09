@@ -23,6 +23,11 @@ BlockConverters:
       ReplaceWith: Stadium
       Safe: true
   Tanks:
+  Waypoint:
+    Name:
+      Set: '{1}\{0}CE.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_{2}.Item.Gbx  
   WaypointCommon:
     Name:
       Set: '{1}\{0}CE.Block.Gbx_CustomBlock'
