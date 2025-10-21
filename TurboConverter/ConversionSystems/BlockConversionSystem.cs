@@ -6,16 +6,16 @@ using TurboConverter.Models;
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class BlockConversionSystem : IConversionSystem
+internal sealed class BlockConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
     private readonly Conversions conversions;
     private readonly Converters converters;
     private readonly Int3 blockSize;
     private readonly ILookup<Int3, CGameCtnBlock> blocksByCoord;
-    private readonly HashSet<CGameCtnBlockSkin> modifiedSkins = new();
+    private readonly HashSet<CGameCtnBlockSkin> modifiedSkins = [];
     
-    public IList<CScriptTraitsMetadata.ScriptStructTrait> ConvertedBlocks { get; } = new List<CScriptTraitsMetadata.ScriptStructTrait>();
+    public IList<CScriptTraitsMetadata.ScriptStructTrait> ConvertedBlocks { get; } = [];
 
     public BlockConversionSystem(CGameCtnChallenge map, Conversions conversions, Converters converters)
     {
@@ -23,7 +23,7 @@ sealed class BlockConversionSystem : IConversionSystem
         this.conversions = conversions;
         this.converters = converters;
 
-        blockSize = map.Collection.GetBlockSize();
+        blockSize = map.Collection?.GetBlockSize() ?? throw new Exception("Map collection is null.");
 
         _ = map.Blocks ?? throw new Exception("Map blocks are null.");
         blocksByCoord = map.Blocks.ToLookup(x => x.Coord);
@@ -66,15 +66,13 @@ sealed class BlockConversionSystem : IConversionSystem
 
             var removeBlock = true;
 
-            var variant = block.Variant.GetValueOrDefault();
-
-            if (conversion.Length > variant)
+            if (conversion.Length > block.Variant)
             {
-                ApplyBlockConversion(block, blockIndex, conversion[variant], out removeBlock);
+                ApplyBlockConversion(block, blockIndex, conversion[block.Variant], out removeBlock);
             }
             else
             {
-                Console.WriteLine($"Block {block.Name} has variant {variant} but only {conversion.Length} variants are defined. Block will be removed.");
+                Console.WriteLine($"Block {block.Name} has variant {block.Variant} but only {conversion.Length} variants are defined. Block will be removed.");
             }
 
             if (removeBlock)
@@ -116,7 +114,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
             if (blockForVariant is not null)
             {
-                ApplyBlockConversion(block, blockIndex, conversion.VariantOf[blockForVariant.Name][blockForVariant.Variant.GetValueOrDefault()], out removeBlock);
+                ApplyBlockConversion(block, blockIndex, conversion.VariantOf[blockForVariant.Name][blockForVariant.Variant], out removeBlock);
                 return;
             }
         }
@@ -137,13 +135,13 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (conversion.Variant.HasValue)
         {
-            block.Variant = (byte?)conversion.Variant;
+            block.Variant = (byte)conversion.Variant.Value;
             removeBlock = false;
         }
 
         if (conversion.SubVariants?.Length > 0)
         {
-            ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant.GetValueOrDefault()], out removeBlock);
+            ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant], out removeBlock);
         }
 
         if (!string.IsNullOrEmpty(conversion.ConverterAfter))
@@ -189,7 +187,7 @@ sealed class BlockConversionSystem : IConversionSystem
 
         if (block.Skin is not null && converter.Skin is not null && !modifiedSkins.Contains(block.Skin))
         {
-            if (!string.IsNullOrEmpty(block.Skin.PackDesc.FilePath))
+            if (!string.IsNullOrEmpty(block.Skin.PackDesc?.FilePath))
             {
                 block.Skin.PackDesc = block.Skin.PackDesc with { FilePath = converter.Skin.Apply(block.Skin.PackDesc.FilePath, conversion.Converter) };
             }
@@ -229,13 +227,12 @@ sealed class BlockConversionSystem : IConversionSystem
 
     private object[] GetBlockStringArgs(CGameCtnBlock block)
     {
-        return new object[]
-        {
+        return [
             block.Name,
-            map.Collection,
+            map.Collection ?? throw new Exception("Map collection is null."),
             block.IsGround ? "Ground" : "Air",
-            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc.FilePath) ?? "WELCOME_TM"
-        };
+            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc?.FilePath) ?? "WELCOME_TM"
+        ];
     }
 
     private void PlaceAnchoredObject(CGameCtnBlock block, ItemModel itemModel, Vec2? blockSizeForRotation)
@@ -243,10 +240,10 @@ sealed class BlockConversionSystem : IConversionSystem
         var id = string.Format(itemModel.Id ?? throw new Exception("ItemModel ID not available"), GetBlockStringArgs(block));
 
         var ident = new Ident(id,
-            itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
+            itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection ?? throw new Exception("Map collection is null."),
             itemModel.Author ?? conversions.DefaultAuthor ?? "");
 
-        var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize.GetXZ() * 0.5f;
+        var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * (1, 0, 1) * 0.5f;
         var pitchYawRoll = new Vec3(-(int)block.Direction * MathF.PI / 2, 0, 0);
 
         if (blockSizeForRotation.HasValue)
@@ -267,6 +264,6 @@ sealed class BlockConversionSystem : IConversionSystem
             }
         }
 
-        map.PlaceAnchoredObject(ident, absolutePosition, pitchYawRoll, -itemModel.Pivot ?? -blockSize.GetXZ() * 0.5f);
+        map.PlaceAnchoredObject(ident, absolutePosition, pitchYawRoll, -itemModel.Pivot ?? -blockSize * (1, 0, 1) * 0.5f);
     }
 }

@@ -2,7 +2,7 @@
   "profiles": {
     "TurboConverterCLI": {
       "commandName": "Project",
-      "commandLineArgs": "\"E:\\ManiaPlanetUserData\\WorkTitles\\Envimix_Turbo@bigbang1112\\Maps\\Original\\Campaigns\\01_White\\01_Canyon\\001.Map.Gbx\""
+      "commandLineArgs": "\"E:\\ManiaPlanetUserData\\WorkTitles\\Envimix_Turbo@bigbang1112\\Maps\\Original\\VR\""
     }
   }
 }

@@ -1,63 +1,56 @@
+﻿using GBX.NET;
 using GBX.NET.Engines.Game;
-using GbxToolAPI;
+using GBX.NET.Tool;
+using Microsoft.Extensions.Logging;
+using System.Collections.Immutable;
 using TmEssentials;
 using TurboConverter.ConversionSystems;
 using TurboConverter.Models;
 
 namespace TurboConverter;
 
-[ToolName("Turbo Converter")]
-[ToolDescription("Turbo Converter is a GBX.NET web tool.")]
-[ToolAuthors("BigBang1112")]
-[ToolAssets("TurboConverter")]
-public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>, IConfigurable<TurboConverterConfig>, IHasAssets
+public class TurboConverterTool : ITool,
+    IMutative<Gbx<CGameCtnChallenge>>,
+    IConfigurable<TurboConverterConfig>
 {
+    private readonly Gbx<CGameCtnChallenge> gbxMap;
     private readonly CGameCtnChallenge map;
+    private readonly IComplexConfig complexConfig;
+    private readonly ILogger logger;
 
-    public TurboConverterConfig Config { get; set; } = new();
+    private static readonly ImmutableHashSet<string> supportedCollections = ImmutableHashSet.Create(
+        "Canyon",
+        "Stadium",
+        "Valley",
+        "Lagoon"
+    );
 
-    public Conversions CanyonConversions { get; set; } = new();
-    public Conversions StadiumConversions { get; set; } = new();
-    public Conversions ValleyConversions { get; set; } = new();
-    public Conversions LagoonConversions { get; set; } = new();
+    public TurboConverterConfig Config { get; } = new();
 
-    public Converters Converters { get; set; } = new();
-
-    public TurboConverterTool(CGameCtnChallenge map)
+    public TurboConverterTool(Gbx<CGameCtnChallenge> gbxMap, IComplexConfig complexConfig, ILogger logger)
     {
-        this.map = map;
+        this.gbxMap = gbxMap;
+        this.complexConfig = complexConfig;
+        this.logger = logger;
+
+        map = gbxMap.Node;
     }
 
-    public static string RemapAssetRoute(string route, bool isManiaPlanet)
+    public Gbx<CGameCtnChallenge>? Mutate()
     {
-        return route; // everything should stay the same
-    }
-
-    public async ValueTask LoadAssetsAsync()
-    {
-        CanyonConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("CanyonConversions.yml");
-        StadiumConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("StadiumConversions.yml");
-        ValleyConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("ValleyConversions.yml");
-        LagoonConversions = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Conversions>("LagoonConversions.yml");
-        Converters = await AssetsManager<TurboConverterTool>.GetFromYmlAsync<Converters>("Converters.yml");
-    }
-
-    public NodeFile<CGameCtnChallenge> Produce()
-    {
-        var conversions = (string)map.Collection switch
+        if (!supportedCollections.Contains(map.Collection?.ToString() ?? ""))
         {
-            "Canyon" => CanyonConversions,
-            "Stadium" => StadiumConversions,
-            "Valley" => ValleyConversions,
-            "Lagoon" => LagoonConversions,
-            _ => throw new Exception($"Collection {map.Collection} is not supported."),
-        };
+            throw new InvalidOperationException($"Map collection '{map.Collection}' is not supported for conversion.");
+        }
+
+        var conversions = complexConfig.Get<Conversions>($"{map.Collection}Conversions", cache: true);
+        var converters = complexConfig.Get<Converters>("Converters", cache: true);
 
         var originalMapInfo = new OriginalMapInfo(map);
 
         new MapUidConversionSystem(map).Run();
 
-        var blockConversionSystem = new BlockConversionSystem(map, conversions, Converters);
+        var blockConversionSystem = new BlockConversionSystem(map, conversions, converters);
         blockConversionSystem.Run();
 
         new Unassigned1ConversionSystem(map).Run();
@@ -69,9 +62,11 @@ public class TurboConverterTool : ITool, IHasOutput<NodeFile<CGameCtnChallenge>>
         // configurable
         // map.AnchoredObjects?.Clear();
 
-        var pureFileName = $"{TextFormatter.Deformat(map.MapName)}.Map.Gbx";
-        var validFileName = string.Join("_", pureFileName.Split(Path.GetInvalidFileNameChars()));
+        var fileName = Path.GetFileName(gbxMap.FilePath)
+            ?? Path.GetInvalidFileNameChars().Aggregate(TextFormatter.Deformat(map.MapName), (current, c) => current.Replace(c, '_')); 
 
-        return new(map, $"Maps/TurboConverter/{validFileName}", IsManiaPlanet: true);
+        gbxMap.FilePath = Path.Combine("Maps", "GbxTools", "TurboConverter", fileName);
+
+        return gbxMap;
     }
 }

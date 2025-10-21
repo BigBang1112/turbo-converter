@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TurboConverter/TurboConverter.csproj" />
+  <Project Path="TurboConverterCLI/TurboConverterCLI.csproj" />
+</Solution>

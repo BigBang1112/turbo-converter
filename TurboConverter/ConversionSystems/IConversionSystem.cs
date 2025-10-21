@@ -1,6 +1,6 @@
 ﻿namespace TurboConverter.ConversionSystems;
 
-interface IConversionSystem
+internal interface IConversionSystem
 {
     void Run();
 }

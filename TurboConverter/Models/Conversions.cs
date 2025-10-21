@@ -8,5 +8,5 @@ public sealed class Conversions
     public string? DefaultAuthor { get; set; }
     public int DecoBaseHeight { get; set; }
     public ItemModel? WarpItemModel { get; set; }
-    public Dictionary<string, BlockConversion[]?>? Blocks { get; set; } = new();
+    public Dictionary<string, BlockConversion[]?>? Blocks { get; set; } = [];
 }

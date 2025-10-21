@@ -2,7 +2,7 @@
 
 namespace TurboConverter;
 
-static partial class RegexUtils
+internal static partial class RegexUtils
 {
     [GeneratedRegex(@"Skins\\(.+)CE\\")]
     private static partial Regex SkinsCEMatch();

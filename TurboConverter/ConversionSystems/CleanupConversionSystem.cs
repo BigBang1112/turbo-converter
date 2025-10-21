@@ -2,7 +2,7 @@
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class CleanupConversionSystem : IConversionSystem
+internal sealed class CleanupConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
 
@@ -14,13 +14,13 @@ sealed class CleanupConversionSystem : IConversionSystem
     public void Run()
     {
         // Remove password chunk
-        map.RemoveChunk<CGameCtnChallenge.Chunk03043029>();
+        map.Chunks.Remove<CGameCtnChallenge.Chunk03043029>();
 
         // Remove lightmap chunk
-        map.RemoveChunk<CGameCtnChallenge.Chunk0304303D>();
+        map.Chunks.Remove<CGameCtnChallenge.Chunk0304303D>();
 
         // Sometimes they might be placed on removed blocks, needs analysis to keep them
-        map.RemoveChunk<CGameCtnChallenge.Chunk0304303E>();
+        map.Chunks.Remove<CGameCtnChallenge.Chunk0304303E>();
 
         // Some older maps have Trackmania\RaceCE MapType
         if (map.ChallengeParameters is not null)

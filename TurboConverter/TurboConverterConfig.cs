@@ -1,8 +1,8 @@
-using GbxToolAPI;
+using GBX.NET.Tool;
 
 namespace TurboConverter;
 
 public class TurboConverterConfig : Config
 {
-    public bool SampleConfigBool { get; set; } = false;
+
 }

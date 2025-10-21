@@ -3,7 +3,7 @@ using GBX.NET.Engines.Game;
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class MapUidConversionSystem : IConversionSystem
+internal sealed class MapUidConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
 

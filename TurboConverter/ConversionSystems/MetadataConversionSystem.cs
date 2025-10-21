@@ -5,11 +5,11 @@ using static GBX.NET.Engines.Script.CScriptTraitsMetadata;
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class MetadataConversionSystem : IConversionSystem
+internal sealed class MetadataConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
     private readonly OriginalMapInfo originalMapInfo;
-    private readonly IList<CScriptTraitsMetadata.ScriptStructTrait> convertedBlocks;
+    private readonly IList<ScriptStructTrait> convertedBlocks;
 
     public MetadataConversionSystem(CGameCtnChallenge map, OriginalMapInfo originalMapInfo, IList<CScriptTraitsMetadata.ScriptStructTrait> convertedBlocks)
     {
@@ -22,7 +22,8 @@ sealed class MetadataConversionSystem : IConversionSystem
     {
         _ = map.ScriptMetadata ?? throw new Exception("ScriptMetadata is null");
 
-        map.ScriptMetadata.CreateChunk<CScriptTraitsMetadata.Chunk11002000>().Version = 5;
+        var chunk = map.ScriptMetadata.Chunks.Get<Chunk11002000>() ?? throw new Exception("ScriptMetadata.Chunk11002000 is not available");
+        chunk.Version = 5;
         
         var assemblyName = typeof(TurboConverterTool).Assembly.GetName();
 

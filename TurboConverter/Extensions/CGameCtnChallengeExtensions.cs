@@ -2,7 +2,7 @@
 
 namespace TurboConverter.Extensions;
 
-static class CGameCtnChallengeExtensions
+internal static class CGameCtnChallengeExtensions
 {
     public static void RemoveBlockAt(this CGameCtnChallenge map, int blockIndex)
     {

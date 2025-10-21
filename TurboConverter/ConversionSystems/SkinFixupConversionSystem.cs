@@ -2,7 +2,7 @@
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class SkinFixupConversionSystem : IConversionSystem
+internal sealed class SkinFixupConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
     private readonly HashSet<CGameCtnBlockSkin> modifiedSkins = new();

@@ -4,7 +4,7 @@ using TurboConverter.Models;
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class WarpConversionSystem : IConversionSystem
+internal sealed class WarpConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
     private readonly Conversions conversions;
@@ -20,7 +20,7 @@ sealed class WarpConversionSystem : IConversionSystem
         if (conversions.WarpItemModel is not null)
         {
             var ident = new Ident(conversions.WarpItemModel.Id ?? throw new Exception("WarpItemModel ID is required"),
-                conversions.WarpItemModel.Collection ?? conversions.DefaultCollection ?? map.Collection,
+                conversions.WarpItemModel.Collection ?? conversions.DefaultCollection ?? map.Collection ?? throw new Exception("Map collection is null."),
                 conversions.WarpItemModel.Author ?? conversions.DefaultAuthor ?? "");
 
             map.PlaceAnchoredObject(ident, new(), new());

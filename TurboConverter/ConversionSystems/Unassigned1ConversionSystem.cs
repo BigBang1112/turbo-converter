@@ -3,7 +3,7 @@ using TurboConverter.Extensions;
 
 namespace TurboConverter.ConversionSystems;
 
-sealed class Unassigned1ConversionSystem : IConversionSystem
+internal sealed class Unassigned1ConversionSystem : IConversionSystem
 {
     private readonly CGameCtnChallenge map;
 
