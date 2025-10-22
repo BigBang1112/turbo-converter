@@ -169,6 +169,9 @@ Blocks:
   RoadMainStraight:
   - Name: RoadMain
     Variant: 3
+  RoadMainCorner:
+  - Name: RoadMain
+    Variant: 2
   RoadRaceCheckpoint:
   - Converter: Waypoint
   RoadRaceCheckpointMirror:

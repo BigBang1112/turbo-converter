@@ -102,6 +102,7 @@ Blocks:
   - Converter: RoadPaint
   RoadThemeParkFlip-CheckpointScreen:
   - Converter: CheckpointScreen
+    HeightOffset: 1
   RoadThemeParkWall-RoadPaintDown:
   - Name: RoadThemeParkWall-StraightUp
     Converter: RoadPaint
@@ -130,6 +131,9 @@ Blocks:
   - Name: RoadThemeParkToRoadMainSimple.Block.Gbx_CustomBlock
     ItemModel:
       Id: CE\RoadThemeParkToRoadMain.Item.Gbx
+  RoadThemeParkStraight:
+  - Name: RoadThemePark
+    Variant: 3
   HighWaySlope2CheckpointRightScreen:
   - Converter: CheckpointScreen
   HighWaySlope2CheckpointLeftScreen:
@@ -138,6 +142,9 @@ Blocks:
   - Converter: CheckpointScreen
   HighWaySlope2CheckpointUpScreen:
   - Converter: CheckpointScreen
+  HighWaySlope2-FW:
+  - Name: HighWaySlope2-FW
+    DirOffset: 2
   HighWayRoadPaintDown:
   - Name: HighWaySlope2Straight
     Converter: RoadPaint
@@ -182,3 +189,10 @@ Blocks:
   RoadFreeWayStraight:
   - Name: FreeWay
     Variant: 3
+  RoadMainSmallStraight:
+  - Name: RoadMainSmall
+    Variant: 3
+  RoadThemeParkLoopOutStart:
+  - Name: RoadThemeParkLoopOutEnd
+  RoadThemeParkLoopOutEnd:
+  - Name: RoadThemeParkLoopOutStart

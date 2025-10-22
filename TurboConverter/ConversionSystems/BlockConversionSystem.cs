@@ -132,6 +132,7 @@ internal sealed class BlockConversionSystem : IConversionSystem
         }
 
         block.Direction = (Direction)(((int)block.Direction + conversion.DirOffset) % 4);
+        block.Coord += (0, conversion.HeightOffset, 0);
 
         if (conversion.Variant.HasValue)
         {
