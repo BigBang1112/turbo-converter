@@ -145,6 +145,21 @@ internal sealed class BlockConversionSystem : IConversionSystem
             ApplyBlockConversion(block, blockIndex, conversion.SubVariants[block.SubVariant], out removeBlock);
         }
 
+        if (conversion.AdditionalBlocks is not null)
+        {
+            foreach (var additionalBlock in conversion.AdditionalBlocks)
+            {
+                var blockName = additionalBlock.Name ?? conversion.Name;
+
+                if (string.IsNullOrEmpty(blockName))
+                {
+                    continue;
+                }
+
+                map.PlaceBlock(blockName, block.Coord + (0, additionalBlock.OffsetY, 0), block.Direction, additionalBlock.IsGround ?? block.IsGround);
+            }
+        }
+
         if (!string.IsNullOrEmpty(conversion.ConverterAfter))
         {
             ApplyConverter(block, conversion.ConverterAfter, conversion);

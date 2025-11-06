@@ -11,12 +11,6 @@ BlockConverters:
     Name:
       Contains: Checkpoint
       Remove: Screen
-    #ConverterAfter: Waypoint
-  CheckpointScreenCommon:
-    Name:
-      Contains: Checkpoint
-      Remove: Screen
-    #ConverterAfter: WaypointCommon
   LandingRamp:
     Name:
       Match: (.*)LandingRamp
@@ -38,4 +32,9 @@ BlockConverters:
     Name:
       Set: '{1}\{0}CE.Block.Gbx_CustomBlock'
     ItemModel:
-      Id: CE\Waypoint\{1}_{0}.Item.Gbx  
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
+  WaypointDeco:
+    Name:
+      Set: '{0}'
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx

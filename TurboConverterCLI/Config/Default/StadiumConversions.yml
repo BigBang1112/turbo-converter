@@ -143,3 +143,47 @@ Blocks:
     Converter: RoadPaint
   StadiumRoadMainStartLine:
   - Converter: WaypointCommon
+  StadiumRoadMainStartFinishLine:
+  - Converter: WaypointCommon
+  StadiumPlatformMultilap:
+  - Converter: WaypointCommon
+  StadiumRoadDirtHighMultiLap:
+  - Converter: WaypointCommon
+  StadiumRoadDirtMultiLap:
+  - Converter: WaypointCommon
+  StadiumTrenchMultiLap:
+  - Converter: WaypointDeco
+  StadiumCheckpointRingV:
+  - Converter: WaypointDeco
+  StadiumGrassCheckpoint:
+  - Converter: WaypointDeco
+  StadiumPlatformCheckpoint:
+  - Converter: WaypointDeco
+  StadiumPlatformDownCheckpoint:
+  - Converter: WaypointDeco
+  StadiumPlatformLeftCheckpoint:
+  - Converter: WaypointDeco
+  StadiumPlatformRightCheckpoint:
+  - Converter: WaypointDeco
+  StadiumPlatformUpCheckpoint:
+  - Converter: WaypointDeco
+  StadiumRoadDirtCheckpoint:
+  - Converter: WaypointDeco
+  StadiumRoadDirtHighCheckpoint:
+  - Converter: WaypointDeco
+  StadiumRoadDirtHighTiltCheckpointLeft:
+  - Converter: WaypointDeco
+  StadiumRoadDirtHighTiltCheckpointRight:
+  - Converter: WaypointDeco
+  StadiumRoadMainCheckpoint:
+  - Converter: WaypointDeco
+  StadiumRoadMainCheckpointDown:
+  - Converter: WaypointDeco
+  StadiumRoadMainCheckpointLeft:
+  - Converter: WaypointDeco
+  StadiumRoadMainCheckpointRight:
+  - Converter: WaypointDeco
+  StadiumRoadMainCheckpointUp:
+  - Converter: WaypointDeco
+  StadiumTrenchCheckpoint:
+  - Converter: WaypointDeco

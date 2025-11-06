@@ -172,9 +172,6 @@ Blocks:
   - Name: TunnelRoad4WayToHighWayLeft
   TunnelRoad4WayToHighwayRight:
   - Name: TunnelRoad4WayToHighWayRight
-  Road4WayStart:
-  - ItemModel:
-      Id: CE\Road4WayStart_{2}.Item.Gbx
   DecoCastleEntryCheckPointInScreen:
   - Converter: CheckpointScreen
   TunnelRoad4WayCross:
@@ -184,3 +181,27 @@ Blocks:
   RoadDirtStraight:
   - Name: RoadDirt
     Variant: 3
+  Road2WayStart:
+  - Converter: Waypoint
+  Road4WayStart:
+  - Converter: Waypoint
+  RoadForestLargeStart:
+  - Converter: WaypointCommon
+  ArenaMultilapParkRoofBase:
+  - Converter: WaypointCommon
+  DecoCastleCenterMultilapLake:
+  - Converter: WaypointCommon
+  Road2WayMultilap:
+  - Converter: Waypoint
+  Road4WayMultiLap:
+  - Converter: Waypoint
+  RoadForestLargeMultilap:
+  - Converter: WaypointCommon
+  Road2WayFinish:
+  - Converter: Waypoint
+  Road4WayFinish:
+  - Converter: Waypoint
+  RoadForestLargeFinish:
+  - Converter: WaypointCommon
+  TunnelRoad4wayFinish:
+  - Converter: WaypointCommon

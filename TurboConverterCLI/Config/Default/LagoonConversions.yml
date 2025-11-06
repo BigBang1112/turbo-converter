@@ -196,3 +196,34 @@ Blocks:
   - Name: RoadThemeParkLoopOutEnd
   RoadThemeParkLoopOutEnd:
   - Name: RoadThemeParkLoopOutStart
+  ArenaStart:
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
+  FreeWayStart:
+  - Converter: WaypointCommon
+  RoadMainStart:
+  - Converter: Waypoint
+  RoadThemeParkStart:
+  - Converter: Waypoint
+  ArenaMultilap:
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
+  FreeWayMultilap:
+  - Converter: WaypointCommon
+  RoadMainMultilap:
+  - Converter: Waypoint
+  RoadThemeParkMultilap:
+  - Converter: WaypointCommon
+  ArenaFinish:
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
+  FreeWayFinish:
+  - Converter: WaypointCommon
+  RoadMainFinish:
+  - Converter: Waypoint
+  RoadThemeParkFinish:
+  - Converter: WaypointCommon  
+  RoadThemeParkFlipFinish:
+  - Converter: WaypointCommon
+  RoadTunnelFinish:
+  - Converter: WaypointCommon  

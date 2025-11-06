@@ -15,4 +15,5 @@ public sealed class BlockConversion
     public BlockConversion[]? SubVariants { get; set; }
     public Vec2? Size { get; set; }
     public Dictionary<string, BlockConversion[]>? VariantOf { get; set; }
+    public BlockModel[]? AdditionalBlocks { get; set; }
 }

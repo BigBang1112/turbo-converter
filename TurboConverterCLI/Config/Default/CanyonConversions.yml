@@ -52,40 +52,34 @@ Blocks:
   - Converter: RoadPaint
   RoadHill2RoadPaintMirror:
   - Converter: RoadPaint
-  RoadHill2CheckpointRightScreen:
-  - Converter: CheckpointScreen
-  RoadHill2CheckpointLeftScreen:
-  - Converter: CheckpointScreen
-  Cliff12RoadMedLandingRamp:
-  - Converter: LandingRamp
   Cliff12RoadMedRoadPaint:
   - Converter: RoadPaint
   Cliff12RoadMedRoadPaintMirror:
   - Converter: RoadPaint
-  Cliff12RoadMedCheckpointRightScreen:
-  - Converter: CheckpointScreen
-  Cliff12RoadMedCheckpointLeftScreen:
-  - Converter: CheckpointScreen
   Cliff12RoadHighLandingRamp:
-  - Converter: LandingRamp
+  - Name: '{1}\Cliff12RoadHighStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\LandingRamp\{1}_{0}.Item.Gbx
+  Cliff12RoadMedLandingRamp:
+  - Name: '{1}\Cliff12RoadMedStraightHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\LandingRamp\{1}_{0}.Item.Gbx
   Cliff12RoadHighRoadPaint:
   - Converter: RoadPaint
   Cliff12RoadHighRoadPaintMirror:
   - Converter: RoadPaint
-  Cliff12RoadHighCheckpointRightScreen:
-  - Converter: CheckpointScreen
-  Cliff12RoadHighCheckpointLeftScreen:
-  - Converter: CheckpointScreen
   ArenaBorderBankRoadPaintRight:
   - Name: ArenaBorderStraightPillarBank
   ArenaBorderBankRoadPaintLeft:
   - Name: ArenaBorderStraightPillarBank
-  ArenaWallRideCheckpointScreen_V:
-  - Converter: CheckpointScreen
-  ArenaWallRideCheckpointScreen_H:
-  - Converter: CheckpointScreen
-  ArenaWallRide2RoadPaintRight: # two ArenaWallRideStraight
-  ArenaWallRide2RoadPaintLeft: # two ArenaWallRideStraight
+  ArenaWallRide2RoadPaintRight:
+  - Name: ArenaWallRideStraight
+    AdditionalBlocks:
+    - OffsetY: 1
+  ArenaWallRide2RoadPaintLeft:
+  - Name: ArenaWallRideStraight
+    AdditionalBlocks:
+    - OffsetY: 1
   ArenaSlopeRoadPaintRight:
   - Converter: RoadPaint
   ArenaSlopeRoadPaintLeft:
@@ -94,23 +88,6 @@ Blocks:
   - Converter: RoadPaint
   ArenaSlopeRoadPaintDown:
   - Converter: RoadPaint
-  OffRoadCheckpointScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointSlopeStraightRightAirScreen:
-  - Converter: CheckpointScreen
-    ConverterAfter: WaypointCommon
-  ArenaCheckpointSlopeStraightLeftAirScreen:
-  - Converter: CheckpointScreen
-    ConverterAfter: WaypointCommon
-  ArenaCheckpointSlopeStraightDownScreen:
-  - Converter: CheckpointScreen
-    ConverterAfter: WaypointCommon
-  ArenaCheckpointSlopeStraightUpScreen:
-  - Converter: CheckpointScreen
-    ConverterAfter: WaypointCommon
-  ArenaCheckpointBaseScreen:
-  - Converter: CheckpointScreen
-    ConverterAfter: WaypointCommon
   ArenaRoadPaint:
   - Name: ArenaSimpleBase
   ArenaTunnelRoadPaint:
@@ -124,12 +101,6 @@ Blocks:
   RoadMainRoadPaint:
   - Name: RoadMain
     Variant: 3
-  RoadMainCheckpointScreen:
-  - Converter: CheckpointScreen
-  RoadRaceTiltCheckpointScreen:
-  - Converter: CheckpointScreen
-  RoadRaceTiltCheckpointScreenMirror:
-  - Converter: CheckpointScreen
   RoadRaceTiltRoadPaint:
   - Converter: RoadPaint
   RoadRaceTiltRoadPaintMirror:
@@ -142,24 +113,6 @@ Blocks:
   - Converter: RoadPaintStaight
   RoadRaceSlopeRoadPaintDownMirror:
   - Converter: RoadPaintStaight
-  RoadRaceSlopeCheckpointDownScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
-  RoadRaceSlopeCheckpointDownScreenMirror:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
-  RoadRaceSlopeCheckpointUpScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
-  RoadRaceSlopeCheckpointUpScreenMirror:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
-  RoadRaceCheckpointScreen:
-  - Converter: CheckpointScreen
-    ConverterAfter: Waypoint
-  RoadRaceCheckpointScreenMirror:
-  - Converter: CheckpointScreen
-    ConverterAfter: Waypoint
   RoadRaceLandingRamp:
   - Converter: LandingRamp
   RoadRaceRoadPaint:
@@ -172,62 +125,191 @@ Blocks:
   RoadMainCorner:
   - Name: RoadMain
     Variant: 2
+  ArenaCheckpointBase:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightDown:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightLeftAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightRightAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointSlopeStraightUp:
+  - Converter: WaypointCommon
+  ArenaTunnelCheckpoint:
+  - Converter: WaypointCommon
+  ArenaTunnelStraightOpen2SidesCheckpoint:
+  - Converter: WaypointCommon
+  ArenaWallRideCheckpoint_H:
+  - Converter: WaypointCommon
+  ArenaWallRideCheckpoint_V:
+  - Converter: WaypointCommon
+  Cliff12RoadHighCheckpointLeft:
+  - Converter: WaypointCommon
+  Cliff12RoadHighCheckpointRight:
+  - Converter: WaypointCommon
+  Cliff12RoadMedCheckpointLeft:
+  - Converter: WaypointCommon
+  Cliff12RoadMedCheckpointRight:
+  - Converter: WaypointCommon
+  OffRoadCheckpoint:
+  - Converter: WaypointCommon
+  RoadCaveDoubleCheckpoint:
+  - Converter: WaypointCommon
+  RoadCaveDoubleCheckpointCenter:
+  - Converter: WaypointCommon
+  RoadCaveDoubleCheckpointLeft:
+  - Converter: WaypointCommon
+  RoadCaveDoubleCheckpointRight:
+  - Converter: WaypointCommon
+  RoadCaveCheckpoint:
+  - Converter: WaypointCommon
+  RoadHill2CheckpointLeft:
+  - Converter: WaypointCommon
+  RoadHill2CheckpointRight:
+  - Converter: WaypointCommon
+  RoadMainCheckpoint:
+  - Converter: Waypoint
   RoadRaceCheckpoint:
   - Converter: Waypoint
   RoadRaceCheckpointMirror:
+  - Converter: Waypoint
+  RoadRaceSlopeCheckpointDown:
+  - Converter: WaypointCommon
+  RoadRaceSlopeCheckpointDownMirror:
+  - Converter: WaypointCommon
+  RoadRaceSlopeCheckpointUp:
+  - Converter: WaypointCommon
+  RoadRaceSlopeCheckpointUpMirror:
+  - Converter: WaypointCommon
+  RoadRaceTiltCheckpoint:
+  - Converter: WaypointCommon
+  RoadRaceTiltCheckpointMirror:
+  - Converter: WaypointCommon
+  ArenaCheckpointBaseScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointSlopeStraightDownScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointSlopeStraightLeftAirScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointSlopeStraightRightAirScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointSlopeStraightUpScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaWallRideCheckpointScreen_H:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaWallRideCheckpointScreen_V:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  Cliff12RoadHighCheckpointLeftScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  Cliff12RoadHighCheckpointRightScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  Cliff12RoadMedCheckpointLeftScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  Cliff12RoadMedCheckpointRightScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  OffRoadCheckpointScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadHill2CheckpointLeftScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadHill2CheckpointRightScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadMainCheckpointScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
+  RoadRaceCheckpointScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
+  RoadRaceCheckpointScreenMirror:
+  - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
+  RoadRaceSlopeCheckpointDownScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadRaceSlopeCheckpointDownScreenMirror:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadRaceSlopeCheckpointUpScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadRaceSlopeCheckpointUpScreenMirror:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadRaceTiltCheckpointScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  RoadRaceTiltCheckpointScreenMirror:
+  - Converter: CheckpointScreen
+    ConverterAfter: WaypointCommon
+  ArenaStart:
+  - Converter: Waypoint
+  RoadMainStart:
   - Converter: Waypoint
   RoadRaceStart:
   - Converter: Waypoint
   RoadRaceStartMirror:
   - Converter: Waypoint
+  ArenaFinish:
+  - Converter: WaypointCommon
+  RoadCaveDoubleFinish:
+  - Converter: WaypointCommon
+  RoadCaveFinish:
+  - Converter: WaypointCommon
+  RoadMainFinish:
+  - Converter: Waypoint
   RoadRaceFinish:
   - Converter: Waypoint
   RoadRaceFinishMirror:
+  - Converter: Waypoint
+  ArenaMultilap:
+  - Converter: WaypointCommon
+  RoadMainMultilap:
   - Converter: Waypoint
   RoadRaceMultilap:
   - Converter: Waypoint
   RoadRaceMultilapMirror:
   - Converter: Waypoint
-  RoadRaceSlopeCheckpointUp:
-  - Converter: Waypoint
-  RoadRaceSlopeCheckpointUpMirror:
-  - Converter: Waypoint
-  RoadRaceSlopeCheckpointDown:
-  - Converter: Waypoint
-  RoadRaceSlopeCheckpointDownMirror:
-  - Converter: Waypoint
-  ArenaCheckpointSlopeStraightRightAir:
-  - Converter: WaypointCommon
-  ArenaCheckpointSlopeStraightLeftAir:
-  - Converter: WaypointCommon
-  ArenaCheckpointSlopeStraightDown:
-  - Converter: WaypointCommon
-  ArenaCheckpointSlopeStraightUp:
-  - Converter: WaypointCommon
-  ArenaCheckpointBase:
-  - Converter: WaypointCommon
   RoadRaceTurbo:
   - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 3
     ItemModel:
       Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceTurboMirror:
   - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 1
     ItemModel:
       Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceTurbo2:
   - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 3
     ItemModel:
       Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceTurbo2Mirror:
   - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 1
     ItemModel:
       Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceFW:
   - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 3
     ItemModel:
       Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceFWMirror:
   - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+    DirOffset: 1
     ItemModel:
       Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   ArenaTurbo1:
