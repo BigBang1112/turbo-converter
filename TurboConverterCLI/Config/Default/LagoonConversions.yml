@@ -204,7 +204,7 @@ Blocks:
   RoadMainStart:
   - Converter: Waypoint
   RoadThemeParkStart:
-  - Converter: Waypoint
+  - Converter: WaypointCommon
   ArenaMultilap:
   - ItemModel:
       Id: CE\Waypoint\{1}_{0}.Item.Gbx
