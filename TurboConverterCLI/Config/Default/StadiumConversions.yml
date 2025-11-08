@@ -155,35 +155,54 @@ Blocks:
   - Converter: WaypointDeco
   StadiumCheckpointRingV:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumGrassCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumPlatformCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumPlatformDownCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumPlatformLeftCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumPlatformRightCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumPlatformUpCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadDirtCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadDirtHighCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadDirtHighTiltCheckpointLeft:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadDirtHighTiltCheckpointRight:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainCheckpointDown:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainCheckpointLeft:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainCheckpointRight:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainCheckpointUp:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumTrenchCheckpoint:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
+  StadiumRoadMainFinishLine:
+  - Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1C.webm

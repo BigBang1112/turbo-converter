@@ -165,6 +165,23 @@ internal sealed class BlockConversionSystem : IConversionSystem
             ApplyConverter(block, conversion.ConverterAfter, conversion);
             removeBlock = false;
         }
+
+        if (!string.IsNullOrWhiteSpace(conversion.Skin))
+        {
+            if (block.Skin is null)
+            {
+                block.Skin = new CGameCtnBlockSkin();
+                block.Skin.CreateChunk<CGameCtnBlockSkin.Chunk03059002>();
+                block.Author = "Nadeo";
+            }
+
+            block.Skin.PackDesc = new()
+            {
+                FilePath = string.Format(conversion.Skin, GetBlockStringArgs(block))
+            };
+
+            removeBlock = false;
+        }
     }
 
     private void ApplyConverter(CGameCtnBlock block, string converterName, BlockConversion conversion)
