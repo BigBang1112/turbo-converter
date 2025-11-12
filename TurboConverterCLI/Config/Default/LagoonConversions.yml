@@ -40,8 +40,9 @@ Blocks:
       Id: CE\CE_CranePlatform_{1}_{2}.Item.Gbx
   CE_PodiumPlatformCrane:
   - Size: [2, 1]
-    ItemModel:
-      Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
+    ItemModels:
+    - Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
+    - Id: CE\CE_CranePodium\{3}_{1}.Item.Gbx
   BeachCheckPointRightScreen:
   - Converter: CheckpointScreen
   BeachCheckPointLeftScreen:

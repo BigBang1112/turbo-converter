@@ -11,6 +11,16 @@ BlockConverters:
     Name:
       Contains: Checkpoint
       Remove: Screen
+    ItemModels:
+    - Id: CE\CheckpointScreen\{1}_{0}_{2}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}_{2}\{3}.Item.Gbx
+  CheckpointScreenCommon:
+    Name:
+      Contains: Checkpoint
+      Remove: Screen
+    ItemModels:
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   LandingRamp:
     Name:
       Match: (.*)LandingRamp

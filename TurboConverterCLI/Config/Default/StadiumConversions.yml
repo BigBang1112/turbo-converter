@@ -32,8 +32,9 @@ Blocks:
       Id: CE\CE_CranePlatform_{1}_{2}.Item.Gbx
   CE_PodiumPlatformCrane:
   - Size: [2, 1]
-    ItemModel:
-      Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
+    ItemModels:
+    - Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
+    - Id: CE\CE_CranePodium\{3}_{1}.Item.Gbx
   CE_Crane:
   - Size: [2, 1]
     ItemModel:
@@ -153,6 +154,7 @@ Blocks:
   - Converter: WaypointCommon
   StadiumTrenchMultiLap:
   - Converter: WaypointDeco
+    Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1D.webm
   StadiumCheckpointRingV:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
@@ -180,10 +182,10 @@ Blocks:
   StadiumRoadDirtHighCheckpoint:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
-  StadiumRoadDirtHighTiltCheckpointLeft:
+  StadiumRoadDirtHillTiltCheckpointLeft:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
-  StadiumRoadDirtHighTiltCheckpointRight:
+  StadiumRoadDirtHillTiltCheckpointRight:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainCheckpoint:

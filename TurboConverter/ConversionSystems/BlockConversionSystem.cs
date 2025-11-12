@@ -213,6 +213,14 @@ internal sealed class BlockConversionSystem : IConversionSystem
             PlaceAnchoredObject(block, converter.ItemModel, conversion.Size);
         }
 
+        if (converter.ItemModels is not null)
+        {
+            foreach (var itemModel in converter.ItemModels)
+            {
+                PlaceAnchoredObject(block, itemModel, conversion.Size);
+            }
+        }
+
         if (converter.Name is not null)
         {
             block.Name = string.Format(converter.Name.Apply(block.Name, conversion.Converter), GetBlockStringArgs(block));

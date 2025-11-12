@@ -37,8 +37,9 @@ Blocks:
   - ItemModel:
       Id: CE\CE_CranePlatform_{1}.Item.Gbx
   CE_PodiumPlatformCrane:
-  - ItemModel:
-      Id: CE\CE_CranePodium_{1}.Item.Gbx
+  - ItemModels:
+    - Id: CE\CE_CranePodium_{1}.Item.Gbx
+    - Id: CE\CE_CranePodium\{3}_{1}.Item.Gbx
   OffRoadLandingRamp:
   - ItemModel:
       Id: CE\LandingRamp\{1}_OffRoadLandingRamp.Item.Gbx
@@ -186,46 +187,46 @@ Blocks:
   RoadRaceTiltCheckpointMirror:
   - Converter: WaypointCommon
   ArenaCheckpointBaseScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightDownScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightLeftAirScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightRightAirScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaCheckpointSlopeStraightUpScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaWallRideCheckpointScreen_H:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaWallRideCheckpointScreen_V:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Cliff12RoadHighCheckpointLeftScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Cliff12RoadHighCheckpointRightScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Cliff12RoadMedCheckpointLeftScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Cliff12RoadMedCheckpointRightScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   OffRoadCheckpointScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadHill2CheckpointLeftScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadHill2CheckpointRightScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadMainCheckpointScreen:
   - Converter: CheckpointScreen
@@ -237,22 +238,22 @@ Blocks:
   - Converter: CheckpointScreen
     ConverterAfter: Waypoint
   RoadRaceSlopeCheckpointDownScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadRaceSlopeCheckpointDownScreenMirror:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadRaceSlopeCheckpointUpScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadRaceSlopeCheckpointUpScreenMirror:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadRaceTiltCheckpointScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadRaceTiltCheckpointScreenMirror:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaStart:
   - Converter: Waypoint
