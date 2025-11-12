@@ -46,8 +46,6 @@ Blocks:
   OffRoadLandingRamp:
   - ItemModel:
       Id: CE\LandingRamp\{1}_OffRoadLandingRamp.Item.Gbx
-  OffRoadCheckpointScreen:
-  - Converter: CheckpointScreen
   ArenaLoopRoadPaintRight:
   - Name: ArenaParkRoofLoopStraight2
     Converter: RoadPaint
@@ -60,22 +58,6 @@ Blocks:
   ArenaParkRoadPaint:
   - Name: ArenaParkBase
   - Converter: RoadPaint
-  ArenaCheckpointParkRoofLoopStraight4HAirScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointParkRoofLoopStraight2VAirScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointParkRoofSlopeRightScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointParkRoofSlopeLeftScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointParkRoofSlopeStraightDownScreen:
-  - Name: ArenaCheckpointParkRoofSlopeStraightDownAir
-    Converter: CheckpointScreen
-  ArenaCheckpointParkRoofSlopeStraightUpScreen:
-  - Name: ArenaCheckpointParkRoofSlopeStraightUpAir
-    Converter: CheckpointScreen
-  ArenaCheckpointParkRoofBaseAirScreen:
-  - Converter: CheckpointScreen
   ArenaParkRoofRoadPaint:
   - Name: ArenaParkRoofBase
     Converter: RoadPaint
@@ -100,37 +82,18 @@ Blocks:
   - Converter: RoadPaint
   TunnelRoad4WayRoadPaint:
   - Name: TunnelRoad4wayStraight # nandeo
-  RoadCliffSlopeUBottomCheckPointLeftScreen:
-  - Converter: CheckpointScreen
-  RoadCliffSlopeUBottomCheckPointRightScreen:
-  - Converter: CheckpointScreen
-  RoadCliffSlopeUTopCheckPointLeftScreen:
-  - Converter: CheckpointScreen
-  RoadCliffSlopeUTopCheckPointRightScreen:
-  - Converter: CheckpointScreen
   RoadCliffSlopeUBottomLandingRamp:
   - Converter: LandingRamp
   RoadCliffSlopeUBottomLandingRampMirror:
   - Converter: LandingRamp
   # RoadForestLargeStartLoop:
-  RoadForestLargeCheckpointScreen:
-  - Converter: CheckpointScreen
-  RoadDirtCheckpointScreen:
-  - Converter: CheckpointScreen
-  Road4WayCheckPointUpScreen:
-  - Name: Road4WayCheckpointUp # lowercase ok?
-    Converter: CheckpointScreen
-  Road4WayCheckPointDownScreen:
-  - Name: Road4WayCheckpointDown # lowercase ok?
-    Converter: CheckpointScreen
   Road4WayRoadPaintSlopeDown:
   - Name: Road4WaySlopeStraight
     Converter: RoadPaint
   Road4WayRoadPaintSlopeUp:
   - Name: Road4WaySlopeStraight
     Converter: RoadPaint
-  Road4WayCheckpointScreen:
-  - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
   Road4WayLandingRamp:
   - Name: Road4Way
     Variant: 3
@@ -139,20 +102,12 @@ Blocks:
   - Name: Road4Way
     Variant: 3
     Converter: RoadPaint
-  Road2WayCheckpointDownScreen:
-  - Name: Road2WayCheckpointSlopeDown
-    Converter: CheckpointScreen
-  Road2WayCheckpointUpScreen:
-  - Name: Road2WayCheckpointSlopeUp
-    Converter: CheckpointScreen
   Road2WayRoadPaintSlopeDown:
   - Name: Road2WaySlopeStraight
     Converter: RoadPaint
   Road2WayRoadPaintSlopeUp:
   - Name: Road2WaySlopeStraight
     Converter: RoadPaint
-  Road2WayCheckpointScreen:
-  - Converter: CheckpointScreen
   Road2WayLandingRamp:
   - Name: Road2Way
     Variant: 3
@@ -173,8 +128,6 @@ Blocks:
   - Name: TunnelRoad4WayToHighWayLeft
   TunnelRoad4WayToHighwayRight:
   - Name: TunnelRoad4WayToHighWayRight
-  DecoCastleEntryCheckPointInScreen:
-  - Converter: CheckpointScreen
   TunnelRoad4WayCross:
   - Name: TunnelRoad4wayCross
   DecoCastleCenterLakeLandingRamp:
@@ -206,3 +159,126 @@ Blocks:
   - Converter: WaypointCommon
   TunnelRoad4wayFinish:
   - Converter: WaypointCommon
+  ArenaCheckpointParkRoofBaseAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofLoopStraight2VAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofLoopStraight4HAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeLeft:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeRight:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeStraightDownAir:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeStraightUpAir:
+  - Converter: WaypointCommon
+  DecoCastleCenterCheckpointLake:
+  - Converter: WaypointCommon
+  DecoCastleEntryCheckPointIn:
+  - Converter: WaypointCommon
+  DecoCastleEntryCheckPointOut:
+  - Converter: WaypointCommon
+  DecoCastleGardenCheckpointLake:
+  - Converter: WaypointCommon
+  OffRoadCheckpoint:
+  - Converter: WaypointCommon
+  Road2WayCheckpoint:
+  - Converter: Waypoint
+  Road2WayCheckpointDown:
+  - Converter: WaypointCommon
+  Road2WayCheckpointUp:
+  - Converter: WaypointCommon
+  Road4WayCheckpoint:
+  - Converter: Waypoint
+  Road4WayCheckpointDown:
+  - Converter: WaypointCommon
+  Road4WayCheckpointUp:
+  - Converter: WaypointCommon
+  RoadCliffSlopeUBottomCheckPointLeft:
+  - Converter: WaypointCommon
+  RoadCliffSlopeUBottomCheckPointRight:
+  - Converter: WaypointCommon
+  RoadCliffSlopeUTopCheckPointLeft:
+  - Converter: WaypointCommon
+  RoadCliffSlopeUTopCheckPointRight:
+  - Converter: WaypointCommon
+  RoadDirtCheckpoint:
+  - Converter: WaypointCommon
+  RoadForestLargeCheckpoint:
+  - Converter: WaypointCommon
+  TunnelRoad4wayCheckpoint:
+  - Converter: WaypointCommon
+  TunnelRoad4WayCheckpointDown:
+  - Converter: WaypointCommon
+  TunnelRoad4WayCheckpointUp:
+  - Converter: WaypointCommon
+  ArenaCheckpointParkRoofLoopStraight4HAirScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointParkRoofLoopStraight2VAirScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeStraightDownScreen:
+  - Name: ArenaCheckpointParkRoofSlopeStraightDownAir
+    Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointParkRoofSlopeStraightUpScreen:
+  - Name: ArenaCheckpointParkRoofSlopeStraightUpAir
+    Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointParkRoofBaseAirScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  OffRoadCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadCliffSlopeUBottomCheckPointLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadCliffSlopeUBottomCheckPointRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadCliffSlopeUTopCheckPointLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadCliffSlopeUTopCheckPointRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadForestLargeCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadDirtCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  Road4WayCheckPointUpScreen:
+  - Name: Road4WayCheckpointUp # lowercase ok?
+    Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  Road4WayCheckPointDownScreen:
+  - Name: Road4WayCheckpointDown # lowercase ok?
+    Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  Road2WayCheckpointDownScreen:
+  - Name: Road2WayCheckpointSlopeDown
+    Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  Road2WayCheckpointUpScreen:
+  - Name: Road2WayCheckpointSlopeUp
+    Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  Road4WayCheckpointScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
+  Road2WayCheckpointScreen:
+  - Converter: CheckpointScreen
+    ConverterAfter: Waypoint
+  DecoCastleEntryCheckPointInScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
