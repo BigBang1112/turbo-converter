@@ -43,20 +43,6 @@ Blocks:
     ItemModels:
     - Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
     - Id: CE\CE_CranePodium\{3}_{1}.Item.Gbx
-  BeachCheckPointRightScreen:
-  - Converter: CheckpointScreen
-  BeachCheckPointLeftScreen:
-  - Converter: CheckpointScreen
-  LandHillCheckpointRightScreen:
-  - Converter: CheckpointScreen
-  LandHillCheckpointLeftScreen:
-  - Converter: CheckpointScreen
-  LandHillCheckpointDownScreen:
-  - Converter: CheckpointScreen
-  LandHillCheckpointUpScreen:
-  - Converter: CheckpointScreen
-  LandCheckpointScreen:
-  - Converter: CheckpointScreen
   RoadTunnelRoadPaintDown:
   - Converter: RoadPaint
   RoadTunnelRoadPaintUp:
@@ -85,45 +71,22 @@ Blocks:
   ArenaRoadPaint:
   - Name: ArenaBase
     Converter: RoadPaint
-  ArenaLoopCheckpointH-Screen:
-  - Converter: CheckpointScreen
-  ArenaLoopCheckpointV-Screen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointRightScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointLeftScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointDownScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointUpScreen:
-  - Converter: CheckpointScreen
-  ArenaCheckpointScreen:
-  - Converter: CheckpointScreen
   RoadThemeParkFlip-RoadPaint:
   - Converter: RoadPaint
-  RoadThemeParkFlip-CheckpointScreen:
-  - Converter: CheckpointScreen
-    HeightOffset: 1
   RoadThemeParkWall-RoadPaintDown:
   - Name: RoadThemeParkWall-StraightUp
     Converter: RoadPaint
   RoadThemeParkWall-RoadPaintUp:
   - Name: RoadThemeParkWall-StraightUp
     Converter: RoadPaint
-  RoadThemeParkWall-CheckpointUpScreen:
-  - Converter: CheckpointScreen
   RoadThemeParkWall-RoadPaintRight:
   - Converter: RoadPaint
   RoadThemeParkWall-RoadPaintLeft:
   - Converter: RoadPaint
-  RoadThemeParkWall-CheckpointScreen:
-  - Converter: CheckpointScreen
   RoadThemeParkRoadPaint:
   - Name: RoadThemePark
     Variant: 3
     Converter: RoadPaint
-  RoadThemeParkCheckpointScreen:
-  - Converter: CheckpointScreen
   ArenaToRoadThemeParkUp:
   - Name: ArenaToRoadThemeParkUpSimple.Block.Gbx_CustomBlock
     ItemModel:
@@ -135,14 +98,6 @@ Blocks:
   RoadThemeParkStraight:
   - Name: RoadThemePark
     Variant: 3
-  HighWaySlope2CheckpointRightScreen:
-  - Converter: CheckpointScreen
-  HighWaySlope2CheckpointLeftScreen:
-  - Converter: CheckpointScreen
-  HighWaySlope2CheckpointDownScreen:
-  - Converter: CheckpointScreen
-  HighWaySlope2CheckpointUpScreen:
-  - Converter: CheckpointScreen
   HighWaySlope2-FW:
   - Name: HighWaySlope2-FW
     DirOffset: 2
@@ -166,8 +121,6 @@ Blocks:
   - Name: RoadMain
     Variant: 3
     Converter: LandingRamp
-  RoadMainCheckpointScreen:
-  - Converter: CheckpointScreen
   FreeWayRoadPaint:
   - Name: FreeWay
     Variant: 3
@@ -177,10 +130,6 @@ Blocks:
     Variant: 3
     ItemModel:
       Id: CE\LandingRamp\{1}_FreeWayRampLandingRamp.Item.Gbx
-  FreeWayCheckpointScreen:
-  - Converter: CheckpointScreen
-  DecoCityCheckpointScreen:
-  - Converter: CheckpointScreen
   DecoCityCenterLandingRamp:
   - Name: DecoCityFloorBase
   DecoCityGardenRampCenter:
@@ -193,6 +142,8 @@ Blocks:
   RoadMainSmallStraight:
   - Name: RoadMainSmall
     Variant: 3
+  RoadThemeParkFlip-FreeWheeling:
+  - HeightOffset: 1
   RoadThemeParkLoopOutStart:
   - Name: RoadThemeParkLoopOutEnd
   RoadThemeParkLoopOutEnd:
@@ -227,4 +178,140 @@ Blocks:
   RoadThemeParkFlipFinish:
   - Converter: WaypointCommon
   RoadTunnelFinish:
-  - Converter: WaypointCommon  
+  - Converter: WaypointCommon
+  ArenaCheckpoint:
+  - Converter: WaypointCommon
+  ArenaCheckpointDown:
+  - Converter: WaypointCommon
+  ArenaCheckpointLeft:
+  - Converter: WaypointCommon
+  ArenaCheckpointRight:
+  - Converter: WaypointCommon
+  ArenaCheckpointUp:
+  - Converter: WaypointCommon
+  ArenaLoopCheckpointH:
+  - Converter: WaypointCommon
+  ArenaLoopCheckpointV:
+  - Converter: WaypointCommon
+  BeachCheckPointLeft:
+  - Converter: WaypointCommon
+  BeachCheckPointRight:
+  - Converter: WaypointCommon
+  DecoCityCheckpoint:
+  - Converter: WaypointCommon
+  FreeWayCheckpoint:
+  - Converter: WaypointCommon
+  HighWaySlope2CheckpointDown:
+  - Converter: WaypointCommon
+  HighWaySlope2CheckpointLeft:
+  - Converter: WaypointCommon
+  HighWaySlope2CheckpointRight:
+  - Converter: WaypointCommon
+  HighWaySlope2CheckpointUp:
+  - Converter: WaypointCommon
+  LandCheckpoint:
+  - Converter: WaypointCommon
+  LandHillCheckpointDown:
+  - Converter: WaypointCommon
+  LandHillCheckpointLeft:
+  - Converter: WaypointCommon
+  LandHillCheckpointRight:
+  - Converter: WaypointCommon
+  LandHillCheckpointUp:
+  - Converter: WaypointCommon
+  RoadMainCheckpoint:
+  - Name: Lagoon\RoadMainFreeSidewalkHole.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_{2}.Item.Gbx
+  RoadThemeParkCheckpoint:
+  - Converter: WaypointCommon
+  RoadThemeParkFlip-Checkpoint:
+  - Converter: WaypointCommon
+  RoadThemeParkWall-Checkpoint:
+  - Converter: WaypointCommon
+  RoadThemeParkWall-CheckpointUp:
+  - Converter: WaypointCommon
+  RoadTunnelCheckpoint:
+  - Converter: WaypointCommon
+  RoadTunnelCheckpointDown:
+  - Converter: WaypointCommon
+  RoadTunnelCheckpointUp:
+  - Converter: WaypointCommon
+  BeachCheckPointRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  BeachCheckPointLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  LandHillCheckpointRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  LandHillCheckpointLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  LandHillCheckpointDownScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  LandHillCheckpointUpScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  LandCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaLoopCheckpointH-Screen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaLoopCheckpointV-Screen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointDownScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointUpScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  ArenaCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadThemeParkFlip-CheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+    HeightOffset: 1
+  RoadThemeParkWall-CheckpointUpScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadThemeParkCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadThemeParkWall-CheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  HighWaySlope2CheckpointRightScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  HighWaySlope2CheckpointLeftScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  HighWaySlope2CheckpointDownScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  HighWaySlope2CheckpointUpScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  RoadMainCheckpointScreen:
+  - Name: Lagoon\RoadMainFreeSidewalkHole.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\Waypoint\{1}_RoadMainCheckpoint_{2}.Item.Gbx
+    Converter: CheckpointScreen
+  FreeWayCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
+  DecoCityCheckpointScreen:
+  - Converter: CheckpointScreenCommon
+    ConverterAfter: WaypointCommon
