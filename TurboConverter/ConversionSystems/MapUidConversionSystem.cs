@@ -1,5 +1,5 @@
-﻿using System.Text;
-using GBX.NET.Engines.Game;
+﻿using GBX.NET.Engines.Game;
+using TmEssentials;
 
 namespace TurboConverter.ConversionSystems;
 
@@ -15,6 +15,6 @@ internal sealed class MapUidConversionSystem : IConversionSystem
     public void Run()
     {
         // Generate unique map UID
-        map.MapUid = $"{Convert.ToBase64String(Encoding.ASCII.GetBytes(Guid.NewGuid().ToString()))[..10]}{map.MapUid.Substring(9, 10)}TMTURBO";
+        map.MapUid = $"{MapUtils.GenerateMapUid()[..10]}{map.MapUid.Substring(9, 10)}TMTURBO";
     }
 }
