@@ -208,3 +208,11 @@ Blocks:
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadMainFinishLine:
   - Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1C.webm
+  StadiumRoadMainFW:
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+  StadiumRoadMainFWSlope:
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+  StadiumRoadMainFWTilt:
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+  StadiumRoadDirtFreeWheeling:
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'

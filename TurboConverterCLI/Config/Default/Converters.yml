@@ -32,7 +32,16 @@ BlockConverters:
       Match: StadiumCE
       ReplaceWith: Stadium
       Safe: true
-  Tanks:
+  TankCommon:
+    Name:
+      Set: '{1}\{0}Hole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}.Item.Gbx
+  Tank:
+    Name:
+      Set: '{1}\{0}Hole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   Waypoint:
     Name:
       Set: '{1}\{0}CE.Block.Gbx_CustomBlock'

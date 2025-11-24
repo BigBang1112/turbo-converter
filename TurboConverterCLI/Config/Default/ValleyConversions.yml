@@ -93,7 +93,6 @@ Blocks:
   Road4WayRoadPaintSlopeUp:
   - Name: Road4WaySlopeStraight
     Converter: RoadPaint
-    ConverterAfter: Waypoint
   Road4WayLandingRamp:
   - Name: Road4Way
     Variant: 3
@@ -266,19 +265,51 @@ Blocks:
     Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Road2WayCheckpointDownScreen:
-  - Name: Road2WayCheckpointSlopeDown
-    Converter: CheckpointScreenCommon
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Road2WayCheckpointUpScreen:
-  - Name: Road2WayCheckpointSlopeUp
-    Converter: CheckpointScreenCommon
+  - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Road4WayCheckpointScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: Waypoint
   Road2WayCheckpointScreen:
-  - Converter: CheckpointScreen
+  - Converter: CheckpointScreenCommon
     ConverterAfter: Waypoint
   DecoCastleEntryCheckPointInScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+  Road2WayFW:
+  - Converter: Tank
+  Road2WaySlopeFW:
+  - Converter: TankCommon
+  Road4WayFW:
+  - Converter: Tank
+  Road4WaySlopeFW:
+  - Converter: TankCommon
+  RoadForestLargeFW:
+  - Converter: TankCommon
+  TunnelRoad4WayFW:
+  - Converter: TankCommon
+  TunnelRoad4WayFWUD:
+  - Converter: TankCommon
+  Road2WayTurbo:
+  - Converter: Tank
+  Road2WayTurboDown:
+  - Converter: TankCommon
+  Road2WayTurboUp:
+  - Converter: TankCommon
+  Road4WayTurbo:
+  - Converter: Tank
+  Road4WayTurboDown:
+  - Converter: TankCommon
+  Road4WayTurboUp:
+  - Converter: TankCommon
+  RoadForestLargeTurbo:
+  - Converter: TankCommon
+  TunnelRoad4WayTurbo:
+  - Converter: TankCommon
+  TunnelRoad4WayTurboDown:
+  - Converter: TankCommon
+  TunnelRoad4WayTurboUp:
+  - Converter: TankCommon

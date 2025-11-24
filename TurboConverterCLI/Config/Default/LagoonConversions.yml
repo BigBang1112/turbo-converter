@@ -98,9 +98,6 @@ Blocks:
   RoadThemeParkStraight:
   - Name: RoadThemePark
     Variant: 3
-  HighWaySlope2-FW:
-  - Name: HighWaySlope2-FW
-    DirOffset: 2
   HighWayRoadPaintDown:
   - Name: HighWaySlope2Straight
     Converter: RoadPaint
@@ -163,7 +160,9 @@ Blocks:
   FreeWayMultilap:
   - Converter: WaypointCommon
   RoadMainMultilap:
-  - Converter: Waypoint
+  - Name: Lagoon\RoadMainFreeSidewalkHole.Block.Gbx_CustomBlock
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_{2}.Item.Gbx
   RoadThemeParkMultilap:
   - Converter: WaypointCommon
   ArenaFinish:
@@ -180,9 +179,11 @@ Blocks:
   RoadTunnelFinish:
   - Converter: WaypointCommon
   ArenaCheckpoint:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaCheckpointDown:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaCheckpointLeft:
   - Converter: WaypointCommon
   ArenaCheckpointRight:
@@ -271,14 +272,18 @@ Blocks:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaCheckpointDownScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaCheckpointDown.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaCheckpointUpScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaCheckpointScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaCheckpoint.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   RoadThemeParkFlip-CheckpointScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
@@ -308,10 +313,63 @@ Blocks:
   - Name: Lagoon\RoadMainFreeSidewalkHole.Block.Gbx_CustomBlock
     ItemModel:
       Id: CE\Waypoint\{1}_RoadMainCheckpoint_{2}.Item.Gbx
-    Converter: CheckpointScreen
+    Converter: CheckpointScreenCommon
   FreeWayCheckpointScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   DecoCityCheckpointScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+  FreeWayFW:
+  - Converter: TankCommon
+  RoadMainFW:
+  - Converter: Tank
+  HighWaySlope2-FW:
+  - DirOffset: 2
+    Converter: TankCommon
+  HighWaySlope2-FWTilt:
+  - Converter: TankCommon
+  FreeWayTurbo:
+  - Converter: TankCommon
+  FreeWayTurbo2:
+  - Converter: TankCommon
+  HighWaySlope2Turbo2Down:
+  - Converter: TankCommon
+  HighWaySlope2Turbo2Left:
+  - Converter: TankCommon
+  HighWaySlope2Turbo2Right:
+  - Converter: TankCommon
+  HighWaySlope2Turbo2Up:
+  - Converter: TankCommon
+  HighWaySlope2TurboDown:
+  - Converter: TankCommon
+  HighWaySlope2TurboLeft:
+  - Converter: TankCommon
+  HighWaySlope2TurboRight:
+  - Converter: TankCommon
+  HighWaySlope2TurboUp:
+  - Converter: TankCommon
+  RoadMainTurbo:
+  - Converter: Tank
+  RoadMainTurbo2:
+  - Converter: Tank
+  RoadThemeParkFlip-Turbo:
+  - Converter: TankCommon
+  RoadThemeParkFlip-Turbo2:
+  - Converter: TankCommon
+  RoadThemeParkTurbo:
+  - Converter: TankCommon
+  RoadThemeParkTurbo2:
+  - Converter: TankCommon
+  RoadTunnelTurbo:
+  - Converter: TankCommon
+  RoadTunnelTurbo2:
+  - Converter: TankCommon
+  RoadTunnelTurbo2Down:
+  - Converter: TankCommon
+  RoadTunnelTurbo2Up:
+  - Converter: TankCommon
+  RoadTunnelTurboDown:
+  - Converter: TankCommon
+  RoadTunnelTurboUp:
+  - Converter: TankCommon

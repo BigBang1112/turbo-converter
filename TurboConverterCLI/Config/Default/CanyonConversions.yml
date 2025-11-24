@@ -284,110 +284,53 @@ Blocks:
   RoadRaceMultilapMirror:
   - Converter: Waypoint
   RoadRaceTurbo:
-  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+  - Converter: Tank
     DirOffset: 3
-    ItemModel:
-      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceTurboMirror:
-  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+  - Converter: Tank
     DirOffset: 1
-    ItemModel:
-      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceTurbo2:
-  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+  - Converter: Tank
     DirOffset: 3
-    ItemModel:
-      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceTurbo2Mirror:
-  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+  - Converter: Tank
     DirOffset: 1
-    ItemModel:
-      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceFW:
-  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+  - Converter: Tank
     DirOffset: 3
-    ItemModel:
-      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   RoadRaceFWMirror:
-  - Name: '{1}\RoadRaceStraightHole.Block.Gbx_CustomBlock'
+  - Converter: Tank
     DirOffset: 1
-    ItemModel:
-      Id: CE\Tank\{1}_{0}_{2}.Item.Gbx
   ArenaTurbo1:
-  - Name: '{1}\ArenaTurbo1Hole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo1SlopeUp:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo1SlopeDown:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+  - Converter: TankCommon
     DirOffset: 2
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
   ArenaTurbo1SlopeLeft:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo1SlopeRight:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo2:
-  - Name: '{1}\ArenaTurbo1Hole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo2SlopeUp:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo2SlopeDown:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+  - Converter: TankCommon
     DirOffset: 2
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
   ArenaTurbo2SlopeLeft:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaTurbo2SlopeRight:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaFreeWheeling:
-  - Name: '{1}\ArenaTurbo1Hole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaFWSlopeUp:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaFWSlopeDown:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
+  - Converter: TankCommon
     DirOffset: 2
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
   ArenaFWSlopeLeft:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
   ArenaFWSlopeRight:
-  - Name: '{1}\ArenaSlopeStraightHole.Block.Gbx_CustomBlock'
-    ItemModel:
-      Id: CE\Tank\{1}_{0}.Item.Gbx
-    Converter: Tanks
+  - Converter: TankCommon
