@@ -1,0 +1,110 @@
+name: Publish CLI
+
+on:
+  release:
+    types: [published]
+
+env:
+  PROJECT_NAME: TurboConverterCLI
+  ARTIFACT_NAME: artifact
+
+permissions:
+  contents: write # important for release description edit and asset upload
+  packages: read
+
+jobs:
+  prepare-description:
+    runs-on: ubuntu-latest
+    name: Set release description
+    
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_BODY: ${{ github.event.release.body }}
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set release information
+        run: |
+          FINAL_BODY="***[Release is being automatically created, please wait...](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})***
+          
+          $RELEASE_BODY"
+          gh release edit ${{ github.ref_name }} -n "$FINAL_BODY"
+
+  build:
+    needs: prepare-description
+
+    strategy:
+      matrix:
+        os: [{ os: windows-latest, runtime: win-x64 }, { os: ubuntu-latest, runtime: linux-x64 }]
+    
+    runs-on: ${{ matrix.os.os }}
+    name: Publish with ${{ matrix.os.os }} (${{ matrix.os.runtime }})
+    
+    env:
+      ZIP_SUFFIX: -${{ matrix.os.runtime }}.${{ github.ref_name }}.zip
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            10.0.x
+
+      - name: Publish
+        run: dotnet publish ${{ env.PROJECT_NAME }}
+          -c Release
+          -r ${{ matrix.os.runtime }}
+          -o build/${{ env.PROJECT_NAME }}
+          -p:PublishTrimmed=true
+          -p:PublishSingleFile=true
+          -p:EnableCompressionInSingleFile=true
+          --self-contained
+          
+      - name: Zip to ${{ env.PROJECT_NAME }}${{ env.ZIP_SUFFIX }}
+        uses: thedoctor0/zip-release@main
+        with:
+          directory: build
+          path: ${{ env.PROJECT_NAME }}
+          filename: ../${{ env.PROJECT_NAME }}${{ env.ZIP_SUFFIX }}
+
+      - name: Calculate SHA256 (Windows)
+        if: matrix.os.os == 'windows-latest'
+        run: |
+          $hash = Get-FileHash -Path '${{ env.PROJECT_NAME }}${{ env.ZIP_SUFFIX }}' -Algorithm SHA256
+          $hashValue = $hash.Hash.ToLower()
+          Write-Host $hashValue
+
+      - name: Calculate SHA256 (Linux)
+        if: matrix.os.os == 'ubuntu-latest'
+        run: |
+          sha256sum "${{ env.PROJECT_NAME }}${{ env.ZIP_SUFFIX }}" | awk '{print $1}'
+
+      - name: Upload ${{ env.PROJECT_NAME }}${{ env.ZIP_SUFFIX }} to this release
+        run: gh release upload ${{ github.ref_name }} ${{ env.PROJECT_NAME }}${{ env.ZIP_SUFFIX }}
+
+  finalize-description:
+    needs: build
+    
+    runs-on: ubuntu-latest
+    name: Finalize release description
+    
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_BODY: ${{ github.event.release.body }}
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set release information
+        run: |
+          FINAL_BODY="${RELEASE_BODY}
+          
+          Assets were automatically generated using the [publish workflow](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})."
+          gh release edit ${{ github.ref_name }} -n "$FINAL_BODY"
