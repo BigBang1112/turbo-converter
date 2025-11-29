@@ -9,4 +9,5 @@ public sealed class Conversions
     public int DecoBaseHeight { get; set; }
     public ItemModel? WarpItemModel { get; set; }
     public Dictionary<string, BlockConversion[]?>? Blocks { get; set; } = [];
+    public HashSet<string>? Tanks { get; set; } = [];
 }

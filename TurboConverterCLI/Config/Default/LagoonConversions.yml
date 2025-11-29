@@ -44,49 +44,43 @@ Blocks:
     - Id: CE\CE_CranePodium_{1}_{2}.Item.Gbx
     - Id: CE\CE_CranePodium\{3}_{1}.Item.Gbx
   RoadTunnelRoadPaintDown:
-  - Converter: RoadPaint
+  - Name: RoadTunnelSlope2Straight
   RoadTunnelRoadPaintUp:
-  - Converter: RoadPaint
+  - Name: RoadTunnelSlope2Straight
   RoadTunnelRoadPaint:
-  - Converter: RoadPaint
-  ArenaRoadPaintWall4: # two ArenaLoopStraight2
+  - Name: RoadTunnelStraight
+  ArenaRoadPaintWall4:
+  - Name: ArenaLoopStraight2
+    AdditionalBlocks:
+    - OffsetY: 2
   ArenaRoadPaintWall2Right:
   - Name: ArenaLoopStraight2
-    Converter: RoadPaint
   ArenaRoadPaintWall2Left:
   - Name: ArenaLoopStraight2
-    Converter: RoadPaint
   ArenaRoadPaintDown:
   - Name: ArenaSlope2Straight
-    Converter: RoadPaint
   ArenaRoadPaintLeft:
   - Name: ArenaSlope2Straight
-    Converter: RoadPaint
   ArenaRoadPaintRight:
   - Name: ArenaSlope2Straight
-    Converter: RoadPaint
   ArenaRoadPaintUp:
   - Name: ArenaSlope2Straight
-    Converter: RoadPaint
   ArenaRoadPaint:
   - Name: ArenaBase
-    Converter: RoadPaint
   RoadThemeParkFlip-RoadPaint:
-  - Converter: RoadPaint
+  - Name: RoadThemeParkFlip
+    Variant: 3
   RoadThemeParkWall-RoadPaintDown:
   - Name: RoadThemeParkWall-StraightUp
-    Converter: RoadPaint
   RoadThemeParkWall-RoadPaintUp:
   - Name: RoadThemeParkWall-StraightUp
-    Converter: RoadPaint
   RoadThemeParkWall-RoadPaintRight:
-  - Converter: RoadPaint
+  - Name: RoadThemeParkWall-Straight
   RoadThemeParkWall-RoadPaintLeft:
-  - Converter: RoadPaint
+  - Name: RoadThemeParkWall-Straight
   RoadThemeParkRoadPaint:
   - Name: RoadThemePark
     Variant: 3
-    Converter: RoadPaint
   ArenaToRoadThemeParkUp:
   - Name: ArenaToRoadThemeParkUpSimple.Block.Gbx_CustomBlock
     ItemModel:
@@ -100,20 +94,15 @@ Blocks:
     Variant: 3
   HighWayRoadPaintDown:
   - Name: HighWaySlope2Straight
-    Converter: RoadPaint
   HighWayRoadPaintUp:
   - Name: HighWaySlope2Straight
-    Converter: RoadPaint
   HighWayRoadPaintRight:
   - Name: HighWayTilt2Straight
-    Converter: RoadPaint
   HighWayRoadPaintLeft:
   - Name: HighWayTilt2Straight
-    Converter: RoadPaint
   RoadMainRoadPaint:
   - Name: RoadMain
     Variant: 3
-    Converter: RoadPaint
   RoadMainLandingRamp:
   - Name: RoadMain
     Variant: 3
@@ -121,7 +110,6 @@ Blocks:
   FreeWayRoadPaint:
   - Name: FreeWay
     Variant: 3
-    Converter: RoadPaint
   FreeWayRampLandingRamp:
   - Name: FreeWay
     Variant: 3
@@ -185,15 +173,20 @@ Blocks:
   - ItemModel:
       Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaCheckpointLeft:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaCheckpointRight:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaCheckpointUp:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaLoopCheckpointH:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   ArenaLoopCheckpointV:
-  - Converter: WaypointCommon
+  - ItemModel:
+      Id: CE\Waypoint\{1}_{0}.Item.Gbx
   BeachCheckPointLeft:
   - Converter: WaypointCommon
   BeachCheckPointRight:
@@ -260,25 +253,35 @@ Blocks:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   ArenaLoopCheckpointH-Screen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaLoopCheckpointH.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaLoopCheckpointV-Screen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaLoopCheckpointV.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaCheckpointRightScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaCheckpointRight.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaCheckpointLeftScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaCheckpointLeft.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaCheckpointDownScreen:
   - ItemModels:
     - Id: CE\Waypoint\{1}_ArenaCheckpointDown.Item.Gbx
     - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
     - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaCheckpointUpScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - ItemModels:
+    - Id: CE\Waypoint\{1}_ArenaCheckpointUp.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   ArenaCheckpointScreen:
   - ItemModels:
     - Id: CE\Waypoint\{1}_ArenaCheckpoint.Item.Gbx
@@ -373,3 +376,58 @@ Blocks:
   - Converter: TankCommon
   RoadTunnelTurboUp:
   - Converter: TankCommon
+  BeachGT2RacingOut:
+  - Converter: LagoonObjects
+    Size: [2, 2]
+  DecoBeachGTDiag3:
+  - Converter: LagoonObjects
+    Size: [3, 2]
+  DecoBeachGTDiag3Mirror:
+  - Converter: LagoonObjects
+    Size: [3, 2]
+  DecoBeachGTDiag3Racing:
+  - Converter: LagoonObjects
+    Size: [3, 2]
+  DecoBeachGTDiag3RacingMirror:
+  - Converter: LagoonObjects
+    Size: [3, 2]
+  DecoBeachSandbar2x1:
+  - Converter: LagoonObjects
+    Size: [2, 1]
+  DecoBeachSandbar2x1Mirror:
+  - Converter: LagoonObjects
+    Size: [2, 1]
+  FreeWayToBeachDiag3X2:
+  - Converter: LagoonObjects
+    Size: [3, 2]
+  FreeWayToBeachDiag3X2Mirror:
+  - Converter: LagoonObjects
+    Size: [3, 2]
+  FreeWayToBeachGTCurve3In:
+  - Converter: LagoonObjects
+    Size: [3, 3]
+  FreeWayToBeachGTCurve3InMirror:
+  - Converter: LagoonObjects
+    Size: [3, 3]
+  FreeWayToBeachGTCurve3Out:
+  - Converter: LagoonObjects
+    Size: [3, 4]
+  FreeWayToBeachGTCurve3OutMirror:
+  - Converter: LagoonObjects
+    Size: [3, 4]
+Tanks:
+- ArenaFWFreeClipTank
+- ArenaFWSlope2FreeClipTankDown
+- ArenaFWSlope2FreeClipTankLeft
+- ArenaFWSlope2FreeClipTankRight
+- ArenaFWSlope2FreeClipTankUp
+- ArenaTurbo2FreeClipTank
+- ArenaTurbo2Slope2_FreeClipTankLeft
+- ArenaTurbo2Slope2_FreeClipTankRight
+- ArenaTurbo2Slope2FreeClipTankDown
+- ArenaTurbo2Slope2FreeClipTankUp
+- ArenaTurboFreeClipTank
+- ArenaTurboSlope2_FreeClipTankLeft
+- ArenaTurboSlope2_FreeClipTankRight
+- ArenaTurboSlope2FreeClipTankDown
+- ArenaTurboSlope2FreeClipTankUp

@@ -36,15 +36,15 @@ internal sealed class BlockConversionSystem : IConversionSystem
         // Backwards loop to allow for block removal
         for (var i = map.Blocks.Count - 1; i >= 0; i--)
         {
-            var block = map.Blocks[i];
+            ApplyBlockConversion(map.Blocks[i], i);
+        }
 
-            // Boosts performance
-            if (block.Name == "Unassigned1")
+        foreach (var block in map.GetBakedBlocks())
+        {
+            if (conversions.Tanks?.Contains(block.Name) == true)
             {
-                continue;
+                ApplyBlockConversion(block, -1, new() { ItemModel = new() { Id = "CE\\Tank\\{1}_{0}.Item.Gbx" } }, out _);
             }
-
-            ApplyBlockConversion(block, i);
         }
     }
 
@@ -95,6 +95,39 @@ internal sealed class BlockConversionSystem : IConversionSystem
             return;
         }
 
+        block.Direction = (Direction)(((int)block.Direction + conversion.PreDirOffset) % 4);
+
+        if (conversion.DirectionOf is not null)
+        {
+            var blockForDirection = blocksByCoord[block.Coord].FirstOrDefault(x => conversion.DirectionOf == x.Name);
+
+            if (blockForDirection is not null)
+            {
+                block.Direction = (Direction)(((int)blockForDirection.Direction + 2) % 4);
+            }
+        }
+
+        if (conversion.PerDirection is not null)
+        {
+            if (conversion.PerDirection.TryGetValue(block.Direction, out var directionConversion))
+            {
+                ApplyBlockConversion(block, blockIndex, directionConversion, out removeBlock);
+            }
+        }
+
+        if (conversion.DirBlockReference is not null)
+        {
+            var blockForDirection = blocksByCoord[block.Coord].FirstOrDefault(x => conversion.DirBlockReference == x.Name);
+
+            if (blockForDirection is not null && conversion.DirBlockReferenceItemModels?.TryGetValue(blockForDirection.Direction, out var itemModels) == true)
+            {
+                foreach (var itemModel in itemModels)
+                {
+                    PlaceAnchoredObject(block, itemModel, conversion.Size);
+                }
+            }
+        }
+
         if (conversion.ItemModel is not null)
         {
             PlaceAnchoredObject(block, conversion.ItemModel, conversion.Size);
@@ -116,6 +149,29 @@ internal sealed class BlockConversionSystem : IConversionSystem
             {
                 ApplyBlockConversion(block, blockIndex, conversion.VariantOf[blockForVariant.Name][blockForVariant.Variant], out removeBlock);
                 return;
+            }
+        }
+
+        if (conversion.ModifierOf is not null)
+        {
+            var modifierApplied = false;
+
+            // for loop from Coord Y to zero
+            for (var y = block.Coord.Y; y >= 0; y--)
+            {
+                var blocksAtCoord = blocksByCoord[new Int3(block.Coord.X, y, block.Coord.Z)];
+                var blockForModifier = blocksAtCoord.FirstOrDefault(x => conversion.ModifierOf.ContainsKey(x.Name));
+                if (blockForModifier is not null)
+                {
+                    ApplyBlockConversion(block, blockIndex, conversion.ModifierOf[blockForModifier.Name][block.Variant], out removeBlock);
+                    modifierApplied = true;
+                    break;
+                }
+            }
+
+            if (!modifierApplied && conversion.ModifierFallback is not null)
+            {
+                ApplyBlockConversion(block, blockIndex, conversion.ModifierFallback[block.Variant], out removeBlock);
             }
         }
 
@@ -196,11 +252,6 @@ internal sealed class BlockConversionSystem : IConversionSystem
             throw new Exception($"Converter {converterName} does not exist.");
         }
 
-        if (converterName == "Tanks")
-        {
-            ApplyTanksConverter(block);
-        }
-
         if (converter is null)
         {
             // throw new Exception($"Converter {conversion.Converter} is not implemented.");
@@ -264,13 +315,6 @@ internal sealed class BlockConversionSystem : IConversionSystem
         }
     }
 
-    private void ApplyTanksConverter(CGameCtnBlock block)
-    {
-        var offset = (Int3)block.Direction;
-
-        //if (blocksByCoord.Contains(block.Coord + (1, 0, 0))
-    }
-
     private object[] GetBlockStringArgs(CGameCtnBlock block)
     {
         return [
@@ -289,8 +333,10 @@ internal sealed class BlockConversionSystem : IConversionSystem
             itemModel.Collection ?? conversions.DefaultCollection ?? map.Collection ?? throw new Exception("Map collection is null."),
             itemModel.Author ?? conversions.DefaultAuthor ?? "");
 
+        var dirOffset = 0;
+
         var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * (1, 0, 1) * 0.5f;
-        var pitchYawRoll = new Vec3(-(int)block.Direction * MathF.PI / 2, 0, 0);
+        var pitchYawRoll = new Vec3(-((int)block.Direction - dirOffset) * MathF.PI / 2, 0, 0);
 
         if (blockSizeForRotation.HasValue)
         {

@@ -1,12 +1,4 @@
 BlockConverters:
-  RoadPaint:
-    Name:
-      Match: (.*)(RoadPaint.*)(Mirror)?
-      ReplaceWith: $1Straight$3
-  RoadPaintStaight: # nandeo
-    Name:
-      Match: (.*)(RoadPaint.+)(Mirror)?
-      ReplaceWith: $1Staight$3
   CheckpointScreen:
     Name:
       Contains: Checkpoint
@@ -57,3 +49,11 @@ BlockConverters:
       Set: '{0}'
     ItemModel:
       Id: CE\Waypoint\{1}_{0}.Item.Gbx
+  LagoonObjects:
+    ItemModel:
+      Id: CE\Objects\{1}_{0}.Item.Gbx
+  ValleyObjects:
+    Name:
+      Set: '{1}\{0}CE.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Objects\{1}_{0}.Item.Gbx

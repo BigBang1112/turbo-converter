@@ -48,51 +48,49 @@ Blocks:
       Id: CE\LandingRamp\{1}_OffRoadLandingRamp.Item.Gbx
   ArenaLoopRoadPaintRight:
   - Name: ArenaParkRoofLoopStraight2
-    Converter: RoadPaint
   ArenaLoopRoadPaintLeft:
   - Name: ArenaParkRoofLoopStraight2
-    Converter: RoadPaint
   ArenaParkBaseLandingRamp:
   - Name: ArenaParkBase
     Converter: LandingRamp
   ArenaParkRoadPaint:
   - Name: ArenaParkBase
-  - Converter: RoadPaint
   ArenaParkRoofRoadPaint:
   - Name: ArenaParkRoofBase
-    Converter: RoadPaint
   ArenaRoadPaintSlope2Left:
   - Name: ArenaBaseSlopeStraight
-    Converter: RoadPaint
   ArenaRoadPaintSlope2Right:
   - Name: ArenaBaseSlopeStraight
-    Converter: RoadPaint
   ArenaRoadPaintSlope2Down:
   - Name: ArenaBaseSlopeStraight
-    Converter: RoadPaint
   ArenaRoadPaintSlope2Up:
   - Name: ArenaBaseSlopeStraight
-    Converter: RoadPaint
   ArenaRoadPaint:
   - Name: ArenaBase
-    Converter: RoadPaint
   TunnelRoad4WayRoadPaintSlopeDown:
-  - Converter: RoadPaint
+  - Name: TunnelRoad4waySlopeStraight
   TunnelRoad4WayRoadPaintSlopeUp:
-  - Converter: RoadPaint
+  - Name: TunnelRoad4waySlopeStraight
   TunnelRoad4WayRoadPaint:
-  - Name: TunnelRoad4wayStraight # nandeo
+  - Name: TunnelRoad4wayStraight
   RoadCliffSlopeUBottomLandingRamp:
-  - Converter: LandingRamp
+  - Name: RoadCliffSlopeUBottom
+    Size: [1, 4]
+    ItemModel:
+      Id: CE\LandingRamp\{1}_{0}.Item.Gbx
   RoadCliffSlopeUBottomLandingRampMirror:
-  - Converter: LandingRamp
-  # RoadForestLargeStartLoop:
+  - Name: RoadCliffSlopeUBottom
+    Size: [1, 4]
+    ItemModel:
+      Id: CE\LandingRamp\{1}_{0}.Item.Gbx
+  RoadForestLargeStartLoop:
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\RoadForestLargeStartLoop.Item.Gbx
   Road4WayRoadPaintSlopeDown:
   - Name: Road4WaySlopeStraight
-    Converter: RoadPaint
   Road4WayRoadPaintSlopeUp:
   - Name: Road4WaySlopeStraight
-    Converter: RoadPaint
   Road4WayLandingRamp:
   - Name: Road4Way
     Variant: 3
@@ -100,13 +98,10 @@ Blocks:
   Road4WayRoadPaint:
   - Name: Road4Way
     Variant: 3
-    Converter: RoadPaint
   Road2WayRoadPaintSlopeDown:
   - Name: Road2WaySlopeStraight
-    Converter: RoadPaint
   Road2WayRoadPaintSlopeUp:
   - Name: Road2WaySlopeStraight
-    Converter: RoadPaint
   Road2WayLandingRamp:
   - Name: Road2Way
     Variant: 3
@@ -114,9 +109,8 @@ Blocks:
   Road2WayRoadPaint:
   - Name: Road2Way
     Variant: 3
-    Converter: RoadPaint
   OffRoadToForestLarge:
-  - Name: RoadForestLargeDeadend  
+  - Name: RoadForestLargeDeadend
   TunnelRoad4WayEntryGrassSlopeBase2:
   - Name: Road4WayEntryGrassSlopeBase2
   TunnelHighwayEntryGrassSlopeBase2:
@@ -182,6 +176,59 @@ Blocks:
   - Converter: WaypointCommon
   OffRoadCheckpoint:
   - Converter: WaypointCommon
+    VariantOf:
+      GrassHill1:
+      -
+      -
+      -
+      -
+      -
+      - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+        PerDirection:
+          North:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+          East:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+          South:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+          West:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
   Road2WayCheckpoint:
   - Converter: Waypoint
   Road2WayCheckpointDown:
@@ -190,18 +237,25 @@ Blocks:
   - Converter: WaypointCommon
   Road4WayCheckpoint:
   - Converter: Waypoint
-  Road4WayCheckpointDown:
-  - Converter: WaypointCommon
-  Road4WayCheckpointUp:
-  - Converter: WaypointCommon
+  Road4WayCheckPointDown:
+  - Name: '{1}\Road4WayCheckpointDownCE.Block.Gbx_CustomBlock' # lowercase ok?
+    ItemModel:
+      Id: CE\Waypoint\{1}_Road4WayCheckpointDown.Item.Gbx
+  Road4WayCheckPointUp:
+  - Name: Road4WayCheckpointUp # lowercase ok?
+    Converter: WaypointCommon
   RoadCliffSlopeUBottomCheckPointLeft:
   - Converter: WaypointCommon
+    Size: [4, 1]
   RoadCliffSlopeUBottomCheckPointRight:
   - Converter: WaypointCommon
+    Size: [4, 1]
   RoadCliffSlopeUTopCheckPointLeft:
   - Converter: WaypointCommon
+    Size: [4, 1]
   RoadCliffSlopeUTopCheckPointRight:
   - Converter: WaypointCommon
+    Size: [4, 1]
   RoadDirtCheckpoint:
   - Converter: WaypointCommon
   RoadForestLargeCheckpoint:
@@ -238,18 +292,107 @@ Blocks:
   OffRoadCheckpointScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+    VariantOf:
+      GrassHill1:
+      -
+      -
+      -
+      -
+      -
+      - Name: '{1}\OffRoadCheckpointCE.Block.Gbx_CustomBlock'
+        PerDirection:
+          North:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down\{3}.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right\{3}.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up\{3}.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left\{3}.Item.Gbx
+          East:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left\{3}.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down\{3}.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right\{3}.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up\{3}.Item.Gbx
+          South:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up\{3}.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left\{3}.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down\{3}.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right\{3}.Item.Gbx
+          West:
+            DirBlockReference: GrassHill1
+            DirBlockReferenceItemModels:
+              North:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Right\{3}.Item.Gbx
+              East:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Up\{3}.Item.Gbx
+              South:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Left\{3}.Item.Gbx
+              West:
+              - Id: CE\Waypoint\{1}_OffRoadCheckpoint_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down.Item.Gbx
+              - Id: CE\CheckpointScreen\{1}_{0}_Down\{3}.Item.Gbx
   RoadCliffSlopeUBottomCheckPointLeftScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+    Size: [4, 1]
   RoadCliffSlopeUBottomCheckPointRightScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+    Size: [4, 1]
   RoadCliffSlopeUTopCheckPointLeftScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+    Size: [4, 1]
   RoadCliffSlopeUTopCheckPointRightScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
+    Size: [4, 1]
   RoadForestLargeCheckpointScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
@@ -257,13 +400,17 @@ Blocks:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   Road4WayCheckPointUpScreen:
-  - Name: Road4WayCheckpointUp # lowercase ok?
-    Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - Name: '{1}\Road4WayCheckpointUpCE.Block.Gbx_CustomBlock' # lowercase ok?
+    ItemModels:
+    - Id: CE\Waypoint\{1}_Road4WayCheckpointUp.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   Road4WayCheckPointDownScreen:
-  - Name: Road4WayCheckpointDown # lowercase ok?
-    Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - Name: '{1}\Road4WayCheckpointDownCE.Block.Gbx_CustomBlock' # lowercase ok?
+    ItemModels:
+    - Id: CE\Waypoint\{1}_Road4WayCheckpointDown.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   Road2WayCheckpointDownScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
@@ -282,13 +429,22 @@ Blocks:
   Road2WayFW:
   - Converter: Tank
   Road2WaySlopeFW:
-  - Converter: TankCommon
+  - Name: '{1}\Road2WayFWSlopeHole.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Tank\{1}_Road2WayFWSlope.Item.Gbx
   Road4WayFW:
   - Converter: Tank
   Road4WaySlopeFW:
   - Converter: TankCommon
   RoadForestLargeFW:
-  - Converter: TankCommon
+  - Name: '{1}\{0}Hole.Block.Gbx_CustomBlock'
+    ModifierOf:
+      Forest:
+      - ItemModel:
+          Id: CE\Tank\{1}_{0}_Forest.Item.Gbx
+    ModifierFallback:
+    - ItemModel:
+        Id: CE\Tank\{1}_{0}_Grass.Item.Gbx
   TunnelRoad4WayFW:
   - Converter: TankCommon
   TunnelRoad4WayFWUD:
@@ -306,10 +462,85 @@ Blocks:
   Road4WayTurboUp:
   - Converter: TankCommon
   RoadForestLargeTurbo:
-  - Converter: TankCommon
+  - Name: '{1}\{0}Hole.Block.Gbx_CustomBlock'
+    ModifierOf:
+      Forest:
+      - ItemModel:
+          Id: CE\Tank\{1}_{0}_Forest.Item.Gbx
+    ModifierFallback:
+    - ItemModel:
+        Id: CE\Tank\{1}_{0}_Grass.Item.Gbx
   TunnelRoad4WayTurbo:
   - Converter: TankCommon
   TunnelRoad4WayTurboDown:
   - Converter: TankCommon
   TunnelRoad4WayTurboUp:
   - Converter: TankCommon
+  TunnelHighwayTurbo:
+  - Converter: TankCommon
+  DecoFieldCornerEntry1x1:
+  - Converter: ValleyObjects
+  DecoFieldDeadendEntry1x1:
+  - Converter: ValleyObjects
+  DecoFieldDeadendEntry2x1:
+  - Converter: ValleyObjects
+    Size: [2, 1]
+  OffRoadSignLeft:
+  - ItemModel:
+      Id: CE\Objects\{1}_{0}.Item.Gbx
+    DirectionOf: GrassToField
+  OffRoadSignRight:
+  - ItemModel:
+      Id: CE\Objects\{1}_{0}.Item.Gbx
+    DirectionOf: GrassToField
+  RoadDirtCornerSign:
+  - Converter: ValleyObjects
+  RoadDirtToFieldEntry:
+  - Converter: ValleyObjects
+  RoadForestLargeCornerSignBarrier:
+  - Converter: ValleyObjects
+  Road2WayTetrisCliff3x2:
+  - Converter: ValleyObjects
+    Size: [2, 3]
+  Road2WayTetrisCliff3x2Mirror:
+  - Converter: ValleyObjects
+    Size: [2, 3]
+  RoadCliff2TetrisGTCurve2:
+  - Converter: ValleyObjects
+    Size: [2, 2]
+  RoadCliff2TetrisGTCurve2Mirror:
+  - Converter: ValleyObjects
+    Size: [2, 2]
+  RoadCliffSlopeEndGTCurveIn:
+  - Converter: ValleyObjects
+    Size: [4, 3]
+  RoadCliffSlopeEndGTCurveInMirror:
+  - Converter: ValleyObjects
+    Size: [4, 3]
+  RoadCliffSlopeEndGTCurveOut:
+  - Converter: ValleyObjects
+    Size: [4, 5]
+  RoadCliffSlopeEndGTCurveOutMirror:
+  - Converter: ValleyObjects
+    Size: [4, 5]
+  RoadCliffTetrisCliff3x2:
+  - Converter: ValleyObjects
+    Size: [2, 3]
+  RoadCliffTetrisCliff3x2Mirror:
+  - Converter: ValleyObjects
+    Size: [2, 3]
+  TunnelRoad4WayUBottom:
+  - Name: Road4wayUbottom
+  TunnelRoad4WayUTop:
+  - Name: Road4wayUTop
+Tanks:
+- ArenaFWFreeClipTank
+- ArenaFWFreeClipDownTank
+- ArenaFWFreeClipLeftTank
+- ArenaFWFreeClipRightTank
+- ArenaFWFreeClipUpTank
+- ArenaTurboFreeClipTank
+- ArenaTurboFreeClipDownTank
+- ArenaTurboFreeClipLeftTank
+- ArenaTurboFreeClipRightTank
+- ArenaTurboFreeClipUpTank

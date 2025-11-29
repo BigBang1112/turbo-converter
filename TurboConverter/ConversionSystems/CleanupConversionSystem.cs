@@ -27,5 +27,7 @@ internal sealed class CleanupConversionSystem : IConversionSystem
         {
             map.ChallengeParameters.MapType = "Trackmania\\Race";
         }
+
+        map.Chunks.Remove<CGameCtnChallenge.Chunk03043048>();
     }
 }

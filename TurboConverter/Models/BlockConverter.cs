@@ -1,4 +1,6 @@
-﻿namespace TurboConverter.Models;
+﻿using GBX.NET;
+
+namespace TurboConverter.Models;
 
 public sealed class BlockConverter
 {

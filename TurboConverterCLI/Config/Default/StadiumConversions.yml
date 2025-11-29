@@ -99,49 +99,60 @@ Blocks:
   - Name: StadiumDecoTower.Block.Gbx_CustomBlock
     ItemModel:
       Id: CE\StadiumDecoTower\D.Item.Gbx
-  # StadiumRoadDirtDiagonaleLeft
-  # StadiumRoadDirtDiagonaleRight
+  StadiumRoadDirtDiagonaleLeft:
+  - Name: StadiumRoadDirtDiagonaleLeft.Block.Gbx_CustomBlock
+    Size: [2, 3]
+    ModifierOf:
+      StadiumDirt:
+      - ItemModel:
+          Id: CE\StadiumRoadDirtDiagonale\Left_Dirt.Item.Gbx
+        Size: [2, 3]
+    ModifierFallback:
+    - ItemModel:
+        Id: CE\StadiumRoadDirtDiagonale\Left_Grass.Item.Gbx
+      Size: [2, 3]
+  StadiumRoadDirtDiagonaleRight:
+  - Name: StadiumRoadDirtDiagonaleRight.Block.Gbx_CustomBlock
+    ModifierOf:
+      StadiumDirt:
+      - ItemModel:
+          Id: CE\StadiumRoadDirtDiagonale\Right_Dirt.Item.Gbx
+        Size: [2, 3]
+    ModifierFallback:
+    - ItemModel:
+        Id: CE\StadiumRoadDirtDiagonale\Right_Grass.Item.Gbx
+      Size: [2, 3]
   StadiumCircuitRoadPaintSlopeRight:
   - Name: StadiumCircuitSlopeStraight
-    Converter: RoadPaint
   StadiumCircuitRoadPaintSlopeLeft:
   - Name: StadiumCircuitSlopeStraight
-    Converter: RoadPaint
   StadiumCircuitRoadPaintSlopeDown:
   - Name: StadiumCircuitSlopeStraight
-    Converter: RoadPaint
   StadiumCircuitRoadPaintSlopeUp:
   - Name: StadiumCircuitSlopeStraight
-    Converter: RoadPaint
   StadiumCircuitRoadPaint:
   - Name: StadiumCircuitBase
-    Converter: RoadPaint
   StadiumPlatformGridRoadPaint:
-  - Converter: RoadPaint
+  - Name: StadiumPlatformGridStraight
   StadiumPlatformWall4RoadPaintDown:
   - Name: StadiumPlatformWall4
-    Converter: RoadPaint
   StadiumPlatformWall4RoadPaintUp:
   - Name: StadiumPlatformWall4
-    Converter: RoadPaint
   StadiumPlatformWall2RoadPaintRight:
   - Name: StadiumPlatformWall2
-    Converter: RoadPaint
   StadiumPlatformWall2RoadPaintLeft:
   - Name: StadiumPlatformWall2
-    Converter: RoadPaint
   StadiumRoadTiltRoadPaintRight:
-  - Converter: RoadPaint
+  - Name: StadiumRoadTiltStraight
   StadiumRoadTiltRoadPaintLeft:
-  - Name: StadiumRoadMainSlopeStraight
-    Converter: RoadPaint
+  - Name: StadiumRoadTiltStraight
   StadiumRoadMainRoadPaintSlopeDown:
   - Name: StadiumRoadMainSlopeStraight
-    Converter: RoadPaint
+  StadiumRoadMainRoadPaintSlopeUp:
+  - Name: StadiumRoadMainSlopeStraight
   StadiumRoadRoadPaint:
   - Name: StadiumRoadMain
     Variant: 3
-    Converter: RoadPaint
   StadiumRoadMainStartLine:
   - Converter: WaypointCommon
   StadiumRoadMainStartFinishLine:
@@ -164,16 +175,16 @@ Blocks:
   StadiumPlatformCheckpoint:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
-  StadiumPlatformDownCheckpoint:
+  StadiumPlatformCheckpointDown:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
-  StadiumPlatformLeftCheckpoint:
+  StadiumPlatformCheckpointLeft:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
-  StadiumPlatformRightCheckpoint:
+  StadiumPlatformCheckpointRight:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
-  StadiumPlatformUpCheckpoint:
+  StadiumPlatformCheckpointUp:
   - Converter: WaypointDeco
     Skin: Skins\Any\Banner8x1\StadiumRaceAd8x1B.webm
   StadiumRoadDirtCheckpoint:
