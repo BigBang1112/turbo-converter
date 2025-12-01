@@ -220,11 +220,17 @@ Blocks:
   RoadThemeParkCheckpoint:
   - Converter: WaypointCommon
   RoadThemeParkFlip-Checkpoint:
-  - Converter: WaypointCommon
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_Fix.Item.Gbx
   RoadThemeParkWall-Checkpoint:
-  - Converter: WaypointCommon
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_Fix.Item.Gbx
   RoadThemeParkWall-CheckpointUp:
-  - Converter: WaypointCommon
+  - Name: '{1}\{0}CE.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_Fix.Item.Gbx
   RoadTunnelCheckpoint:
   - Converter: WaypointCommon
   RoadTunnelCheckpointDown:
@@ -288,18 +294,27 @@ Blocks:
     - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
     - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   RoadThemeParkFlip-CheckpointScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - Name: '{1}\RoadThemeParkFlip-CheckpointCE.Block.Gbx_CustomBlock'
+    ItemModels:
+    - Id: CE\Waypoint\{1}_RoadThemeParkFlip-Checkpoint_Fix.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
     HeightOffset: 1
   RoadThemeParkWall-CheckpointUpScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - Name: '{1}\RoadThemeParkWall-CheckpointUpCE.Block.Gbx_CustomBlock'
+    ItemModels:
+    - Id: CE\Waypoint\{1}_RoadThemeParkWall-CheckpointUp_Fix.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   RoadThemeParkCheckpointScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
   RoadThemeParkWall-CheckpointScreen:
-  - Converter: CheckpointScreenCommon
-    ConverterAfter: WaypointCommon
+  - Name: '{1}\RoadThemeParkWall-CheckpointCE.Block.Gbx_CustomBlock'
+    ItemModels:
+    - Id: CE\Waypoint\{1}_RoadThemeParkWall-Checkpoint_Fix.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
+    - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
   HighWaySlope2CheckpointRightScreen:
   - Converter: CheckpointScreenCommon
     ConverterAfter: WaypointCommon
