@@ -1,6 +1,6 @@
 # Turbo Converter
 
-### Warning. This is not a representative code. The goal was just to finish to project in some way so that players can enjoy the project finally. Refer to this just if you want to see how something works.
+### Warning. This is not a representative code. The goal was just to finish to project in some way so that players can enjoy Envimix Turbo finally. Refer to this just if you want to see how something works.
 
 Convert Trackmania Turbo maps to Envimix Turbo title pack from Trackmania 2.
 
