@@ -281,7 +281,9 @@ Blocks:
   RoadCaveFinish:
   - Converter: WaypointCommon
   RoadMainFinish:
-  - Converter: Waypoint
+  - Name: '{1}\{0}CE2.Block.Gbx_CustomBlock'
+    ItemModel:
+      Id: CE\Waypoint\{1}_{0}_{2}2.Item.Gbx  
   RoadRaceFinish:
   - Converter: Waypoint
   RoadRaceFinishMirror:
