@@ -297,6 +297,7 @@ Blocks:
   - Name: '{1}\RoadThemeParkFlip-CheckpointCE.Block.Gbx_CustomBlock'
     ItemModels:
     - Id: CE\Waypoint\{1}_RoadThemeParkFlip-Checkpoint_Fix.Item.Gbx
+      OffsetY: 1
     - Id: CE\CheckpointScreen\{1}_{0}.Item.Gbx
     - Id: CE\CheckpointScreen\{1}_{0}\{3}.Item.Gbx
     HeightOffset: 1

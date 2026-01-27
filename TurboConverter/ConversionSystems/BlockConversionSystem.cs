@@ -335,7 +335,7 @@ internal sealed class BlockConversionSystem : IConversionSystem
 
         var dirOffset = 0;
 
-        var absolutePosition = (block.Coord - (0, conversions.DecoBaseHeight, 0)) * blockSize + blockSize * (1, 0, 1) * 0.5f;
+        var absolutePosition = (block.Coord + (0, -conversions.DecoBaseHeight + itemModel.OffsetY, 0)) * blockSize + blockSize * (1, 0, 1) * 0.5f;
         var pitchYawRoll = new Vec3(-((int)block.Direction - dirOffset) * MathF.PI / 2, 0, 0);
 
         if (blockSizeForRotation.HasValue)

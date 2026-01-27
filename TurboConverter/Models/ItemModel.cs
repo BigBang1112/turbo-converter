@@ -8,4 +8,5 @@ public sealed class ItemModel
     public Vec3? Pivot { get; set; }
     public Id? Collection { get; set; }
     public string? Author { get; set; }
+    public int OffsetY { get; set; }
 }
