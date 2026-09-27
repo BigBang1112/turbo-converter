@@ -53,6 +53,7 @@ public class TurboConverterTool : ITool,
         var blockConversionSystem = new BlockConversionSystem(map, conversions, converters);
         blockConversionSystem.Run();
 
+        new ItemConversionSystem(map).Run();
         new Unassigned1ConversionSystem(map).Run();
         new SkinFixupConversionSystem(map).Run();
         new WarpConversionSystem(map, conversions).Run();
