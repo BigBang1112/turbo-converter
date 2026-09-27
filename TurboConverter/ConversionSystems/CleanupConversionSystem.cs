@@ -1,4 +1,5 @@
-﻿using GBX.NET.Engines.Game;
+﻿using GBX.NET;
+using GBX.NET.Engines.Game;
 
 namespace TurboConverter.ConversionSystems;
 
@@ -29,5 +30,8 @@ internal sealed class CleanupConversionSystem : IConversionSystem
         }
 
         map.Chunks.Remove<CGameCtnChallenge.Chunk03043048>();
+        
+        map.TitleId = "Envimix_Turbo@bigbang1112";
+        map.UpdateHeaderXml(GameVersion.MP4);
     }
 }
