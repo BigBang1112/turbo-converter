@@ -1,8 +1,7 @@
 {
   "profiles": {
     "TurboConverterCLI": {
-      "commandName": "Project",
-      "commandLineArgs": "\"E:\\ManiaPlanetUserData\\WorkTitles\\Envimix_Turbo@bigbang1112\\Maps\\Original\\VR\""
+      "commandName": "Project"
     }
   }
 }
