@@ -1,0 +1,1602 @@
+MP4:
+  CanyonCE\Media\Solid\Road\CaveDouble\ToRoadCave\Straight02.Solid.Gbx: Canyon\Media\Solid\Road\CaveDouble\ToRoadCave\Straight.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\AirMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\MirrorAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\EditorHelperMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\Mirror_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\GroundMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\MirrorGround.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\DownAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeDownAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\DownAirMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeDownMirrorAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\DownEditorHelper.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeDown_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\DownEditorHelperMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeDownMirror_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\Trigger.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\Slope_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\TriggerMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeMirror_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\UpAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeUpAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\UpAirMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeUpMirrorAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\UpEditorHelper.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeUp_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\UpEditorHelperMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\SlopeUpMirror_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\TriggerAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\Air_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\TriggerAirMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\MirrorAir_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\TriggerGround.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\Ground_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\TriggerGroundMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\MirrorGround_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Multilap\EditorHelperMirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Multilap\MirrorEditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\Checkpoint-Trigger-Mirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\TiltMirror_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\Checkpoint-Trigger.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\Tilt_Trigger.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointAir-Mirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\TiltMirrorAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\TiltAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointEditorHelper-Mirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\TiltMirror_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointEditorHelper.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\Tilt_EditorHelper.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointGround-Mirror.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\TiltMirrorGround.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointGround.Solid.Gbx: Canyon\Media\Solid\Road\Race\Checkpoint\TiltGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlCameraPubStraightAir.Solid.Gbx: Stadium\Media\Solid\Control_FC\CameraPubStraightAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlCameraPubStraightGround.Solid.Gbx: Stadium\Media\Solid\Control_FC\CameraPubStraightGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControLightStraightGround.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightStraightGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightBaseAir.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightBaseAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightBaseFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightBaseFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightBaseFreeClipTop.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightBaseFreeClipTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightBaseGround.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightBaseGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightStraightAir.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightStraightAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightStraightFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightStraightFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\ControlLightStraightFreeClipTop.Solid.Gbx: Stadium\Media\Solid\Control_FC\LightStraightFreeClipTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCornerInAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\CornerInAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCornerInGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\CornerInGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCornerOutAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\CornerOutAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCornerOutGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\CornerOutGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCross1x1.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\Cross1x1.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCross3x3.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\Cross3x3.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricCross3x3Screen.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\Cross3x3Screen.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricFreeClip.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\FreeClip.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarAirScreen.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarAirScreen.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerFreeClipTop.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerFreeClipTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInFreeClipABottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInFreeClipABottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInFreeClipATop.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInFreeClipATop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInFreeClipBBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInFreeClipBBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInFreeClipBTop.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInFreeClipBTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInFreeClipCBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInFreeClipCBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInFreeClipCTop.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInFreeClipCTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerInGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerInGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarCornerOutAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarCornerOutAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarFreeClipLeft.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarFreeClipLeft.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarFreeClipRight.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarFreeClipRight.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarFreeClipTop.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarFreeClipTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarScreenGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarScreenGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarScreenSmallAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarScreenSmallAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricPillarScreenSmallGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\PillarScreenSmallGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerInAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerInAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerInFreeClipABottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerInFreeClipABottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerInFreeClipBBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerInFreeClipBBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerInFreeClipCBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerInFreeClipCBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerOutAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerOutAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerOutFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerOutFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampCornerOutGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampCornerOutGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampFreeClipLeftAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampFreeClipLeftAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampFreeClipLeftGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampFreeClipLeftGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampFreeClipRightAir.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampFreeClipRightAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricRampFreeClipRightGround.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\RampFreeClipRightGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricStraight1x1Air.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\Straight1x1Air.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\FabricStraight1x1Ground.Solid.Gbx: Stadium\Media\Solid\Fabric_FC\Straight1x1Ground.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformFreeWheelingAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\FreeWheelingAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformFreeWheelingSlope2Air.Solid.Gbx: Stadium\Media\Solid\Platform_FC\FreeWheelingSlope2Air.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformGridFreeClip.Solid.Gbx: Stadium\Media\Solid\Platform_FC\GridFreeClip.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformGridStraightAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\GridStraightAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformGridStraightGround.Solid.Gbx: Stadium\Media\Solid\Platform_FC\GridStraightGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformLoopEndAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\LoopEndAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformLoopStartAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\LoopStartAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformLoopStartGround.Solid.Gbx: Stadium\Media\Solid\Platform_FC\LoopStartGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoad2Air.Solid.Gbx: Stadium\Media\Solid\Platform_FC\ToRoad2Air.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoad2Ground.Solid.Gbx: Stadium\Media\Solid\Platform_FC\ToRoad2Ground.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoad2MirrorAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\ToRoad2MirrorAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoad2MirrorGround.Solid.Gbx: Stadium\Media\Solid\Platform_FC\ToRoad2MirrorGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoadAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\ToRoadAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoadGround.Solid.Gbx: Stadium\Media\Solid\Platform_FC\ToRoadGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformTurboAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\TurboAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformTurboDownAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\TurboDownAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformTurboLeftAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\TurboLeftAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformTurboRightAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\TurboRightAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformTurboUpAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\TurboUpAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall1Air.Solid.Gbx: Stadium\Media\Solid\Platform_FC\Wall1Air.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall2Air.Solid.Gbx: Stadium\Media\Solid\Platform_FC\Wall2Air.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall2PubAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\Wall2PubAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall4Air.Solid.Gbx: Stadium\Media\Solid\Platform_FC\Wall4Air.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWallBorderAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\WallBorderAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWallBorderFreeClip.Solid.Gbx: Stadium\Media\Solid\Platform_FC\WallBorderFreeClip.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWallBorderFreeClipFront.Solid.Gbx: Stadium\Media\Solid\Platform_FC\WallBorderFreeClipFront.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchEndGround.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchEndGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchEndGroundMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchEndGroundMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchFreeClipEnd.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchFreeClipEnd.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchFreeClipEndMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchFreeClipEndMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchFreeClipStart.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchFreeClipStart.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchFreeClipStartMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchFreeClipStartMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchStartGround.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchStartGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptArchStartGroundMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\ArchStartGroundMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeFreeClip.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeFreeClip.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeFreeClipBottom.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeFreeClipBottom.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeFreeClipBottomMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeFreeClipBottomMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeFreeClipMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeFreeClipMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeFreeClipTop.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeFreeClipTop.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeFreeClipTopMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeFreeClipTopMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgePillarAir.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgePillarAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgePillarAirMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgePillarAirMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgePillarGround.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgePillarGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgePillarGroundMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgePillarGroundMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSlopeEndAir.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSlopeEndAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSlopeEndAirMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSlopeEndAirMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSlopeStartAir.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSlopeStartAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSlopeStartAirMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSlopeStartAirMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSlopeStartGround.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSlopeStartGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSlopeStartGroundMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSlopeStartGroundMirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeStraightAir.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeStraightAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeStraightSmallAir.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeStraightSmallAir.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSuspendSlope2.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSuspendSlope2.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSuspendSlope2Mirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSuspendSlope2Mirror.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSuspendSlopeEnd.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSuspendSlopeEnd.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\SculptBridgeSuspendSlopeEndMirror.Solid.Gbx: Stadium\Media\Solid\Sculpt_FC\BridgeSuspendSlopeEndMirror.Solid.Gbx
+  ValleyCE\Media\Solid\Tunnel\GTCurve3Slope02.Solid.Gbx: Valley\Media\Solid\Tunnel\GTCurve3Slope.Solid.Gbx
+  ValleyCE\Media\Solid\Tunnel\GTCurve3SlopeMirror02.Solid.Gbx: Valley\Media\Solid\Tunnel\GTCurve3SlopeMirror.Solid.Gbx
+
+# TMT values are replacement item lists; empty values have no verified item mapping.
+# ID placeholder: {1} = map environment for shared solids.
+# Fixed screen defaults: AD_try_hard_09 for checkpoints, PODIUM_VID_TryHard1 for podiums.
+TMT:
+  CanyonCE\Media\Solid\Arena\Border\Bank\RoadPaintLeftAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Border\Bank\RoadPaintLeftGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Border\Bank\RoadPaintRightAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Border\Bank\RoadPaintRightGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Checkpoint\Base\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointBaseScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointBaseScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointBase.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightDown\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightDownScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightDown.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightDown\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightDownScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightDown.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightLeft\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightLeftAirScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightLeftAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightLeftAir.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightLeft\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightLeftAirScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightLeftAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightLeftAir.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightRight\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightRightAirScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightRightAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightRightAir.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightRight\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightRightAirScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightRightAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightRightAir.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightUp\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightUpScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightUp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\Slope\StraightUp\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightUpScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaCheckpointSlopeStraightUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaCheckpointSlopeStraightUp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\WallRide\HAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaWallRideCheckpointScreen_H.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaWallRideCheckpointScreen_H\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaWallRideCheckpoint_H.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Checkpoint\WallRide\VAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_ArenaWallRideCheckpointScreen_V.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_ArenaWallRideCheckpointScreen_V\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_ArenaWallRideCheckpoint_V.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\FW\FreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaFWFreeClipTank.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\FW\FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaFWFreeClipTankDown.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\FW\FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaFWFreeClipTankLeft.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\FW\FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaFWFreeClipTankRight.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\FW\FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaFWFreeClipTankUp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\RoadPaint\DownAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\DownGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\FreeClipTop.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\LeftAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\LeftGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\RightAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\RightGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\UpAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\RoadPaint\UpGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Tunnel\RoadPaint\Air.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Turbo\2FreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurbo2FreeClipTank.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\2FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurbo2FreeClipTankDown.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\2FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurbo2FreeClipTankLeft.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\2FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurbo2FreeClipTankRight.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\2FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurbo2FreeClipTankUp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\FreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurboFreeClipTank.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurboFreeClipTankDown.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurboFreeClipTankLeft.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurboFreeClipTankRight.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Canyon_ArenaTurboFreeClipTankUp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemover.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemover_EditorHelper.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemoverLeft_EditorHelper.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemoverRight_EditorHelper.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintLeftAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintLeftGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintRightAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintRightGround.Solid.Gbx:
+  CanyonCE\Media\Solid\CE\Crane\PlatformAir.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Canyon.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\CE\Crane\PlatformGround.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Canyon.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\CE\Podium\CraneAir.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Canyon.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Canyon.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\CE\Podium\CraneGround.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Canyon.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Canyon.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\High\CheckpointLeftScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadHighCheckpointLeftScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadHighCheckpointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_Cliff12RoadHighCheckpointLeft.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\High\CheckpointRightScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadHighCheckpointRightScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadHighCheckpointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_Cliff12RoadHighCheckpointRight.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\High\LandingRamp.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_Cliff12RoadHighLandingRamp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\High\RoadPaint.Solid.Gbx:
+  CanyonCE\Media\Solid\Cliff12Road\High\RoadPaintMirror.Solid.Gbx:
+  CanyonCE\Media\Solid\Cliff12Road\Med\CheckpointLeftScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadMedCheckpointLeftScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadMedCheckpointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_Cliff12RoadMedCheckpointLeft.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\Med\CheckpointRightScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadMedCheckpointRightScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_Cliff12RoadMedCheckpointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_Cliff12RoadMedCheckpointRight.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\Med\LandingRamp.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_Cliff12RoadMedLandingRamp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Cliff12Road\Med\RoadPaint.Solid.Gbx:
+  CanyonCE\Media\Solid\Cliff12Road\Med\RoadPaintMirror.Solid.Gbx:
+  CanyonCE\Media\Solid\Deco\Reffinery\PipelineBaseAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Deco\Technics\AntennaAir.Solid.Gbx:
+  CanyonCE\Media\Solid\OffRoad\Checkpoint\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_OffRoadCheckpointScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_OffRoadCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_OffRoadCheckpoint.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\OffRoad\LandingRamp\Ground.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_OffRoadLandingRamp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Cave\RoadPaint.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\CaveDouble\RoadPaint.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Hill2\CheckpointLeftScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadHill2CheckpointLeftScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadHill2CheckpointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadHill2CheckpointLeft.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Hill2\CheckpointRightScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadHill2CheckpointRightScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadHill2CheckpointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadHill2CheckpointRight.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Hill2\LandingRamp.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_RoadHill2LandingRamp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Hill2\RoadPaint.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Hill2\RoadPaintMirror.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Main\Checkpoint\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadMainCheckpointScreen_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadMainCheckpointScreen_Air\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadMainCheckpoint_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Main\Checkpoint\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadMainCheckpointScreen_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadMainCheckpointScreen_Ground\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadMainCheckpoint_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Main\LandingRamp\Air.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_RoadMainLandingRamp_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Main\LandingRamp\Ground.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_RoadMainLandingRamp_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Main\RoadPaint\Air.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Main\RoadPaint\Ground.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Main\RoadPaint\SlopeDownAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Main\RoadPaint\SlopeUpAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreen_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreen_Air\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceCheckpoint_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\AirScreenMirror.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreenMirror_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreenMirror_Air\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceCheckpointMirror_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreen_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreen_Ground\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceCheckpoint_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\GroundScreenMirror.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreenMirror_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceCheckpointScreenMirror_Ground\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceCheckpointMirror_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\DownAirScreen.Solid.Gbx:
+  - Id: CE\Waypoint\Canyon_RoadRaceSlopeCheckpointDown.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointDownScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\DownAirScreenMirror.Solid.Gbx:
+  - Id: CE\Waypoint\Canyon_RoadRaceSlopeCheckpointDownMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointDownScreenMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointDownScreenMirror\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\UpAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointUpScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceSlopeCheckpointUp.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Checkpoint\Slope\UpAirScreenMirror.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointUpScreenMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceSlopeCheckpointUpScreenMirror\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceSlopeCheckpointUpMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\LandingRamp\Air.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_RoadRaceLandingRamp_Air.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\LandingRamp\Ground.Solid.Gbx:
+  - Id: CE\LandingRamp\Canyon_RoadRaceLandingRamp_Ground.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\Air.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\Ground.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\MirrorAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\MirrorGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeDownAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeDownMirrorAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeUpAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeUpMirrorAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltMirrorAir.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltMirrorGround.Solid.Gbx:
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointAirScreen-Mirror.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreenMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreenMirror\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceTiltCheckpointMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceTiltCheckpoint.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointGroundScreen-Mirror.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreenMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreenMirror\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceTiltCheckpointMirror.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointGroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreen.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  - Id: CE\Waypoint\Canyon_RoadRaceTiltCheckpoint.Item.Gbx
+    Collection: 12
+    Author: bigbang1112
+  CanyonCE\Media\Solid\Warp\SkyDome.Solid.Gbx:
+  CanyonCE\Media\Solid\Zone\DirtCliff\Base1A.Solid.Gbx:
+  CanyonCE\Media\Solid\Zone\DirtCliff\CornerA.Solid.Gbx:
+  CanyonCE\Media\Solid\Zone\DirtCliff\DeadendA.Solid.Gbx:
+  CommonTMCE\Media\Solid\AirShip\Airship.Solid.Gbx:
+  CommonTMCE\Media\Solid\Helico\AirA.Solid.Gbx:
+  CommonTMCE\Media\Solid\Helico\AirB.Solid.Gbx:
+  CommonTMCE\Media\Solid\Helico\ScreenAirA.Solid.Gbx:
+  CommonTMCE\Media\Solid\Helico\ScreenAirB.Solid.Gbx:
+  CommonTMCE\Media\Solid\Helico\StartAirA.Solid.Gbx:
+  - Id: CE\CE_HelicoStart_{1}.Item.gbx
+    Author: bigbang1112
+  CommonTMCE\Media\Solid\Helico\StartEditorHelper.Solid.Gbx:
+  CommonTMCE\Media\Solid\Podium\EditorHelper.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\ConcreteCubeArrow-4m.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\Crane.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\LandingRamp.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\Platform.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\PlatformPodium.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\Screen2x1.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\SoundSystemArrayBig.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\SoundSystemArrayMedium.Solid.Gbx:
+  CommonTMCE\Media\Solid\TreeGen\StartLights5.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\CheckpointDownScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaCheckpointDown.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointDownScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\CheckpointLeftScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaCheckpointLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointLeftScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\CheckpointRightScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaCheckpointRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointRightScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\CheckpointScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaCheckpoint.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\CheckpointUpScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaCheckpointUp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointUpScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaCheckpointUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\FWFreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaFWFreeClipTank.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\FWFreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaFWSlope2FreeClipTankDown.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\FWFreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaFWSlope2FreeClipTankLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\FWFreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaFWSlope2FreeClipTankRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\FWFreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaFWSlope2FreeClipTankUp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\LoopCheckpointH-Screen_Air.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaLoopCheckpointH.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaLoopCheckpointH-Screen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaLoopCheckpointH-Screen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\LoopCheckpointV-ScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_ArenaLoopCheckpointV.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaLoopCheckpointV-Screen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_ArenaLoopCheckpointV-Screen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\RoadPaintAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintDownAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintLeftAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintRightAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintUpAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintWall2LeftAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintWall2RightAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\RoadPaintWall4Air.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\Turbo2FreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurbo2FreeClipTank.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\Turbo2Slope2_FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurbo2Slope2FreeClipTankDown.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\Turbo2Slope2_FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurbo2Slope2_FreeClipTankLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\Turbo2Slope2_FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurbo2Slope2_FreeClipTankRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\Turbo2Slope2_FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurbo2Slope2FreeClipTankUp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\TurboFreeClipRemover_EditorHelper.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\TurboFreeClipRemoverAir.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\TurboFreeClipRemoverLeft_EditorHelper.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\TurboFreeClipRemoverRight_EditorHelper.Solid.Gbx:
+  LagoonCE\Media\Solid\Arena\TurboFreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurboFreeClipTank.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\TurboSlope2_FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurboSlope2FreeClipTankDown.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\TurboSlope2_FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurboSlope2_FreeClipTankLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\TurboSlope2_FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurboSlope2_FreeClipTankRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Arena\TurboSlope2_FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Lagoon_ArenaTurboSlope2FreeClipTankUp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\CE\Crane\PlatformAir.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Lagoon_Air.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\CE\Crane\PlatformGround.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Lagoon_Ground.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\CE\Podium\CraneAir.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Lagoon_Air.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Lagoon.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\CE\Podium\CraneGround.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Lagoon_Ground.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Lagoon.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\CityFloor\Checkpoint\ScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_DecoCityCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_DecoCityCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_DecoCityCheckpoint.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\CityFloor\FreeClipA.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityFloor\FreeClipSmall.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityFloor\LandingRamp.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityFloor\SlopeFreeClipLeftA.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityFloor\SlopeFreeClipRightA.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityGarden\FreeClipA.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityGarden\SlopeFreeClipLeftA.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityGarden\SlopeFreeClipRightA.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\CityQuays\Base.Solid.Gbx:
+  LagoonCE\Media\Solid\Deco\Land\Checkpoint\HillDownScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointDownScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_LandHillCheckpointDown.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\Land\Checkpoint\HillLeftScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointLeftScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_LandHillCheckpointLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\Land\Checkpoint\HillRightScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointRightScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_LandHillCheckpointRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\Land\Checkpoint\HillUpScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointUpScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_LandHillCheckpointUp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\Land\Checkpoint\ScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_LandCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_LandCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_LandCheckpoint.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\TreeBeach\Checkpoint\ScreenLeft.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_BeachCheckPointLeftScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_BeachCheckPointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_BeachCheckPointLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\Deco\TreeBeach\Checkpoint\ScreenRight.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_BeachCheckPointRightScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_BeachCheckPointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_BeachCheckPointRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\FreeWay\Checkpoint\ScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_FreeWayCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_FreeWayCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_FreeWayCheckpoint.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\FreeWay\Corner\GroundSignEditorHelper.Solid.Gbx:
+  LagoonCE\Media\Solid\FreeWay\LandingRamp\Ground.Solid.Gbx:
+  - Id: CE\LandingRamp\Lagoon_FreeWayRampLandingRamp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\FreeWay\RoadPaint\Ground.Solid.Gbx:
+  LagoonCE\Media\Solid\FreeWay\Start\EditorHelper.Solid.Gbx:
+  LagoonCE\Media\Solid\HighWay\RoadPaint\DownAir.Solid.Gbx:
+  LagoonCE\Media\Solid\HighWay\RoadPaint\LeftAir.Solid.Gbx:
+  LagoonCE\Media\Solid\HighWay\RoadPaint\RightAir.Solid.Gbx:
+  LagoonCE\Media\Solid\HighWay\RoadPaint\UpAir.Solid.Gbx:
+  LagoonCE\Media\Solid\HighWay\Slope2Checkpoint\DownScreenAir.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointDownScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_HighWaySlope2CheckpointDown.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\HighWay\Slope2Checkpoint\LeftScreenAir.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointLeftScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_HighWaySlope2CheckpointLeft.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\HighWay\Slope2Checkpoint\RightScreenAir.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointRightScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_HighWaySlope2CheckpointRight.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\HighWay\Slope2Checkpoint\UpScreenAir.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointUpScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_HighWaySlope2CheckpointUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_HighWaySlope2CheckpointUp.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\HighWay\Slope2Loop\RightFreeClipLeftAir.Solid.Gbx:
+  LagoonCE\Media\Solid\HighWay\Slope2Loop\RightFreeClipRightAir.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadMain\Checkpoint\ScreenAir.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_RoadMainCheckpoint_Air.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_RoadMainCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_RoadMainCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\RoadMain\Checkpoint\ScreenGround.Solid.Gbx:
+  - Id: CE\Waypoint\Lagoon_RoadMainCheckpoint_Ground.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_RoadMainCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_RoadMainCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\RoadMain\RoadPaint\Air.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadMain\RoadPaint\Ground.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadMain\Specials\LandingRampAir.Solid.Gbx:
+  - Id: CE\LandingRamp\Lagoon_RoadMainLandingRamp_Air.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\RoadMain\Specials\LandingRampGround.Solid.Gbx:
+  - Id: CE\LandingRamp\Lagoon_RoadMainLandingRamp_Ground.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\RoadThemePark\Checkpoint\ScreenAir.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_RoadThemeParkCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_RoadThemeParkCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_RoadThemeParkCheckpoint.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  LagoonCE\Media\Solid\RoadThemePark\Checkpoint\ScreenDoubleWayAir.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadThemePark\Checkpoint\TriggerAir.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadThemePark\RoadPaint\Air.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadTunnel\RoadPaint.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadTunnel\RoadPaintDown.Solid.Gbx:
+  LagoonCE\Media\Solid\RoadTunnel\RoadPaintUp.Solid.Gbx:
+  StadiumCE\GameCtnObjectInfo\Vehicles\MainBodyVeryHigh.solid.gbx:
+  StadiumCE\Media\Solid\CE\Crane\Air.Solid.Gbx:
+  - Id: CE\CE_Crane_Air.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\CE\Crane\Ground.Solid.Gbx:
+  - Id: CE\CE_Crane_Ground.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\CE\Crane\PlatformAir.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Stadium_Air.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\CE\Crane\PlatformGround.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Stadium_Ground.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\CE\Helico\GroundA.Solid.Gbx:
+  StadiumCE\Media\Solid\CE\Helico\GroundB.Solid.Gbx:
+  StadiumCE\Media\Solid\CE\Podium\CraneAir.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Stadium_Air.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Stadium.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\CE\Podium\CraneGround.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Stadium_Ground.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Stadium.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\Circuit_FC\PlatformGridRoadPaintAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformGridRoadPaintGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeDownAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeDownGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeLeftAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeLeftGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeRightAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeRightGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeUpAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeUpGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformToRoadToRoadMainAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall2RoadPaintLeftAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall2RoadPaintRightAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall4RoadPaintDownAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Circuit_FC\PlatformWall4RoadPaintUpAir.Solid.Gbx:
+  StadiumCE\Media\Solid\DecoPalm\DirtHillBase1A.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillBase1A.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillBase1B.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillBase1B.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillBase1C.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillBase1C.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillBase5A.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillBase5A.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillBase5B.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillBase5B.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillBase5C.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillBase5C.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillCornerA.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillCornerA.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillCornerB.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillCornerB.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillCornerC.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillCornerC.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillDeadendA.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillDeadendA.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillDeadendB.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillDeadendB.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\DirtHillDeadendC.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\DirtHillDeadendC.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\GrassBaseA.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\GrassBaseA.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\GrassBaseB.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\GrassBaseB.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\DecoPalm\GrassBaseC.Solid.Gbx:
+  - Id: CE\StadiumDecoPalm\GrassBaseC.Item.Gbx
+    Collection: Stadium
+    Author: bigbang1112
+  StadiumCE\Media\Solid\Road\Main\RoadPaint\Air.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Main\RoadPaint\Ground.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Main\RoadPaint\SlopeDownAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Main\RoadPaint\SlopeDownGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Main\RoadPaint\SlopeUpAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Main\RoadPaint\SlopeUpGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Tilt\RoadPaintLeftAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Tilt\RoadPaintLeftGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Tilt\RoadPaintRightAir.Solid.Gbx:
+  StadiumCE\Media\Solid\Road\Tilt\RoadPaintRightGround.Solid.Gbx:
+  StadiumCE\Media\Solid\Temp\DecoPalm.Solid.Gbx:
+  StadiumCE\Media\Solid\Zone\WarpBuildings.Solid.Gbx:
+  - Id: CE\WarpBuildings.Item.gbx
+    Collection: Stadium
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\LeftEditorHelper.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofBaseAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofBaseAirScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofBaseAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofBaseAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofBaseGroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofBaseAirScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofBaseAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofBaseAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofLoopStraight2VAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofLoopStraight2VAirScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofLoopStraight2VAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofLoopStraight2VAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofLoopStraight4HAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofLoopStraight4HAirScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofLoopStraight4HAirScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofLoopStraight4HAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeLeftAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeLeftScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeLeft.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeLeftGroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeLeftScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeLeft.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeRightAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeRightScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeRight.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeRightGroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeRightScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeRight.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightDownAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightDownScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeStraightDownAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightDownGroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightDownScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeStraightDownAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightDownTrigger.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpAirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightUpScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeStraightUpAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpGroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightUpScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeStraightUpAir.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpTrigger.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\Checkpoint\RightEditorHelper.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\ParkRoof\FW\FreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaFWFreeClipTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\FW\FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaFWFreeClipDownTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\FW\FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaFWFreeClipLeftTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\FW\FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaFWFreeClipRightTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\FW\FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaFWFreeClipUpTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\FreeClipTankAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaTurboFreeClipTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\FreeClipTankDownAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaTurboFreeClipDownTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\FreeClipTankLeftAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaTurboFreeClipLeftTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\FreeClipTankRightAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaTurboFreeClipRightTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\FreeClipTankUpAir.Solid.Gbx:
+  - Id: CE\Tank\Valley_ArenaTurboFreeClipUpTank.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\TurboFreeClipRemover.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\TurboFreeClipRemover_EditorHelper.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\TurboFreeClipRemoverLeft_EditorHelper.Solid.Gbx:
+  ValleyCE\Media\Solid\Arena\ParkRoof\Turbo\TurboFreeClipRemoverRight_EditorHelper.Solid.Gbx:
+  ValleyCE\Media\Solid\CE\Crane\PlatformAir.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Valley_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\CE\Crane\PlatformGround.Solid.Gbx:
+  - Id: CE\CE_CranePlatform_Valley_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\CE\Podium\CraneAir.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Valley_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Valley.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\CE\Podium\CraneGround.Solid.Gbx:
+  - Id: CE\CE_CranePodium_Valley_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Valley.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Deco\Castle\CastleDeadendEntryLakeCheckPointInScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_DecoCastleEntryCheckPointInScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_DecoCastleEntryCheckPointInScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_DecoCastleEntryCheckPointIn.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Deco\Castle\CastleDeadendEntryLakeCheckPointOutScreen.Solid.Gbx:
+  ValleyCE\Media\Solid\Deco\Castle\CenterCheckpointLakeScreen.Solid.Gbx:
+  ValleyCE\Media\Solid\Deco\Castle\GardenCheckpointLakeScreen.Solid.Gbx:
+  ValleyCE\Media\Solid\Deco\Podium\ParkGround.Solid.Gbx:
+  ValleyCE\Media\Solid\LandingRamp\ArenaParkBaseAir.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_ArenaParkBaseLandingRamp_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\ArenaParkBaseGround.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_ArenaParkBaseLandingRamp_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\CastleCenterLake.Solid.Gbx:
+  ValleyCE\Media\Solid\LandingRamp\OffRoad.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_OffRoadLandingRamp.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\OffRoad_Field.Solid.Gbx:
+  ValleyCE\Media\Solid\LandingRamp\Road2WayAir.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_Road2WayLandingRamp_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\Road2WayGround.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_Road2WayLandingRamp_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\Road4WayAir.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_Road4WayLandingRamp_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\Road4WayGround.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_Road4WayLandingRamp_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\RoadCliff.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_RoadCliffSlopeUBottomLandingRamp.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\LandingRamp\RoadCliffMirror.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_RoadCliffSlopeUBottomLandingRampMirror.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\OffRoad\CheckpointDownScreenGround.Solid.Gbx:
+  - Id: CE\Waypoint\Valley_OffRoadCheckpoint_Down.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Down.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Down\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\OffRoad\CheckpointFieldScreen.Solid.Gbx:
+  ValleyCE\Media\Solid\OffRoad\CheckpointLeftScreenGround.Solid.Gbx:
+  - Id: CE\Waypoint\Valley_OffRoadCheckpoint_Left.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Left.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Left\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\OffRoad\CheckpointRightScreenGround.Solid.Gbx:
+  - Id: CE\Waypoint\Valley_OffRoadCheckpoint_Right.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Right.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Right\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\OffRoad\CheckpointScreenGround.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_OffRoadCheckpoint.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\OffRoad\CheckpointUpScreenGround.Solid.Gbx:
+  - Id: CE\Waypoint\Valley_OffRoadCheckpoint_Up.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Up.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen_Up\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\OffRoad\RoadForestToOffRoad.Solid.Gbx:
+  ValleyCE\Media\Solid\OffRoad\RoadForestToOffRoadGrass.Solid.Gbx:
+  ValleyCE\Media\Solid\Road2Way\Checkpoint\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_Road2WayCheckpoint_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road2Way\Checkpoint\DownScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointDownScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_Road2WayCheckpointDown.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road2Way\Checkpoint\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_Road2WayCheckpoint_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road2Way\Checkpoint\UpScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointUpScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road2WayCheckpointUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_Road2WayCheckpointUp.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road4Way\Checkpoint\AirScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_Road4WayCheckpoint_Air.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road4Way\Checkpoint\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_Road4WayCheckpoint_Ground.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road4Way\Slope\CheckpointDownScreen.Solid.Gbx:
+  - Id: CE\Waypoint\Valley_Road4WayCheckpointDown.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckPointDownScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckPointDownScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\Road4Way\Slope\CheckpointUpScreen.Solid.Gbx:
+  - Id: CE\Waypoint\Valley_Road4WayCheckpointUp.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckPointUpScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_Road4WayCheckPointUpScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadCliff\UBottomCheckPointLeftScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUBottomCheckPointLeftScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUBottomCheckPointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadCliffSlopeUBottomCheckPointLeft.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadCliff\UBottomCheckPointRightScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUBottomCheckPointRightScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUBottomCheckPointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadCliffSlopeUBottomCheckPointRight.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadCliff\UTopCheckPointLeftScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUTopCheckPointLeftScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUTopCheckPointLeftScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadCliffSlopeUTopCheckPointLeft.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadCliff\UTopCheckPointRightScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUTopCheckPointRightScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadCliffSlopeUTopCheckPointRightScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadCliffSlopeUTopCheckPointRight.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadDirt\Checkpoint\GroundScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadDirtCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadDirtCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadDirtCheckpoint.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadForestLarge\CheckpointScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadForestLargeCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadForestLargeCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadForestLargeCheckpoint.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  ValleyCE\Media\Solid\RoadForestLarge\FreeClipTech.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadForestLargeGrass\CheckpointScreen.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadForestLargeGrass\FreeClipTech.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaBase.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaLoopLeftAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaLoopLeftGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaLoopRightAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaLoopRightGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaParkBaseAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaParkBaseGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaParkRoofBaseAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaParkRoofBaseGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2DownAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2DownGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2LeftAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2LeftGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2RightAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2RightGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2UpAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\ArenaSlope2UpGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road2WayAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road2WayGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road2WaySlopeDownAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road2WaySlopeUpAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road4WayAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road4WayGround.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road4WaySlopeDownAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\Road4WaySlopeUpAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\TunnelRoad4WayAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\TunnelRoad4WaySlopeDownAir.Solid.Gbx:
+  ValleyCE\Media\Solid\RoadPaint\TunnelRoad4WaySlopeUpAir.Solid.Gbx:

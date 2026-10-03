@@ -45,6 +45,7 @@ public class TurboConverterTool : ITool,
 
         var conversions = complexConfig.Get<Conversions>($"{map.Collection}Conversions", cache: true);
         var converters = complexConfig.Get<Converters>("Converters", cache: true);
+        var solidMappings = complexConfig.Get<SolidMappings>("SolidMappings", cache: true);
 
         var originalMapInfo = new OriginalMapInfo(map);
 
@@ -53,7 +54,7 @@ public class TurboConverterTool : ITool,
         var blockConversionSystem = new BlockConversionSystem(map, conversions, converters);
         blockConversionSystem.Run();
 
-        new ItemConversionSystem(map).Run();
+        new ItemConversionSystem(map, solidMappings).Run();
         new SkinFixupConversionSystem(map).Run();
         new WarpConversionSystem(map, conversions).Run();
         new CleanupConversionSystem(map).Run();
