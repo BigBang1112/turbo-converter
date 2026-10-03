@@ -317,11 +317,18 @@ internal sealed class BlockConversionSystem : IConversionSystem
 
     private object[] GetBlockStringArgs(CGameCtnBlock block)
     {
+        var skinName = Path.GetFileNameWithoutExtension(block.Skin?.PackDesc?.FilePath);
+
+        if (string.IsNullOrEmpty(skinName))
+        {
+            skinName = "WELCOME_TM";
+        }
+
         return [
             block.Name,
             map.Collection ?? throw new Exception("Map collection is null."),
             block.IsGround ? "Ground" : "Air",
-            Path.GetFileNameWithoutExtension(block.Skin?.PackDesc?.FilePath) ?? "WELCOME_TM"
+            skinName
         ];
     }
 
