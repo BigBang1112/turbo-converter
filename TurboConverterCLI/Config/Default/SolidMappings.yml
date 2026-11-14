@@ -4,11 +4,27 @@ MP4:
   CanyonCE\Media\Solid\Arena\Border\Bank\RoadPaintRightAir.Solid.Gbx: Canyon\Media\Solid\Arena\Border\StraightPillar\BankAir.Solid.Gbx
   CanyonCE\Media\Solid\Arena\Border\Bank\RoadPaintRightGround.Solid.Gbx: Canyon\Media\Solid\Arena\Border\StraightPillar\BankGround.Solid.Gbx
   CanyonCE\Media\Solid\Arena\RoadPaint\DownAir.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Air.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\RoadPaint\DownGround.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Ground.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\RoadPaint\FreeClipTop.Solid.Gbx: Canyon\Media\Solid\Arena\Simple\Base\FreeClipTop.Solid.Gbx
   CanyonCE\Media\Solid\Arena\RoadPaint\LeftAir.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Air.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\RoadPaint\LeftGround.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Ground.Solid.Gbx
   CanyonCE\Media\Solid\Arena\RoadPaint\RightAir.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Air.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\RoadPaint\RightGround.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Ground.Solid.Gbx
   CanyonCE\Media\Solid\Arena\RoadPaint\UpAir.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Air.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\RoadPaint\UpGround.Solid.Gbx: Canyon\Media\Solid\Arena\Slope\Straight\Ground.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\Tunnel\RoadPaint\Air.Solid.Gbx: Canyon\Media\Solid\Arena\Tunnel\Straight\AirA.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintLeftAir.Solid.Gbx: Canyon\Media\Solid\Arena\WallRide\StraightAir.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintLeftGround.Solid.Gbx: Canyon\Media\Solid\Arena\WallRide\StraightGround.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintRightAir.Solid.Gbx: Canyon\Media\Solid\Arena\WallRide\StraightAir.Solid.Gbx
+  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintRightGround.Solid.Gbx: Canyon\Media\Solid\Arena\WallRide\StraightGround.Solid.Gbx
+  CanyonCE\Media\Solid\Cliff12Road\High\RoadPaint.Solid.Gbx: Canyon\Media\Solid\Cliff12Road\High\StraightA.Solid.Gbx
+  CanyonCE\Media\Solid\Cliff12Road\High\RoadPaintMirror.Solid.Gbx: Canyon\Media\Solid\Cliff12Road\High\StraightA.Solid.Gbx
+  CanyonCE\Media\Solid\Cliff12Road\Med\RoadPaint.Solid.Gbx: Canyon\Media\Solid\Cliff12Road\Med\StraightA.Solid.Gbx
+  CanyonCE\Media\Solid\Cliff12Road\Med\RoadPaintMirror.Solid.Gbx: Canyon\Media\Solid\Cliff12Road\Med\StraightA.Solid.Gbx
   CanyonCE\Media\Solid\Deco\Technics\AntennaAir.Solid.Gbx: Canyon\Media\Solid\Deco\Technics\AntennaAirB.Solid.Gbx
+  CanyonCE\Media\Solid\Road\CaveDouble\RoadPaint.Solid.Gbx: Canyon\Media\Solid\Road\CaveDouble\Straight.Solid.Gbx
   CanyonCE\Media\Solid\Road\CaveDouble\ToRoadCave\Straight02.Solid.Gbx: Canyon\Media\Solid\Road\CaveDouble\ToRoadCave\Straight.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Cave\RoadPaint.Solid.Gbx: Canyon\Media\Solid\Road\Cave\StraightA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Hill2\RoadPaint.Solid.Gbx: Canyon\Media\Solid\Road\Hill2\StraightA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Hill2\RoadPaintMirror.Solid.Gbx: Canyon\Media\Solid\Road\Hill2\StraightA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Main\RoadPaint\Air.Solid.Gbx: Canyon\Media\Solid\Road\Main\Straight\Air.Solid.Gbx
@@ -38,7 +54,9 @@ MP4:
   CanyonCE\Media\Solid\Road\Race\RoadPaint\MirrorAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Straight\AirA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Race\RoadPaint\MirrorGround.Solid.Gbx: Canyon\Media\Solid\Road\Race\Straight\GroundA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeDownAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Slope\StraightAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeDownMirrorAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Slope\StraightAirMirror.Solid.Gbx
   CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeUpAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Slope\StraightAir.Solid.Gbx
+  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeUpMirrorAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Slope\StraightAirMirror.Solid.Gbx
   CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Tilt\StraightAirA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltGround.Solid.Gbx: Canyon\Media\Solid\Road\Race\Tilt\StraightGroundA.Solid.Gbx
   CanyonCE\Media\Solid\Road\Race\RoadPaint\TiltMirrorAir.Solid.Gbx: Canyon\Media\Solid\Road\Race\Tilt\StraightAirA.Solid.Gbx
@@ -61,7 +79,13 @@ MP4:
   LagoonCE\Media\Solid\Arena\RoadPaintWall4Air.Solid.Gbx: Lagoon\Media\Solid\Arena\LoopStraight4Air.Solid.Gbx
   LagoonCE\Media\Solid\Deco\CityFloor\FreeClipA.Solid.Gbx: Lagoon\Media\Solid\Deco\CityFloor\FreeClipAir.Solid.Gbx
   LagoonCE\Media\Solid\Deco\CityFloor\FreeClipSmall.Solid.Gbx: Lagoon\Media\Solid\Deco\CityFloor\FreeClipSmallGround.Solid.Gbx
+  LagoonCE\Media\Solid\Deco\CityFloor\LandingRamp.Solid.Gbx: Lagoon\Media\Solid\Deco\CityFloor\BaseA.Solid.Gbx
+  LagoonCE\Media\Solid\Deco\CityFloor\SlopeFreeClipLeftA.Solid.Gbx: Lagoon\Media\Solid\Deco\CityFloor\SlopeFreeClipLeftAir.Solid.Gbx
+  LagoonCE\Media\Solid\Deco\CityFloor\SlopeFreeClipRightA.Solid.Gbx: Lagoon\Media\Solid\Deco\CityFloor\SlopeFreeClipRightAir.Solid.Gbx
   LagoonCE\Media\Solid\Deco\CityGarden\FreeClipA.Solid.Gbx: Lagoon\Media\Solid\Deco\CityGarden\FreeClipGround.Solid.Gbx
+  LagoonCE\Media\Solid\Deco\CityGarden\SlopeFreeClipLeftA.Solid.Gbx: Lagoon\Media\Solid\Deco\CityGarden\SlopeFreeClipLeftAir.Solid.Gbx
+  LagoonCE\Media\Solid\Deco\CityGarden\SlopeFreeClipRightA.Solid.Gbx: Lagoon\Media\Solid\Deco\CityGarden\SlopeFreeClipRightAir.Solid.Gbx
+  LagoonCE\Media\Solid\Deco\CityQuays\Base.Solid.Gbx: Lagoon\Media\Solid\Deco\CityFloor\BaseA.Solid.Gbx
   LagoonCE\Media\Solid\FreeWay\RoadPaint\Ground.Solid.Gbx: Lagoon\Media\Solid\FreeWay\Straight\Ground.Solid.Gbx
   LagoonCE\Media\Solid\HighWay\RoadPaint\DownAir.Solid.Gbx: Lagoon\Media\Solid\HighWay\Slope2\StraightAir.Solid.Gbx
   LagoonCE\Media\Solid\HighWay\RoadPaint\LeftAir.Solid.Gbx: Lagoon\Media\Solid\HighWay\Tilt2\StraightAir.Solid.Gbx
@@ -69,6 +93,7 @@ MP4:
   LagoonCE\Media\Solid\HighWay\RoadPaint\UpAir.Solid.Gbx: Lagoon\Media\Solid\HighWay\Slope2\StraightAir.Solid.Gbx
   LagoonCE\Media\Solid\RoadMain\RoadPaint\Air.Solid.Gbx: Lagoon\Media\Solid\RoadMain\Straight\Air.Solid.Gbx
   LagoonCE\Media\Solid\RoadMain\RoadPaint\Ground.Solid.Gbx: Lagoon\Media\Solid\RoadMain\Straight\Ground.Solid.Gbx
+  LagoonCE\Media\Solid\RoadThemePark\Checkpoint\TriggerAir.Solid.Gbx: Lagoon\Media\Solid\RoadThemePark\Checkpoint\DoubleWayTriggerAir.Solid.Gbx
   LagoonCE\Media\Solid\RoadThemePark\RoadPaint\Air.Solid.Gbx: Lagoon\Media\Solid\RoadThemePark\Straight\Air.Solid.Gbx
   LagoonCE\Media\Solid\RoadTunnel\RoadPaint.Solid.Gbx: Lagoon\Media\Solid\RoadTunnel\StraightC.Solid.Gbx
   LagoonCE\Media\Solid\RoadTunnel\RoadPaintDown.Solid.Gbx: Lagoon\Media\Solid\RoadTunnel\Slope2StraightB.Solid.Gbx
@@ -137,6 +162,7 @@ MP4:
   StadiumCE\Media\Solid\Circuit_FC\PlatformLoopEndAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\LoopEndAir.Solid.Gbx
   StadiumCE\Media\Solid\Circuit_FC\PlatformLoopStartAir.Solid.Gbx: Stadium\Media\Solid\Platform_FC\LoopStartAir.Solid.Gbx
   StadiumCE\Media\Solid\Circuit_FC\PlatformLoopStartGround.Solid.Gbx: Stadium\Media\Solid\Platform_FC\LoopStartGround.Solid.Gbx
+  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintAir.Solid.Gbx: Stadium\Media\Solid\Circuit_FC\Void.Solid.Gbx
   StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeDownAir.Solid.Gbx: Stadium\Media\Solid\Circuit_FC\SlopeStraightAir.Solid.Gbx
   StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeDownGround.Solid.Gbx: Stadium\Media\Solid\Circuit_FC\SlopeStraightGround.Solid.Gbx
   StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintSlopeLeftAir.Solid.Gbx: Stadium\Media\Solid\Circuit_FC\SlopeStraightAir.Solid.Gbx
@@ -209,15 +235,21 @@ MP4:
   StadiumCE\Media\Solid\Road\Tilt\RoadPaintLeftGround.Solid.Gbx: Stadium\Media\Solid\Road\Tilt\StraightGround.Solid.Gbx
   StadiumCE\Media\Solid\Road\Tilt\RoadPaintRightAir.Solid.Gbx: Stadium\Media\Solid\Road\Tilt\StraightAir.Solid.Gbx
   StadiumCE\Media\Solid\Road\Tilt\RoadPaintRightGround.Solid.Gbx: Stadium\Media\Solid\Road\Tilt\StraightGround.Solid.Gbx
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightDownTrigger.Solid.Gbx: Valley\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpDownTrigger.Solid.Gbx
+  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpTrigger.Solid.Gbx: Valley\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpDownTrigger.Solid.Gbx
   ValleyCE\Media\Solid\Deco\Podium\ParkGround.Solid.Gbx: Valley\Media\Solid\Deco\Podium\ParkAir.Solid.Gbx
+  ValleyCE\Media\Solid\LandingRamp\CastleCenterLake.Solid.Gbx: Valley\Media\Solid\Deco\Castle\CenterLake-A.Solid.Gbx
   ValleyCE\Media\Solid\OffRoad\RoadForestToOffRoad.Solid.Gbx: Valley\Media\Solid\RoadForestLarge\Deadend.Solid.Gbx
   ValleyCE\Media\Solid\OffRoad\RoadForestToOffRoadGrass.Solid.Gbx: Valley\Media\Solid\RoadForestLargeGrass\Deadend.Solid.Gbx
+  ValleyCE\Media\Solid\RoadPaint\ArenaBase.Solid.Gbx: Valley\Media\Solid\Arena\Base\Void.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaLoopLeftAir.Solid.Gbx: Valley\Media\Solid\Arena\ParkRoof\Loop\Straight2Air.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaLoopLeftGround.Solid.Gbx: Valley\Media\Solid\Arena\ParkRoof\Loop\Straight2Ground.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaLoopRightAir.Solid.Gbx: Valley\Media\Solid\Arena\ParkRoof\Loop\Straight2Air.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaLoopRightGround.Solid.Gbx: Valley\Media\Solid\Arena\ParkRoof\Loop\Straight2Ground.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaParkBaseAir.Solid.Gbx: Valley\Media\Solid\Arena\Park\BaseAir.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaParkBaseGround.Solid.Gbx: Valley\Media\Solid\Arena\Park\BaseAir.Solid.Gbx
+  ValleyCE\Media\Solid\RoadPaint\ArenaParkRoofBaseAir.Solid.Gbx: Valley\Media\Solid\Arena\ParkRoof\BaseAir.Solid.Gbx
+  ValleyCE\Media\Solid\RoadPaint\ArenaParkRoofBaseGround.Solid.Gbx: Valley\Media\Solid\Arena\ParkRoof\BaseGround.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaSlope2DownAir.Solid.Gbx: Valley\Media\Solid\Arena\Base\Slope\StraightAir.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaSlope2DownGround.Solid.Gbx: Valley\Media\Solid\Arena\Base\Slope\StraightGround.Solid.Gbx
   ValleyCE\Media\Solid\RoadPaint\ArenaSlope2LeftAir.Solid.Gbx: Valley\Media\Solid\Arena\Base\Slope\StraightAir.Solid.Gbx
@@ -242,6 +274,7 @@ MP4:
 
 # TMT values are replacement item lists; empty values have no verified item mapping.
 # ID placeholder: {1} = map environment for shared solids.
+# Environments: optional list restricting an item to maps of those environments (omitted = all).
 # Fixed screen defaults: AD_try_hard_09 for checkpoints, PODIUM_VID_TryHard1 for podiums.
 TMT:
   CanyonCE\Media\Solid\Arena\Checkpoint\Base\AirScreen.Solid.Gbx:
@@ -374,12 +407,6 @@ TMT:
   - Id: CE\Tank\Canyon_ArenaFWFreeClipTankUp.Item.Gbx
     Collection: 12
     Author: bigbang1112
-  CanyonCE\Media\Solid\Arena\RoadPaint\DownGround.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\RoadPaint\FreeClipTop.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\RoadPaint\LeftGround.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\RoadPaint\RightGround.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\RoadPaint\UpGround.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\Tunnel\RoadPaint\Air.Solid.Gbx:
   CanyonCE\Media\Solid\Arena\Turbo\2FreeClipTankAir.Solid.Gbx:
   - Id: CE\Tank\Canyon_ArenaTurbo2FreeClipTank.Item.Gbx
     Collection: 12
@@ -424,10 +451,6 @@ TMT:
   CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemover_EditorHelper.Solid.Gbx:
   CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemoverLeft_EditorHelper.Solid.Gbx:
   CanyonCE\Media\Solid\Arena\Turbo\TurboFreeClipRemoverRight_EditorHelper.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintLeftAir.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintLeftGround.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintRightAir.Solid.Gbx:
-  CanyonCE\Media\Solid\Arena\WallRide\2RoadPaintRightGround.Solid.Gbx:
   CanyonCE\Media\Solid\CE\Crane\PlatformAir.Solid.Gbx:
   - Id: CE\CE_CranePlatform_Canyon.Item.Gbx
     Collection: 12
@@ -474,8 +497,6 @@ TMT:
   - Id: CE\LandingRamp\Canyon_Cliff12RoadHighLandingRamp.Item.Gbx
     Collection: 12
     Author: bigbang1112
-  CanyonCE\Media\Solid\Cliff12Road\High\RoadPaint.Solid.Gbx:
-  CanyonCE\Media\Solid\Cliff12Road\High\RoadPaintMirror.Solid.Gbx:
   CanyonCE\Media\Solid\Cliff12Road\Med\CheckpointLeftScreen.Solid.Gbx:
   - Id: CE\CheckpointScreen\Canyon_Cliff12RoadMedCheckpointLeftScreen.Item.Gbx
     Collection: 12
@@ -500,8 +521,6 @@ TMT:
   - Id: CE\LandingRamp\Canyon_Cliff12RoadMedLandingRamp.Item.Gbx
     Collection: 12
     Author: bigbang1112
-  CanyonCE\Media\Solid\Cliff12Road\Med\RoadPaint.Solid.Gbx:
-  CanyonCE\Media\Solid\Cliff12Road\Med\RoadPaintMirror.Solid.Gbx:
   CanyonCE\Media\Solid\Deco\Reffinery\PipelineBaseAir.Solid.Gbx:
   CanyonCE\Media\Solid\OffRoad\Checkpoint\GroundScreen.Solid.Gbx:
   - Id: CE\CheckpointScreen\Canyon_OffRoadCheckpointScreen.Item.Gbx
@@ -517,8 +536,6 @@ TMT:
   - Id: CE\LandingRamp\Canyon_OffRoadLandingRamp.Item.Gbx
     Collection: 12
     Author: bigbang1112
-  CanyonCE\Media\Solid\Road\Cave\RoadPaint.Solid.Gbx:
-  CanyonCE\Media\Solid\Road\CaveDouble\RoadPaint.Solid.Gbx:
   CanyonCE\Media\Solid\Road\Hill2\CheckpointLeftScreen.Solid.Gbx:
   - Id: CE\CheckpointScreen\Canyon_RoadHill2CheckpointLeftScreen.Item.Gbx
     Collection: 12
@@ -659,8 +676,6 @@ TMT:
   - Id: CE\LandingRamp\Canyon_RoadRaceLandingRamp_Ground.Item.Gbx
     Collection: 12
     Author: bigbang1112
-  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeDownMirrorAir.Solid.Gbx:
-  CanyonCE\Media\Solid\Road\Race\RoadPaint\SlopeUpMirrorAir.Solid.Gbx:
   CanyonCE\Media\Solid\Road\Race\Tilt\CheckpointAirScreen-Mirror.Solid.Gbx:
   - Id: CE\CheckpointScreen\Canyon_RoadRaceTiltCheckpointScreenMirror.Item.Gbx
     Collection: 12
@@ -890,12 +905,6 @@ TMT:
   - Id: CE\Waypoint\Lagoon_DecoCityCheckpoint.Item.Gbx
     Collection: 13
     Author: bigbang1112
-  LagoonCE\Media\Solid\Deco\CityFloor\LandingRamp.Solid.Gbx:
-  LagoonCE\Media\Solid\Deco\CityFloor\SlopeFreeClipLeftA.Solid.Gbx:
-  LagoonCE\Media\Solid\Deco\CityFloor\SlopeFreeClipRightA.Solid.Gbx:
-  LagoonCE\Media\Solid\Deco\CityGarden\SlopeFreeClipLeftA.Solid.Gbx:
-  LagoonCE\Media\Solid\Deco\CityGarden\SlopeFreeClipRightA.Solid.Gbx:
-  LagoonCE\Media\Solid\Deco\CityQuays\Base.Solid.Gbx:
   LagoonCE\Media\Solid\Deco\Land\Checkpoint\HillDownScreenGround.Solid.Gbx:
   - Id: CE\CheckpointScreen\Lagoon_LandHillCheckpointDownScreen.Item.Gbx
     Collection: 13
@@ -1063,7 +1072,15 @@ TMT:
     Collection: 13
     Author: bigbang1112
   LagoonCE\Media\Solid\RoadThemePark\Checkpoint\ScreenDoubleWayAir.Solid.Gbx:
-  LagoonCE\Media\Solid\RoadThemePark\Checkpoint\TriggerAir.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Lagoon_RoadThemeParkCheckpointScreen.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Lagoon_RoadThemeParkCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
+  - Id: CE\Waypoint\Lagoon_RoadThemeParkCheckpoint.Item.Gbx
+    Collection: 13
+    Author: bigbang1112
   StadiumCE\GameCtnObjectInfo\Vehicles\MainBodyVeryHigh.solid.gbx:
   StadiumCE\Media\Solid\CE\Crane\Air.Solid.Gbx:
   - Id: CE\CE_Crane_Air.Item.Gbx
@@ -1082,7 +1099,13 @@ TMT:
     Collection: Stadium
     Author: bigbang1112
   StadiumCE\Media\Solid\CE\Helico\GroundA.Solid.Gbx:
+  - Id: CE\CE_HelicoA.Item.Gbx
+    Collection: 10003
+    Author: bigbang1112
   StadiumCE\Media\Solid\CE\Helico\GroundB.Solid.Gbx:
+  - Id: CE\CE_HelicoB.Item.Gbx
+    Collection: 10003
+    Author: bigbang1112
   StadiumCE\Media\Solid\CE\Podium\CraneAir.Solid.Gbx:
   - Id: CE\CE_CranePodium_Stadium_Air.Item.Gbx
     Collection: Stadium
@@ -1097,7 +1120,6 @@ TMT:
   - Id: CE\CE_CranePodium\PODIUM_VID_TryHard1_Stadium.Item.Gbx
     Collection: Stadium
     Author: bigbang1112
-  StadiumCE\Media\Solid\Circuit_FC\PlatformRoadPaintAir.Solid.Gbx:
   StadiumCE\Media\Solid\DecoPalm\DirtHillBase1A.Solid.Gbx:
   - Id: CE\StadiumDecoPalm\DirtHillBase1A.Item.Gbx
     Collection: Stadium
@@ -1264,7 +1286,6 @@ TMT:
   - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeStraightDownAir.Item.Gbx
     Collection: 11
     Author: bigbang1112
-  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightDownTrigger.Solid.Gbx:
   ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpAirScreen.Solid.Gbx:
   - Id: CE\CheckpointScreen\Valley_ArenaCheckpointParkRoofSlopeStraightUpScreen.Item.Gbx
     Collection: 11
@@ -1285,7 +1306,6 @@ TMT:
   - Id: CE\Waypoint\Valley_ArenaCheckpointParkRoofSlopeStraightUpAir.Item.Gbx
     Collection: 11
     Author: bigbang1112
-  ValleyCE\Media\Solid\Arena\Checkpoint\ParkRoofSlopeStraightUpTrigger.Solid.Gbx:
   ValleyCE\Media\Solid\Arena\Checkpoint\RightEditorHelper.Solid.Gbx:
   ValleyCE\Media\Solid\Arena\ParkRoof\FW\FreeClipTankAir.Solid.Gbx:
   - Id: CE\Tank\Valley_ArenaFWFreeClipTank.Item.Gbx
@@ -1364,8 +1384,35 @@ TMT:
     Collection: 11
     Author: bigbang1112
   ValleyCE\Media\Solid\Deco\Castle\CastleDeadendEntryLakeCheckPointOutScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_DecoCastleEntryCheckPointOutScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_DecoCastleEntryCheckPointOutScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_DecoCastleEntryCheckPointOut.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
   ValleyCE\Media\Solid\Deco\Castle\CenterCheckpointLakeScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_DecoCastleCenterCheckpointLakeScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_DecoCastleCenterCheckpointLakeScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_DecoCastleCenterCheckpointLake.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
   ValleyCE\Media\Solid\Deco\Castle\GardenCheckpointLakeScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_DecoCastleGardenCheckpointLakeScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_DecoCastleGardenCheckpointLakeScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_DecoCastleGardenCheckpointLake.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
   ValleyCE\Media\Solid\LandingRamp\ArenaParkBaseAir.Solid.Gbx:
   - Id: CE\LandingRamp\Valley_ArenaParkBaseLandingRamp_Air.Item.Gbx
     Collection: 11
@@ -1374,12 +1421,14 @@ TMT:
   - Id: CE\LandingRamp\Valley_ArenaParkBaseLandingRamp_Ground.Item.Gbx
     Collection: 11
     Author: bigbang1112
-  ValleyCE\Media\Solid\LandingRamp\CastleCenterLake.Solid.Gbx:
   ValleyCE\Media\Solid\LandingRamp\OffRoad.Solid.Gbx:
   - Id: CE\LandingRamp\Valley_OffRoadLandingRamp.Item.Gbx
     Collection: 11
     Author: bigbang1112
   ValleyCE\Media\Solid\LandingRamp\OffRoad_Field.Solid.Gbx:
+  - Id: CE\LandingRamp\Valley_OffRoadLandingRamp.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
   ValleyCE\Media\Solid\LandingRamp\Road2WayAir.Solid.Gbx:
   - Id: CE\LandingRamp\Valley_Road2WayLandingRamp_Air.Item.Gbx
     Collection: 11
@@ -1415,6 +1464,15 @@ TMT:
     Collection: 11
     Author: bigbang1112
   ValleyCE\Media\Solid\OffRoad\CheckpointFieldScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_OffRoadCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_OffRoadCheckpoint.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
   ValleyCE\Media\Solid\OffRoad\CheckpointLeftScreenGround.Solid.Gbx:
   - Id: CE\Waypoint\Valley_OffRoadCheckpoint_Left.Item.Gbx
     Collection: 11
@@ -1597,7 +1655,13 @@ TMT:
     Author: bigbang1112
   ValleyCE\Media\Solid\RoadForestLarge\FreeClipTech.Solid.Gbx:
   ValleyCE\Media\Solid\RoadForestLargeGrass\CheckpointScreen.Solid.Gbx:
+  - Id: CE\CheckpointScreen\Valley_RoadForestLargeCheckpointScreen.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\CheckpointScreen\Valley_RoadForestLargeCheckpointScreen\AD_try_hard_09.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
+  - Id: CE\Waypoint\Valley_RoadForestLargeCheckpoint.Item.Gbx
+    Collection: 11
+    Author: bigbang1112
   ValleyCE\Media\Solid\RoadForestLargeGrass\FreeClipTech.Solid.Gbx:
-  ValleyCE\Media\Solid\RoadPaint\ArenaBase.Solid.Gbx:
-  ValleyCE\Media\Solid\RoadPaint\ArenaParkRoofBaseAir.Solid.Gbx:
-  ValleyCE\Media\Solid\RoadPaint\ArenaParkRoofBaseGround.Solid.Gbx:
