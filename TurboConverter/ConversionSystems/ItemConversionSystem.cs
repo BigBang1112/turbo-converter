@@ -173,8 +173,16 @@ internal sealed class ItemConversionSystem : IConversionSystem
         return string.Join("\\",
             path.Split('\\')
                 .Select(part =>
-                    part.EndsWith("CE", StringComparison.OrdinalIgnoreCase)
+                    ceFolders.Contains(part)
                         ? part[..^2]
                         : part));
     }
+
+    private static readonly HashSet<string> ceFolders = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "CanyonCE",
+        "LagoonCE",
+        "StadiumCE",
+        "ValleyCE"
+    };
 }

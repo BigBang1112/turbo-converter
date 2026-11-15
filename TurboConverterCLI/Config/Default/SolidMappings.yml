@@ -274,7 +274,6 @@ MP4:
 
 # TMT values are replacement item lists; empty values have no verified item mapping.
 # ID placeholder: {1} = map environment for shared solids.
-# Environments: optional list restricting an item to maps of those environments (omitted = all).
 # Fixed screen defaults: AD_try_hard_09 for checkpoints, PODIUM_VID_TryHard1 for podiums.
 TMT:
   CanyonCE\Media\Solid\Arena\Checkpoint\Base\AirScreen.Solid.Gbx:
