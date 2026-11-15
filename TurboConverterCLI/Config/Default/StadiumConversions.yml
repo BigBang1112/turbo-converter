@@ -86,19 +86,19 @@ Blocks:
   StadiumDecoTowerA:
   - Name: StadiumDecoTower.Block.Gbx_CustomBlock
     ItemModel:
-      Id: CE\StadiumDecoTower\A.Item.Gbx
+      Id: CE\StadiumDecoTower\A{4}.Item.Gbx
   StadiumDecoTowerB:
   - Name: StadiumDecoTower.Block.Gbx_CustomBlock
     ItemModel:
-      Id: CE\StadiumDecoTower\B.Item.Gbx
+      Id: CE\StadiumDecoTower\B{4}.Item.Gbx
   StadiumDecoTowerC:
   - Name: StadiumDecoTower.Block.Gbx_CustomBlock
     ItemModel:
-      Id: CE\StadiumDecoTower\C.Item.Gbx
+      Id: CE\StadiumDecoTower\C{4}.Item.Gbx
   StadiumDecoTowerD:
   - Name: StadiumDecoTower.Block.Gbx_CustomBlock
     ItemModel:
-      Id: CE\StadiumDecoTower\D.Item.Gbx
+      Id: CE\StadiumDecoTower\D{4}.Item.Gbx
   StadiumRoadDirtDiagonaleLeft:
   - Name: StadiumRoadDirtDiagonaleLeft.Block.Gbx_CustomBlock
     Size: [2, 3]

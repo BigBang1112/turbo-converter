@@ -318,6 +318,7 @@ internal sealed class BlockConversionSystem : IConversionSystem
     private object[] GetBlockStringArgs(CGameCtnBlock block)
     {
         var skinName = Path.GetFileNameWithoutExtension(block.Skin?.PackDesc?.FilePath);
+        var skinSuffix = string.IsNullOrEmpty(skinName) ? "" : $"_{skinName}";
 
         if (string.IsNullOrEmpty(skinName))
         {
@@ -328,7 +329,8 @@ internal sealed class BlockConversionSystem : IConversionSystem
             block.Name,
             map.Collection ?? throw new Exception("Map collection is null."),
             block.IsGround ? "Ground" : "Air",
-            skinName
+            skinName,
+            skinSuffix
         ];
     }
 
